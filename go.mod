@@ -14,7 +14,7 @@ require (
 	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37 // indirect
 	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2 // indirect
 	golang.org/x/sys v0.0.0-20200523222454-059865788121 // indirect
-	jsouthworth.net/go/danos-buildpackage v0.0.0-20200529151524-e3f0b2d65e80
+	jsouthworth.net/go/danos-buildpackage v0.0.0-20200601162338-dc24a974ea9f
 	jsouthworth.net/go/dyn v0.0.0-20190414143850-c77f9cc7c983
 	jsouthworth.net/go/immutable v0.0.0-20200428214457-0cfcea959a4d
 	jsouthworth.net/go/seq v0.0.0-20190918170623-46e5a194a36e // indirect
