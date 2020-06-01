@@ -205,7 +205,7 @@ func buildRepos(repos []string, logDir, debDir, baseDir, version string) error {
 	done := make(chan struct{})
 	interrupt := make(chan os.Signal)
 	signal.Notify(interrupt, os.Interrupt)
-	logf, err := os.OpenFile(filepath.Join(logdir, "failed-builds.log"),
+	logf, err := os.OpenFile(filepath.Join(logDir, "failed-builds.log"),
 		os.O_RDWR|os.O_CREATE, 0755)
 	if err != nil {
 		return err
