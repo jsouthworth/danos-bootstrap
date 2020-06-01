@@ -205,6 +205,12 @@ func buildRepos(repos []string, logDir, debDir, baseDir, version string) error {
 	done := make(chan struct{})
 	interrupt := make(chan os.Signal)
 	signal.Notify(interrupt, os.Interrupt)
+	logf, err := os.OpenFile(filepath.Join(logdir, "failed-builds.log"),
+		os.O_RDWR|os.O_CREATE, 0755)
+	if err != nil {
+		return err
+	}
+	defer logf.Close()
 	go func() {
 		for _, repo := range repos {
 			err := teeAndEval(logDir, repo, func() error {
@@ -212,6 +218,7 @@ func buildRepos(repos []string, logDir, debDir, baseDir, version string) error {
 			})
 			if err != nil {
 				buildErrs = append(buildErrs, err)
+				fmt.Fprintln(logf, err)
 			}
 		}
 		close(done)
