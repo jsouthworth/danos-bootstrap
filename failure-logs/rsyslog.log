@@ -1,0 +1,1218 @@
+Building rsyslog
+{"status":"Pulling from jsouthworth/danos-buildpackage","id":"debian10-bootstrap"}
+{"status":"Digest: sha256:fe499243687f6da2b6f300baa16598c2b3f1a87a4d02e7128122a143f16cbdb5"}
+{"status":"Status: Image is up to date for registry.hub.docker.com/jsouthworth/danos-buildpackage:debian10-bootstrap"}
+/tmp/pkgs /build/src
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   accton-as5916-54xks-hwdiag accton-as5916-54xks-support accton-as5916-54xks-sys-led-control acmd acmd-dbgsym base-files-vyatta bcm-kbp-linux-modules-5.4.0-trunk-vyatta-amd64 bcm-linux-bde-modules-5.4.0-trunk-vyatta-amd64 bvnos-linux-libc-dev-vyatta chvrf cli-sandbox cli-shell-api cloud-init config-utils configd configd-v1-yang deb-vci-helper dh-signobs dh-vci dh-yang dpdk dpdk-dev dpdk-dev-dbgsym dpdk-igb-uio-dkms dpdk-modules-5.4.0-trunk-vyatta-amd64 dpdk-rte-kni-dkms ephemerad ephemerad-v1-yang frr frr-dbg frr-doc frr-pythontools golang-dbus-dev golang-github-danos-aaa-dev golang-github-danos-config-dev golang-github-danos-configd-client-dev golang-github-danos-configd-rpc-dev golang-github-danos-encoding-rfc7951-dev golang-github-danos-mgmterror-dev golang-github-danos-op-dev golang-github-danos-utils-args-dev golang-github-danos-utils-audit-dev golang-github-danos-utils-exec-dev golang-github-danos-utils-guard-dev golang-github-danos-utils-natsort-dev golang-github-danos-utils-os-group-dev golang-github-danos-utils-patherr-dev golang-github-danos-utils-pathutil-dev golang-github-danos-utils-tsort-dev golang-github-danos-utils-tty-dev golang-github-danos-vci-dev golang-github-danos-vyatta-controller-protobuf-dev golang-github-danos-vyatta-dataplane-protobuf-dev golang-github-danos-yang-dev golang-github-danos-yangd-client-dev golang-github-danos-yangd-dev golang-github-jsouthworth-objtree-dev golang-github-zeromq-goczmq-dev golang-jsouthworth-dyn-dev golang-jsouthworth-etm-dev golang-jsouthworth-hash-dev golang-jsouthworth-immutable-dev golang-jsouthworth-seq-dev golang-jsouthworth-transduce-dev golang-jsouthworth-try-dev grub-efi-amd64-signed i2util-tools i2util-tools-dbgsym ibacm ibacm-dbgsym ibverbs-providers ibverbs-providers-dbgsym ibverbs-utils ibverbs-utils-dbgsym ietf-inet-types-yang ietf-netconf-monitoring-yang ietf-netconf-with-defaults-yang ietf-netconf-yang ietf-yang-types-yang ifmgrd ifmgrd-dbgsym iproute iproute-doc iproute2 iproute2-dbgsym iproute2-doc iputils-arping iputils-arping-dbgsym iputils-clockdiff iputils-clockdiff-dbgsym iputils-ping iputils-ping-dbgsym iputils-tracepath iputils-tracepath-dbgsym isc-dhcp-client isc-dhcp-client-dbgsym isc-dhcp-client-ddns isc-dhcp-client-ddns-dbgsym isc-dhcp-common isc-dhcp-dev isc-dhcp-relay isc-dhcp-relay-dbgsym isc-dhcp-server isc-dhcp-server-dbgsym isc-dhcp-server-ldap isc-dhcp-server-ldap-dbgsym jitterentropy-rngd jitterentropy-rngd-dbgsym journalbeat journalbeat-dbgsym keepalived keepalived-dbg libdpdk-dbg libdpdk-dev libi2util-dev libibumad-dev libibumad3 libibumad3-dbgsym libibverbs-dev libibverbs1 libibverbs1-dbgsym libndpi-bin libndpi-bin-dbgsym libndpi-dev libndpi3.0 libndpi3.0-dbgsym libnetconf-dev libnetconf-doc libnetconf0 libnetconf0-dbgsym libnss-vrfdns libnss-vrfdns-dbgsym libpam-chvrf libpam-chvrf-dbgsym libpam-tacplus libpam-tacplus-dbg libpcap-dev libpcap0.8 libpcap0.8-dbg libpcap0.8-dev librdmacm-dev librdmacm1 librdmacm1-dbgsym libre-dev libre0 libre0-dbgsym librte-acl20.0 librte-acl20.0-dbgsym librte-bbdev0.200 librte-bbdev0.200-dbgsym librte-bitratestats20.0 librte-bitratestats20.0-dbgsym librte-bpf0.200 librte-bpf0.200-dbgsym librte-bus-dpaa20.0 librte-bus-dpaa20.0-dbgsym librte-bus-fslmc20.0 librte-bus-fslmc20.0-dbgsym librte-bus-ifpga20.0 librte-bus-ifpga20.0-dbgsym librte-bus-pci20.0 librte-bus-pci20.0-dbgsym librte-bus-vdev20.0 librte-bus-vdev20.0-dbgsym librte-bus-vmbus20.0 librte-bus-vmbus20.0-dbgsym librte-cfgfile20.0 librte-cfgfile20.0-dbgsym librte-cmdline20.0 librte-cmdline20.0-dbgsym librte-common-cpt20.0 librte-common-cpt20.0-dbgsym librte-common-dpaax20.0 librte-common-dpaax20.0-dbgsym librte-common-octeontx2-20.0 librte-common-octeontx2-20.0-dbgsym librte-common-octeontx20.0 librte-common-octeontx20.0-dbgsym librte-compressdev0.200 librte-compressdev0.200-dbgsym librte-cryptodev20.0 librte-cryptodev20.0-dbgsym librte-distributor20.0 librte-distributor20.0-dbgsym librte-eal20.0 librte-eal20.0-dbgsym librte-efd20.0 librte-efd20.0-dbgsym librte-ethdev20.0 librte-ethdev20.0-dbgsym librte-eventdev20.0 librte-eventdev20.0-dbgsym librte-fib0.200 librte-fib0.200-dbgsym librte-flow-classify0.200 librte-flow-classify0.200-dbgsym librte-gro20.0 librte-gro20.0-dbgsym librte-gso20.0 librte-gso20.0-dbgsym librte-hash20.0 librte-hash20.0-dbgsym librte-ip-frag20.0 librte-ip-frag20.0-dbgsym librte-ipsec0.200 librte-ipsec0.200-dbgsym librte-jobstats20.0 librte-jobstats20.0-dbgsym librte-kni20.0 librte-kni20.0-dbgsym librte-kvargs20.0 librte-kvargs20.0-dbgsym librte-latencystats20.0 librte-latencystats20.0-dbgsym librte-lpm20.0 librte-lpm20.0-dbgsym librte-mbuf20.0 librte-mbuf20.0-dbgsym librte-member20.0 librte-member20.0-dbgsym librte-mempool-bucket20.0 librte-mempool-bucket20.0-dbgsym librte-mempool-dpaa2-20.0 librte-mempool-dpaa2-20.0-dbgsym librte-mempool-dpaa20.0 librte-mempool-dpaa20.0-dbgsym librte-mempool-octeontx2-20.0 librte-mempool-octeontx2-20.0-dbgsym librte-mempool-octeontx20.0 librte-mempool-octeontx20.0-dbgsym librte-mempool-ring20.0 librte-mempool-ring20.0-dbgsym librte-mempool-stack20.0 librte-mempool-stack20.0-dbgsym librte-mempool20.0 librte-mempool20.0-dbgsym librte-meter20.0 librte-meter20.0-dbgsym librte-metrics20.0 librte-metrics20.0-dbgsym librte-net20.0 librte-net20.0-dbgsym librte-pci20.0 librte-pci20.0-dbgsym librte-pdump20.0 librte-pdump20.0-dbgsym librte-pipeline20.0 librte-pipeline20.0-dbgsym librte-pmd-aesni-gcm20.0 librte-pmd-aesni-gcm20.0-dbgsym librte-pmd-aesni-mb20.0 librte-pmd-aesni-mb20.0-dbgsym librte-pmd-af-packet20.0 librte-pmd-af-packet20.0-dbgsym librte-pmd-af-xdp20.0 librte-pmd-ark20.0 librte-pmd-ark20.0-dbgsym librte-pmd-atlantic20.0 librte-pmd-atlantic20.0-dbgsym librte-pmd-avp20.0 librte-pmd-avp20.0-dbgsym librte-pmd-axgbe20.0 librte-pmd-axgbe20.0-dbgsym librte-pmd-bbdev-fpga-lte-fec20.0 librte-pmd-bbdev-fpga-lte-fec20.0-dbgsym librte-pmd-bbdev-null20.0 librte-pmd-bbdev-null20.0-dbgsym librte-pmd-bbdev-turbo-sw20.0 librte-pmd-bbdev-turbo-sw20.0-dbgsym librte-pmd-bnx2x20.0 librte-pmd-bnx2x20.0-dbgsym librte-pmd-bnxt20.0 librte-pmd-bnxt20.0-dbgsym librte-pmd-bond20.0 librte-pmd-bond20.0-dbgsym librte-pmd-caam-jr20.0 librte-pmd-caam-jr20.0-dbgsym librte-pmd-ccp20.0 librte-pmd-ccp20.0-dbgsym librte-pmd-crypto-scheduler20.0 librte-pmd-crypto-scheduler20.0-dbgsym librte-pmd-cxgbe20.0 librte-pmd-cxgbe20.0-dbgsym librte-pmd-dpaa-event20.0 librte-pmd-dpaa-event20.0-dbgsym librte-pmd-dpaa-sec20.0 librte-pmd-dpaa-sec20.0-dbgsym librte-pmd-dpaa2-20.0 librte-pmd-dpaa2-20.0-dbgsym librte-pmd-dpaa2-event20.0 librte-pmd-dpaa2-event20.0-dbgsym librte-pmd-dpaa2-sec20.0 librte-pmd-dpaa2-sec20.0-dbgsym librte-pmd-dpaa20.0 librte-pmd-dpaa20.0-dbgsym librte-pmd-dsw-event20.0 librte-pmd-dsw-event20.0-dbgsym librte-pmd-e1000-20.0 librte-pmd-e1000-20.0-dbgsym librte-pmd-ena20.0 librte-pmd-ena20.0-dbgsym librte-pmd-enetc20.0 librte-pmd-enetc20.0-dbgsym librte-pmd-enic20.0 librte-pmd-enic20.0-dbgsym librte-pmd-failsafe20.0 librte-pmd-failsafe20.0-dbgsym librte-pmd-fm10k20.0 librte-pmd-fm10k20.0-dbgsym librte-pmd-hinic20.0 librte-pmd-hinic20.0-dbgsym librte-pmd-hns3-20.0 librte-pmd-hns3-20.0-dbgsym librte-pmd-i40e20.0 librte-pmd-i40e20.0-dbgsym librte-pmd-iavf20.0 librte-pmd-iavf20.0-dbgsym librte-pmd-ice20.0 librte-pmd-ice20.0-dbgsym librte-pmd-ifc20.0 librte-pmd-ifc20.0-dbgsym librte-pmd-isal20.0 librte-pmd-ixgbe20.0 librte-pmd-ixgbe20.0-dbgsym librte-pmd-kni20.0 librte-pmd-kni20.0-dbgsym librte-pmd-liquidio20.0 librte-pmd-liquidio20.0-dbgsym librte-pmd-memif20.0 librte-pmd-memif20.0-dbgsym librte-pmd-mlx4-20.0 librte-pmd-mlx4-20.0-dbgsym librte-pmd-mlx5-20.0 librte-pmd-mlx5-20.0-dbgsym librte-pmd-netvsc20.0 librte-pmd-netvsc20.0-dbgsym librte-pmd-nfp20.0 librte-pmd-nfp20.0-dbgsym librte-pmd-nitrox20.0 librte-pmd-nitrox20.0-dbgsym librte-pmd-null-crypto20.0 librte-pmd-null-crypto20.0-dbgsym librte-pmd-null20.0 librte-pmd-null20.0-dbgsym librte-pmd-octeontx-compress20.0 librte-pmd-octeontx-compress20.0-dbgsym librte-pmd-octeontx-crypto20.0 librte-pmd-octeontx-crypto20.0-dbgsym librte-pmd-octeontx-event20.0 librte-pmd-octeontx-event20.0-dbgsym librte-pmd-octeontx2-20.0 librte-pmd-octeontx2-20.0-dbgsym librte-pmd-octeontx2-crypto20.0 librte-pmd-octeontx2-crypto20.0-dbgsym librte-pmd-octeontx2-event20.0 librte-pmd-octeontx2-event20.0-dbgsym librte-pmd-octeontx20.0 librte-pmd-octeontx20.0-dbgsym librte-pmd-opdl-event20.0 librte-pmd-opdl-event20.0-dbgsym librte-pmd-openssl20.0 librte-pmd-openssl20.0-dbgsym librte-pmd-pcap20.0 librte-pmd-pcap20.0-dbgsym librte-pmd-pfe20.0 librte-pmd-pfe20.0-dbgsym librte-pmd-qat20.0 librte-pmd-qat20.0-dbgsym librte-pmd-qede20.0 librte-pmd-qede20.0-dbgsym librte-pmd-ring20.0 librte-pmd-ring20.0-dbgsym librte-pmd-sfc20.0 librte-pmd-sfc20.0-dbgsym librte-pmd-skeleton-event20.0 librte-pmd-skeleton-event20.0-dbgsym librte-pmd-softnic20.0 librte-pmd-sw-event20.0 librte-pmd-sw-event20.0-dbgsym librte-pmd-tap20.0 librte-pmd-tap20.0-dbgsym librte-pmd-thunderx20.0 librte-pmd-thunderx20.0-dbgsym librte-pmd-vdev-netvsc20.0 librte-pmd-vdev-netvsc20.0-dbgsym librte-pmd-vhost20.0 librte-pmd-vhost20.0-dbgsym librte-pmd-virtio-crypto20.0 librte-pmd-virtio-crypto20.0-dbgsym librte-pmd-virtio20.0 librte-pmd-virtio20.0-dbgsym librte-pmd-vmxnet3-20.0 librte-pmd-vmxnet3-20.0-dbgsym librte-pmd-zlib20.0 librte-pmd-zlib20.0-dbgsym librte-port20.0 librte-port20.0-dbgsym librte-power20.0 librte-power20.0-dbgsym librte-rawdev-dpaa2-cmdif20.0 librte-rawdev-dpaa2-cmdif20.0-dbgsym librte-rawdev-dpaa2-qdma20.0 librte-rawdev-dpaa2-qdma20.0-dbgsym librte-rawdev-ioat20.0 librte-rawdev-ioat20.0-dbgsym librte-rawdev-ntb20.0 librte-rawdev-ntb20.0-dbgsym librte-rawdev-octeontx2-dma20.0 librte-rawdev-octeontx2-dma20.0-dbgsym librte-rawdev-skeleton20.0 librte-rawdev-skeleton20.0-dbgsym librte-rawdev20.0 librte-rawdev20.0-dbgsym librte-rcu0.200 librte-rcu0.200-dbgsym librte-reorder20.0 librte-reorder20.0-dbgsym librte-rib0.200 librte-rib0.200-dbgsym librte-ring20.0 librte-ring20.0-dbgsym librte-sched20.0 librte-sched20.0-dbgsym librte-security20.0 librte-security20.0-dbgsym librte-stack0.200 librte-stack0.200-dbgsym librte-table20.0 librte-table20.0-dbgsym librte-telemetry0.200 librte-telemetry0.200-dbgsym librte-timer20.0 librte-timer20.0-dbgsym librte-vhost20.0 librte-vhost20.0-dbgsym libsnmp-base libsnmp-dev libsnmp-perl libsnmp-perl-dbgsym libsnmp30 libsnmp30-dbg libtac-dev libtac3 libteam-dbg libteam-dev libteam-utils libteam5 libteamdctl0 libvci-dev libvci-perl libvci-perl-dbgsym libvci1 libvci1-dbgsym libvplaned-dev libvrfmanager-vyatta-dev libvyatta-cfg-dbg libvyatta-cfg-dev libvyatta-cfg1 libvyatta-cfgclient-perl libvyatta-controller-proto-dev libvyatta-controller-proto-support libvyatta-controller-proto1 libvyatta-dataplane-proto-dev libvyatta-dataplane-proto-support libvyatta-dataplane-proto1 libvyatta-dataplane-proto1-dbgsym libvyatta-dpdk-swport-dev libvyatta-dpdk-swport1 libvyatta-dpdk-swport1-dbgsym libvyatta-util-dev libvyatta-util1 libvyatta-util1-dbgsym libvyatta-vrfmanager-perl libvyatta-vrfmanager-sh libvyattafal-dev libzmq-constants-perl libzmq-libzmq3-perl libzmq-libzmq3-perl-dbgsym lintian-profile-vyatta linux-compiler-gcc-8-x86 linux-firmware linux-headers-5.4.0-trunk-all linux-headers-5.4.0-trunk-all-amd64 linux-headers-5.4.0-trunk-common-vyatta linux-headers-5.4.0-trunk-vyatta-amd64 linux-headers-amd64 linux-image-5.4.0-trunk-vyatta-amd64 linux-image-5.4.0-trunk-vyatta-amd64-dbg linux-image-vyatta-amd64 linux-image-vyatta-amd64-dbg linux-kbuild-5.4 linux-kbuild-5.4-dbgsym linux-perf linux-perf-5.4 linux-perf-5.4-dbgsym linux-support-5.4.0-trunk live-boot-vyatta live-build-desc-buster live-build-desc-hooks lu lu-dbgsym mstpd mstpd-dbgsym netconf-callhome-client netconf-callhome-client-dbgsym netconf-callhome-server netconf-callhome-server-dbgsym netplug netplug-dbgsym notifyd notifyd-v1-yang opc owamp-client owamp-client-dbgsym owamp-server owamp-server-dbgsym pam-sandbox pam-sandbox-dbgsym pesign-obs-integration platform-parser ppp ppp-dbgsym ppp-dev provisiond provisiond-dbgsym pyang python-netsnmp python-netsnmp-dbgsym python-vyatta-cfgclient python3-accton-as5916-54xks-sfp-helper python3-pyverbs python3-pyverbs-dbgsym python3-shared-storage python3-vci python3-vci-dbgsym python3-vrfmanager python3-vyatta-cfgclient radvd radvd-dbg rdma-core rdma-core-dbgsym rdmacm-utils rdmacm-utils-dbgsym repcpd repcpd-dbgsym ruby-vyatta-cfgclient snmp snmp-dbgsym snmpd snmpd-dbgsym snmptrapd snmptrapd-dbgsym srptools srptools-dbgsym td-agent-bit td-agent-bit-dbgsym tkmib twamp-client twamp-client-dbgsym twamp-server twamp-server-dbgsym valgrind valgrind-dbg valgrind-mpi vci-tools vcli vplane-controller vplane-controller-dbg vrf-manager vyatta-cfg vyatta-config-shell vyatta-dataplane vyatta-dataplane-dbgsym vyatta-dataplane-dev vyatta-dataplane-protocols-versions vyatta-dataplane-sample-plugin vyatta-dataplane-sample-plugin-dbgsym vyatta-dataplane-test vyatta-dataplane-test-dbgsym vyatta-dscp-v1-yang vyatta-ifmgr-v1-yang vyatta-interfaces-v1-yang vyatta-ndpi-application-names-v1-yang vyatta-ndpi-application-types-v1-yang vyatta-ndpi-show-name vyatta-ndpi-show-name-dbgsym vyatta-netconf-agent vyatta-netconf-agent-dbgsym vyatta-op-config-v1-yang vyatta-op-qa-notify-v1-yang vyatta-op-shell vyatta-op-show-confirmed-commit-v1-yang vyatta-opd vyatta-opd-dev vyatta-opd-extensions-v1-yang vyatta-opd-v1-yang vyatta-policy-v1-yang vyatta-resources-v1-yang vyatta-routing-instance-interfaces-v1-yang vyatta-routing-v1-yang vyatta-security-v1-yang vyatta-service-netconf-callhome-v1-yang vyatta-service-netconf-routing-instance-v1-yang vyatta-service-netconf-v1-yang vyatta-services-v1-yang vyatta-system-acm-configd-v1-yang vyatta-system-acm-opd-v1-yang vyatta-system-acm-v1-yang vyatta-system-login-user-isolation-v1-yang vyatta-system-v1-yang vyatta-types-v1-yang vyatta-util vyatta-util-dbgsym vyatta-vci-bus yang-utils yangd yangd-v1-yang
+dpkg-scanpackages: info: Wrote 617 entries to output Packages file.
+/build/src
+Get:1 file:/tmp/pkgs  InRelease
+Ign:1 file:/tmp/pkgs  InRelease
+Get:2 file:/tmp/pkgs  Release
+Ign:2 file:/tmp/pkgs  Release
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages [123 kB]
+Hit:4 http://deb.debian.org/debian buster InRelease
+Get:5 http://deb.debian.org/debian buster-updates InRelease [49.3 kB]
+Get:6 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+Fetched 115 kB in 0s (459 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lintian is already the newest version (2.15.0).
+lintian set to manually installed.
+The following NEW packages will be installed:
+  base-files-vyatta lintian-profile-vyatta
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/8528 B of archives.
+After this operation, 76.8 kB of additional disk space will be used.
+Get:1 file:/tmp/pkgs  base-files-vyatta 0.6 [3148 B]
+Get:2 file:/tmp/pkgs  lintian-profile-vyatta 0.5 [5380 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package base-files-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27824 files and directories currently installed.)
+Preparing to unpack .../base-files-vyatta_0.6_amd64.deb ...
+Adding 'diversion of /etc/issue to /etc/issue.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue' from an Essential package with rename is dangerous, use --no-rename
+Adding 'diversion of /etc/issue.net to /etc/issue.net.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue.net' from an Essential package with rename is dangerous, use --no-rename
+Unpacking base-files-vyatta (0.6) ...
+Setting up base-files-vyatta (0.6) ...
+Selecting previously unselected package lintian-profile-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27851 files and directories currently installed.)
+Preparing to unpack .../lintian-profile-vyatta_0.5_all.deb ...
+Unpacking lintian-profile-vyatta (0.5) ...
+Setting up lintian-profile-vyatta (0.5) ...
+dh_testdir
+dh_testroot
+dh_prep
+dh_testdir
+dh_testroot
+dh_install
+dh_installdocs
+dh_installchangelogs
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'rsyslog-build-deps' in '../rsyslog-build-deps_8.2002.0-2vyatta1_amd64.deb'.
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package rsyslog-build-deps.
+(Reading database ... 27870 files and directories currently installed.)
+Preparing to unpack rsyslog-build-deps_8.2002.0-2vyatta1_amd64.deb ...
+Unpacking rsyslog-build-deps (8.2002.0-2vyatta1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following additional packages will be installed:
+  autoconf-archive bison comerr-dev curl default-libmysqlclient-dev dh-exec
+  dh-systemd dmsetup flex krb5-multidev libapparmor1 libargon2-1 libbison-dev
+  libbson-1.0-0 libbson-dev libcryptsetup12 libcurl4 libcurl4-gnutls-dev
+  libczmq-dev libczmq4 libdevmapper1.02.1 libestr-dev libestr0 libfaketime
+  libfastjson-dev libfastjson4 libgmp-dev libgmpxx4ldbl libgnutls-openssl27
+  libgnutls28-dev libgnutlsxx28 libgssrpc4 libhiredis-dev libhiredis0.14
+  libidn2-dev libip4tc0 libjs-jquery libjs-sphinxdoc libjs-underscore
+  libjson-c3 libkadm5clnt-mit11 libkadm5srv-mit11 libkdb5-9 libkmod2
+  libkrb5-dev liblognorm-dev liblognorm5 libmariadb-dev libmariadb-dev-compat
+  libmongoc-1.0-0 libmongoc-dev libnorm-dev libnorm1 libp11-kit-dev
+  libpgm-5.2-0 libpgm-dev libpopt0 libpq-dev libpq5 libprocps7 librdkafka++1
+  librdkafka-dev librdkafka1 libsnappy-dev libsnappy1v5 libsodium-dev
+  libsodium23 libssl-dev libsystemd-dev libtasn1-6-dev libzmq3-dev libzmq5
+  logrotate lsof nettle-dev pkg-config procps systemd uuid-dev zlib1g-dev
+Suggested packages:
+  bison-doc doc-base flex-doc krb5-doc libcurl4-doc libidn11-dev libldap2-dev
+  librtmp-dev libssh2-1-dev gmp-doc libgmp10-doc libmpfr-dev gnutls-bin
+  gnutls-doc krb5-user libnorm-doc postgresql-doc-11 libssl-doc
+  systemd-container policykit-1
+Recommended packages:
+  libfl-dev javascript-common libtasn1-doc libpam-systemd dbus
+The following NEW packages will be installed:
+  autoconf-archive bison comerr-dev curl default-libmysqlclient-dev dh-exec
+  dh-systemd dmsetup flex krb5-multidev libapparmor1 libargon2-1 libbison-dev
+  libbson-1.0-0 libbson-dev libcryptsetup12 libcurl4 libcurl4-gnutls-dev
+  libczmq-dev libczmq4 libdevmapper1.02.1 libestr-dev libestr0 libfaketime
+  libfastjson-dev libfastjson4 libgmp-dev libgmpxx4ldbl libgnutls-openssl27
+  libgnutls28-dev libgnutlsxx28 libgssrpc4 libhiredis-dev libhiredis0.14
+  libidn2-dev libip4tc0 libjs-jquery libjs-sphinxdoc libjs-underscore
+  libjson-c3 libkadm5clnt-mit11 libkadm5srv-mit11 libkdb5-9 libkmod2
+  libkrb5-dev liblognorm-dev liblognorm5 libmariadb-dev libmariadb-dev-compat
+  libmongoc-1.0-0 libmongoc-dev libnorm-dev libnorm1 libp11-kit-dev
+  libpgm-5.2-0 libpgm-dev libpopt0 libpq-dev libpq5 libprocps7 librdkafka++1
+  librdkafka-dev librdkafka1 libsnappy-dev libsnappy1v5 libsodium-dev
+  libsodium23 libssl-dev libsystemd-dev libtasn1-6-dev libzmq3-dev libzmq5
+  logrotate lsof nettle-dev pkg-config procps systemd uuid-dev zlib1g-dev
+0 upgraded, 80 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 21.7 MB of archives.
+After this operation, 79.5 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian buster/main amd64 dh-exec amd64 0.23.1 [26.3 kB]
+Get:2 http://deb.debian.org/debian buster/main amd64 dh-systemd all 12.1.1 [122 kB]
+Get:3 http://deb.debian.org/debian buster/main amd64 autoconf-archive all 20180313-1 [749 kB]
+Get:4 http://deb.debian.org/debian buster/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-1 [214 kB]
+Get:5 http://deb.debian.org/debian buster/main amd64 libhiredis0.14 amd64 0.14.0-3 [33.8 kB]
+Get:6 http://deb.debian.org/debian buster/main amd64 libhiredis-dev amd64 0.14.0-3 [52.8 kB]
+Get:7 http://deb.debian.org/debian buster/main amd64 libgnutls-openssl27 amd64 3.6.7-4+deb10u3 [317 kB]
+Get:8 http://deb.debian.org/debian buster/main amd64 libgnutlsxx28 amd64 3.6.7-4+deb10u3 [14.6 kB]
+Get:9 http://deb.debian.org/debian buster/main amd64 libidn2-dev amd64 2.0.5-1+deb10u1 [79.5 kB]
+Get:10 http://deb.debian.org/debian buster/main amd64 libp11-kit-dev amd64 0.23.15-2 [195 kB]
+Get:11 http://deb.debian.org/debian buster/main amd64 libtasn1-6-dev amd64 4.13-3 [104 kB]
+Get:12 http://deb.debian.org/debian buster/main amd64 libgmpxx4ldbl amd64 2:6.1.2+dfsg-4 [22.9 kB]
+Get:13 http://deb.debian.org/debian buster/main amd64 libgmp-dev amd64 2:6.1.2+dfsg-4 [628 kB]
+Get:14 http://deb.debian.org/debian buster/main amd64 nettle-dev amd64 3.4.1-1 [1076 kB]
+Get:15 http://deb.debian.org/debian buster/main amd64 libgnutls28-dev amd64 3.6.7-4+deb10u3 [1087 kB]
+Get:16 http://deb.debian.org/debian buster/main amd64 libmariadb-dev amd64 1:10.3.22-0+deb10u1 [1011 kB]
+Get:17 http://deb.debian.org/debian buster/main amd64 libmariadb-dev-compat amd64 1:10.3.22-0+deb10u1 [31.0 kB]
+Get:18 http://deb.debian.org/debian buster/main amd64 default-libmysqlclient-dev amd64 1.0.5 [3764 B]
+Get:19 http://deb.debian.org/debian buster/main amd64 libpq5 amd64 11.7-0+deb10u1 [166 kB]
+Get:20 http://deb.debian.org/debian buster/main amd64 libpq-dev amd64 11.7-0+deb10u1 [162 kB]
+Get:21 http://deb.debian.org/debian buster/main amd64 libbson-1.0-0 amd64 1.14.0-1 [72.0 kB]
+Get:22 http://deb.debian.org/debian buster/main amd64 libsnappy1v5 amd64 1.1.7-1 [17.0 kB]
+Get:23 http://deb.debian.org/debian buster/main amd64 libmongoc-1.0-0 amd64 1.14.0-1 [229 kB]
+Get:24 http://deb.debian.org/debian buster/main amd64 libbson-dev amd64 1.14.0-1 [114 kB]
+Get:25 http://deb.debian.org/debian buster/main amd64 libssl-dev amd64 1.1.1d-0+deb10u3 [1793 kB]
+Get:26 http://deb.debian.org/debian buster/main amd64 libsnappy-dev amd64 1.1.7-1 [29.2 kB]
+Get:27 http://deb.debian.org/debian buster/main amd64 libmongoc-dev amd64 1.14.0-1 [50.5 kB]
+Get:28 http://deb.debian.org/debian buster/main amd64 libcurl4-gnutls-dev amd64 7.64.0-4+deb10u1 [417 kB]
+Get:29 http://deb.debian.org/debian buster/main amd64 librdkafka1 amd64 0.11.6-1.1 [337 kB]
+Get:30 http://deb.debian.org/debian buster/main amd64 librdkafka++1 amd64 0.11.6-1.1 [34.4 kB]
+Get:31 http://deb.debian.org/debian buster/main amd64 librdkafka-dev amd64 0.11.6-1.1 [445 kB]
+Get:32 http://deb.debian.org/debian buster/main amd64 libgssrpc4 amd64 1.17-3 [91.3 kB]
+Get:33 http://deb.debian.org/debian buster/main amd64 libkdb5-9 amd64 1.17-3 [73.2 kB]
+Get:34 http://deb.debian.org/debian buster/main amd64 libkadm5srv-mit11 amd64 1.17-3 [85.6 kB]
+Get:35 http://deb.debian.org/debian buster/main amd64 libkadm5clnt-mit11 amd64 1.17-3 [73.4 kB]
+Get:36 http://deb.debian.org/debian buster/main amd64 comerr-dev amd64 2.1-1.44.5-1+deb10u3 [102 kB]
+Get:37 http://deb.debian.org/debian buster/main amd64 krb5-multidev amd64 1.17-3 [156 kB]
+Get:38 http://deb.debian.org/debian buster/main amd64 libkrb5-dev amd64 1.17-3 [47.4 kB]
+Get:39 http://deb.debian.org/debian buster/main amd64 libestr0 amd64 0.1.10-2.1 [8694 B]
+Get:40 http://deb.debian.org/debian buster/main amd64 libestr-dev amd64 0.1.10-2.1 [8520 B]
+Get:41 http://deb.debian.org/debian buster/main amd64 libfastjson4 amd64 0.99.8-2 [26.8 kB]
+Get:42 http://deb.debian.org/debian buster/main amd64 liblognorm5 amd64 2.0.5-1 [60.4 kB]
+Get:43 http://deb.debian.org/debian buster/main amd64 libjs-jquery all 3.3.1~dfsg-3 [332 kB]
+Get:44 http://deb.debian.org/debian buster/main amd64 libjs-underscore all 1.9.1~dfsg-1 [99.4 kB]
+Get:45 http://deb.debian.org/debian buster/main amd64 libjs-sphinxdoc all 1.8.4-1 [95.9 kB]
+Get:46 http://deb.debian.org/debian buster/main amd64 libfastjson-dev amd64 0.99.8-2 [41.4 kB]
+Get:47 http://deb.debian.org/debian buster/main amd64 liblognorm-dev amd64 2.0.5-1 [167 kB]
+Get:48 http://deb.debian.org/debian buster/main amd64 libnorm1 amd64 1.5.8+dfsg2-1 [287 kB]
+Get:49 http://deb.debian.org/debian buster/main amd64 libpgm-5.2-0 amd64 5.2.122~dfsg-3 [158 kB]
+Get:50 http://deb.debian.org/debian buster/main amd64 libsodium23 amd64 1.0.17-1 [158 kB]
+Get:51 http://deb.debian.org/debian buster/main amd64 libzmq5 amd64 4.3.1-4+deb10u1 [246 kB]
+Get:52 http://deb.debian.org/debian buster/main amd64 libpgm-dev amd64 5.2.122~dfsg-3 [190 kB]
+Get:53 http://deb.debian.org/debian buster/main amd64 libsodium-dev amd64 1.0.17-1 [176 kB]
+Get:54 http://deb.debian.org/debian buster/main amd64 libnorm-dev amd64 1.5.8+dfsg2-1 [460 kB]
+Get:55 http://deb.debian.org/debian buster/main amd64 libzmq3-dev amd64 4.3.1-4+deb10u1 [442 kB]
+Get:56 http://deb.debian.org/debian buster/main amd64 uuid-dev amd64 2.33.1-0.1 [93.6 kB]
+Get:57 http://deb.debian.org/debian buster/main amd64 libsystemd-dev amd64 241-7~deb10u4 [322 kB]
+Get:58 http://deb.debian.org/debian buster/main amd64 libczmq4 amd64 4.2.0-2 [168 kB]
+Get:59 http://deb.debian.org/debian buster/main amd64 libczmq-dev amd64 4.2.0-2 [395 kB]
+Get:60 http://deb.debian.org/debian buster/main amd64 pkg-config amd64 0.29-6 [63.5 kB]
+Get:61 http://deb.debian.org/debian buster/main amd64 libbison-dev amd64 2:3.3.2.dfsg-1 [500 kB]
+Get:62 http://deb.debian.org/debian buster/main amd64 bison amd64 2:3.3.2.dfsg-1 [871 kB]
+Get:63 http://deb.debian.org/debian buster/main amd64 flex amd64 2.6.4-6.2 [456 kB]
+Get:64 http://deb.debian.org/debian buster/main amd64 libprocps7 amd64 2:3.3.15-2 [61.7 kB]
+Get:65 http://deb.debian.org/debian buster/main amd64 procps amd64 2:3.3.15-2 [259 kB]
+Get:66 http://deb.debian.org/debian buster/main amd64 libfaketime amd64 0.9.7-3 [31.2 kB]
+Get:67 http://deb.debian.org/debian buster/main amd64 libapparmor1 amd64 2.13.2-10 [94.7 kB]
+Get:68 http://deb.debian.org/debian buster/main amd64 libargon2-1 amd64 0~20171227-0.2 [19.6 kB]
+Get:69 http://deb.debian.org/debian buster/main amd64 dmsetup amd64 2:1.02.155-3 [90.8 kB]
+Get:70 http://deb.debian.org/debian buster/main amd64 libdevmapper1.02.1 amd64 2:1.02.155-3 [141 kB]
+Get:71 http://deb.debian.org/debian buster/main amd64 libjson-c3 amd64 0.12.1+ds-2 [26.9 kB]
+Get:72 http://deb.debian.org/debian buster/main amd64 libcryptsetup12 amd64 2:2.1.0-5+deb10u2 [193 kB]
+Get:73 http://deb.debian.org/debian buster/main amd64 libip4tc0 amd64 1.8.2-4 [70.2 kB]
+Get:74 http://deb.debian.org/debian buster/main amd64 libkmod2 amd64 26-1 [52.7 kB]
+Get:75 http://deb.debian.org/debian buster/main amd64 systemd amd64 241-7~deb10u4 [3499 kB]
+Get:76 http://deb.debian.org/debian buster/main amd64 lsof amd64 4.91+dfsg-1 [319 kB]
+Get:77 http://deb.debian.org/debian buster/main amd64 libpopt0 amd64 1.16-12 [49.4 kB]
+Get:78 http://deb.debian.org/debian buster/main amd64 logrotate amd64 3.14.0-4 [63.1 kB]
+Get:79 http://deb.debian.org/debian buster/main amd64 libcurl4 amd64 7.64.0-4+deb10u1 [331 kB]
+Get:80 http://deb.debian.org/debian buster/main amd64 curl amd64 7.64.0-4+deb10u1 [264 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 21.7 MB in 0s (72.3 MB/s)
+Selecting previously unselected package dh-exec.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27874 files and directories currently installed.)
+Preparing to unpack .../00-dh-exec_0.23.1_amd64.deb ...
+Unpacking dh-exec (0.23.1) ...
+Selecting previously unselected package dh-systemd.
+Preparing to unpack .../01-dh-systemd_12.1.1_all.deb ...
+Unpacking dh-systemd (12.1.1) ...
+Selecting previously unselected package autoconf-archive.
+Preparing to unpack .../02-autoconf-archive_20180313-1_all.deb ...
+Unpacking autoconf-archive (20180313-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../03-zlib1g-dev_1%3a1.2.11.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-1) ...
+Selecting previously unselected package libhiredis0.14:amd64.
+Preparing to unpack .../04-libhiredis0.14_0.14.0-3_amd64.deb ...
+Unpacking libhiredis0.14:amd64 (0.14.0-3) ...
+Selecting previously unselected package libhiredis-dev:amd64.
+Preparing to unpack .../05-libhiredis-dev_0.14.0-3_amd64.deb ...
+Unpacking libhiredis-dev:amd64 (0.14.0-3) ...
+Selecting previously unselected package libgnutls-openssl27:amd64.
+Preparing to unpack .../06-libgnutls-openssl27_3.6.7-4+deb10u3_amd64.deb ...
+Unpacking libgnutls-openssl27:amd64 (3.6.7-4+deb10u3) ...
+Selecting previously unselected package libgnutlsxx28:amd64.
+Preparing to unpack .../07-libgnutlsxx28_3.6.7-4+deb10u3_amd64.deb ...
+Unpacking libgnutlsxx28:amd64 (3.6.7-4+deb10u3) ...
+Selecting previously unselected package libidn2-dev:amd64.
+Preparing to unpack .../08-libidn2-dev_2.0.5-1+deb10u1_amd64.deb ...
+Unpacking libidn2-dev:amd64 (2.0.5-1+deb10u1) ...
+Selecting previously unselected package libp11-kit-dev:amd64.
+Preparing to unpack .../09-libp11-kit-dev_0.23.15-2_amd64.deb ...
+Unpacking libp11-kit-dev:amd64 (0.23.15-2) ...
+Selecting previously unselected package libtasn1-6-dev:amd64.
+Preparing to unpack .../10-libtasn1-6-dev_4.13-3_amd64.deb ...
+Unpacking libtasn1-6-dev:amd64 (4.13-3) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../11-libgmpxx4ldbl_2%3a6.1.2+dfsg-4_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-4) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../12-libgmp-dev_2%3a6.1.2+dfsg-4_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-4) ...
+Selecting previously unselected package nettle-dev:amd64.
+Preparing to unpack .../13-nettle-dev_3.4.1-1_amd64.deb ...
+Unpacking nettle-dev:amd64 (3.4.1-1) ...
+Selecting previously unselected package libgnutls28-dev:amd64.
+Preparing to unpack .../14-libgnutls28-dev_3.6.7-4+deb10u3_amd64.deb ...
+Unpacking libgnutls28-dev:amd64 (3.6.7-4+deb10u3) ...
+Selecting previously unselected package libmariadb-dev.
+Preparing to unpack .../15-libmariadb-dev_1%3a10.3.22-0+deb10u1_amd64.deb ...
+Unpacking libmariadb-dev (1:10.3.22-0+deb10u1) ...
+Selecting previously unselected package libmariadb-dev-compat:amd64.
+Preparing to unpack .../16-libmariadb-dev-compat_1%3a10.3.22-0+deb10u1_amd64.deb ...
+Unpacking libmariadb-dev-compat:amd64 (1:10.3.22-0+deb10u1) ...
+Selecting previously unselected package default-libmysqlclient-dev:amd64.
+Preparing to unpack .../17-default-libmysqlclient-dev_1.0.5_amd64.deb ...
+Unpacking default-libmysqlclient-dev:amd64 (1.0.5) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../18-libpq5_11.7-0+deb10u1_amd64.deb ...
+Unpacking libpq5:amd64 (11.7-0+deb10u1) ...
+Selecting previously unselected package libpq-dev.
+Preparing to unpack .../19-libpq-dev_11.7-0+deb10u1_amd64.deb ...
+Unpacking libpq-dev (11.7-0+deb10u1) ...
+Selecting previously unselected package libbson-1.0-0.
+Preparing to unpack .../20-libbson-1.0-0_1.14.0-1_amd64.deb ...
+Unpacking libbson-1.0-0 (1.14.0-1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../21-libsnappy1v5_1.1.7-1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.7-1) ...
+Selecting previously unselected package libmongoc-1.0-0.
+Preparing to unpack .../22-libmongoc-1.0-0_1.14.0-1_amd64.deb ...
+Unpacking libmongoc-1.0-0 (1.14.0-1) ...
+Selecting previously unselected package libbson-dev.
+Preparing to unpack .../23-libbson-dev_1.14.0-1_amd64.deb ...
+Unpacking libbson-dev (1.14.0-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../24-libssl-dev_1.1.1d-0+deb10u3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.1d-0+deb10u3) ...
+Selecting previously unselected package libsnappy-dev:amd64.
+Preparing to unpack .../25-libsnappy-dev_1.1.7-1_amd64.deb ...
+Unpacking libsnappy-dev:amd64 (1.1.7-1) ...
+Selecting previously unselected package libmongoc-dev.
+Preparing to unpack .../26-libmongoc-dev_1.14.0-1_amd64.deb ...
+Unpacking libmongoc-dev (1.14.0-1) ...
+Selecting previously unselected package libcurl4-gnutls-dev:amd64.
+Preparing to unpack .../27-libcurl4-gnutls-dev_7.64.0-4+deb10u1_amd64.deb ...
+Unpacking libcurl4-gnutls-dev:amd64 (7.64.0-4+deb10u1) ...
+Selecting previously unselected package librdkafka1:amd64.
+Preparing to unpack .../28-librdkafka1_0.11.6-1.1_amd64.deb ...
+Unpacking librdkafka1:amd64 (0.11.6-1.1) ...
+Selecting previously unselected package librdkafka++1:amd64.
+Preparing to unpack .../29-librdkafka++1_0.11.6-1.1_amd64.deb ...
+Unpacking librdkafka++1:amd64 (0.11.6-1.1) ...
+Selecting previously unselected package librdkafka-dev:amd64.
+Preparing to unpack .../30-librdkafka-dev_0.11.6-1.1_amd64.deb ...
+Unpacking librdkafka-dev:amd64 (0.11.6-1.1) ...
+Selecting previously unselected package libgssrpc4:amd64.
+Preparing to unpack .../31-libgssrpc4_1.17-3_amd64.deb ...
+Unpacking libgssrpc4:amd64 (1.17-3) ...
+Selecting previously unselected package libkdb5-9:amd64.
+Preparing to unpack .../32-libkdb5-9_1.17-3_amd64.deb ...
+Unpacking libkdb5-9:amd64 (1.17-3) ...
+Selecting previously unselected package libkadm5srv-mit11:amd64.
+Preparing to unpack .../33-libkadm5srv-mit11_1.17-3_amd64.deb ...
+Unpacking libkadm5srv-mit11:amd64 (1.17-3) ...
+Selecting previously unselected package libkadm5clnt-mit11:amd64.
+Preparing to unpack .../34-libkadm5clnt-mit11_1.17-3_amd64.deb ...
+Unpacking libkadm5clnt-mit11:amd64 (1.17-3) ...
+Selecting previously unselected package comerr-dev:amd64.
+Preparing to unpack .../35-comerr-dev_2.1-1.44.5-1+deb10u3_amd64.deb ...
+Unpacking comerr-dev:amd64 (2.1-1.44.5-1+deb10u3) ...
+Selecting previously unselected package krb5-multidev:amd64.
+Preparing to unpack .../36-krb5-multidev_1.17-3_amd64.deb ...
+Unpacking krb5-multidev:amd64 (1.17-3) ...
+Selecting previously unselected package libkrb5-dev:amd64.
+Preparing to unpack .../37-libkrb5-dev_1.17-3_amd64.deb ...
+Unpacking libkrb5-dev:amd64 (1.17-3) ...
+Selecting previously unselected package libestr0:amd64.
+Preparing to unpack .../38-libestr0_0.1.10-2.1_amd64.deb ...
+Unpacking libestr0:amd64 (0.1.10-2.1) ...
+Selecting previously unselected package libestr-dev:amd64.
+Preparing to unpack .../39-libestr-dev_0.1.10-2.1_amd64.deb ...
+Unpacking libestr-dev:amd64 (0.1.10-2.1) ...
+Selecting previously unselected package libfastjson4:amd64.
+Preparing to unpack .../40-libfastjson4_0.99.8-2_amd64.deb ...
+Unpacking libfastjson4:amd64 (0.99.8-2) ...
+Selecting previously unselected package liblognorm5:amd64.
+Preparing to unpack .../41-liblognorm5_2.0.5-1_amd64.deb ...
+Unpacking liblognorm5:amd64 (2.0.5-1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../42-libjs-jquery_3.3.1~dfsg-3_all.deb ...
+Unpacking libjs-jquery (3.3.1~dfsg-3) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../43-libjs-underscore_1.9.1~dfsg-1_all.deb ...
+Unpacking libjs-underscore (1.9.1~dfsg-1) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../44-libjs-sphinxdoc_1.8.4-1_all.deb ...
+Unpacking libjs-sphinxdoc (1.8.4-1) ...
+Selecting previously unselected package libfastjson-dev:amd64.
+Preparing to unpack .../45-libfastjson-dev_0.99.8-2_amd64.deb ...
+Unpacking libfastjson-dev:amd64 (0.99.8-2) ...
+Selecting previously unselected package liblognorm-dev.
+Preparing to unpack .../46-liblognorm-dev_2.0.5-1_amd64.deb ...
+Unpacking liblognorm-dev (2.0.5-1) ...
+Selecting previously unselected package libnorm1:amd64.
+Preparing to unpack .../47-libnorm1_1.5.8+dfsg2-1_amd64.deb ...
+Unpacking libnorm1:amd64 (1.5.8+dfsg2-1) ...
+Selecting previously unselected package libpgm-5.2-0:amd64.
+Preparing to unpack .../48-libpgm-5.2-0_5.2.122~dfsg-3_amd64.deb ...
+Unpacking libpgm-5.2-0:amd64 (5.2.122~dfsg-3) ...
+Selecting previously unselected package libsodium23:amd64.
+Preparing to unpack .../49-libsodium23_1.0.17-1_amd64.deb ...
+Unpacking libsodium23:amd64 (1.0.17-1) ...
+Selecting previously unselected package libzmq5:amd64.
+Preparing to unpack .../50-libzmq5_4.3.1-4+deb10u1_amd64.deb ...
+Unpacking libzmq5:amd64 (4.3.1-4+deb10u1) ...
+Selecting previously unselected package libpgm-dev:amd64.
+Preparing to unpack .../51-libpgm-dev_5.2.122~dfsg-3_amd64.deb ...
+Unpacking libpgm-dev:amd64 (5.2.122~dfsg-3) ...
+Selecting previously unselected package libsodium-dev:amd64.
+Preparing to unpack .../52-libsodium-dev_1.0.17-1_amd64.deb ...
+Unpacking libsodium-dev:amd64 (1.0.17-1) ...
+Selecting previously unselected package libnorm-dev:amd64.
+Preparing to unpack .../53-libnorm-dev_1.5.8+dfsg2-1_amd64.deb ...
+Unpacking libnorm-dev:amd64 (1.5.8+dfsg2-1) ...
+Selecting previously unselected package libzmq3-dev:amd64.
+Preparing to unpack .../54-libzmq3-dev_4.3.1-4+deb10u1_amd64.deb ...
+Unpacking libzmq3-dev:amd64 (4.3.1-4+deb10u1) ...
+Selecting previously unselected package uuid-dev:amd64.
+Preparing to unpack .../55-uuid-dev_2.33.1-0.1_amd64.deb ...
+Unpacking uuid-dev:amd64 (2.33.1-0.1) ...
+Selecting previously unselected package libsystemd-dev:amd64.
+Preparing to unpack .../56-libsystemd-dev_241-7~deb10u4_amd64.deb ...
+Unpacking libsystemd-dev:amd64 (241-7~deb10u4) ...
+Selecting previously unselected package libczmq4:amd64.
+Preparing to unpack .../57-libczmq4_4.2.0-2_amd64.deb ...
+Unpacking libczmq4:amd64 (4.2.0-2) ...
+Selecting previously unselected package libczmq-dev:amd64.
+Preparing to unpack .../58-libczmq-dev_4.2.0-2_amd64.deb ...
+Unpacking libczmq-dev:amd64 (4.2.0-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../59-pkg-config_0.29-6_amd64.deb ...
+Unpacking pkg-config (0.29-6) ...
+Selecting previously unselected package libbison-dev:amd64.
+Preparing to unpack .../60-libbison-dev_2%3a3.3.2.dfsg-1_amd64.deb ...
+Unpacking libbison-dev:amd64 (2:3.3.2.dfsg-1) ...
+Selecting previously unselected package bison.
+Preparing to unpack .../61-bison_2%3a3.3.2.dfsg-1_amd64.deb ...
+Unpacking bison (2:3.3.2.dfsg-1) ...
+Selecting previously unselected package flex.
+Preparing to unpack .../62-flex_2.6.4-6.2_amd64.deb ...
+Unpacking flex (2.6.4-6.2) ...
+Selecting previously unselected package libprocps7:amd64.
+Preparing to unpack .../63-libprocps7_2%3a3.3.15-2_amd64.deb ...
+Unpacking libprocps7:amd64 (2:3.3.15-2) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../64-procps_2%3a3.3.15-2_amd64.deb ...
+Unpacking procps (2:3.3.15-2) ...
+Selecting previously unselected package libfaketime:amd64.
+Preparing to unpack .../65-libfaketime_0.9.7-3_amd64.deb ...
+Unpacking libfaketime:amd64 (0.9.7-3) ...
+Selecting previously unselected package libapparmor1:amd64.
+Preparing to unpack .../66-libapparmor1_2.13.2-10_amd64.deb ...
+Unpacking libapparmor1:amd64 (2.13.2-10) ...
+Selecting previously unselected package libargon2-1:amd64.
+Preparing to unpack .../67-libargon2-1_0~20171227-0.2_amd64.deb ...
+Unpacking libargon2-1:amd64 (0~20171227-0.2) ...
+Selecting previously unselected package dmsetup.
+Preparing to unpack .../68-dmsetup_2%3a1.02.155-3_amd64.deb ...
+Unpacking dmsetup (2:1.02.155-3) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Preparing to unpack .../69-libdevmapper1.02.1_2%3a1.02.155-3_amd64.deb ...
+Unpacking libdevmapper1.02.1:amd64 (2:1.02.155-3) ...
+Selecting previously unselected package libjson-c3:amd64.
+Preparing to unpack .../70-libjson-c3_0.12.1+ds-2_amd64.deb ...
+Unpacking libjson-c3:amd64 (0.12.1+ds-2) ...
+Selecting previously unselected package libcryptsetup12:amd64.
+Preparing to unpack .../71-libcryptsetup12_2%3a2.1.0-5+deb10u2_amd64.deb ...
+Unpacking libcryptsetup12:amd64 (2:2.1.0-5+deb10u2) ...
+Selecting previously unselected package libip4tc0:amd64.
+Preparing to unpack .../72-libip4tc0_1.8.2-4_amd64.deb ...
+Unpacking libip4tc0:amd64 (1.8.2-4) ...
+Selecting previously unselected package libkmod2:amd64.
+Preparing to unpack .../73-libkmod2_26-1_amd64.deb ...
+Unpacking libkmod2:amd64 (26-1) ...
+Selecting previously unselected package systemd.
+Preparing to unpack .../74-systemd_241-7~deb10u4_amd64.deb ...
+Unpacking systemd (241-7~deb10u4) ...
+Selecting previously unselected package lsof.
+Preparing to unpack .../75-lsof_4.91+dfsg-1_amd64.deb ...
+Unpacking lsof (4.91+dfsg-1) ...
+Selecting previously unselected package libpopt0:amd64.
+Preparing to unpack .../76-libpopt0_1.16-12_amd64.deb ...
+Unpacking libpopt0:amd64 (1.16-12) ...
+Selecting previously unselected package logrotate.
+Preparing to unpack .../77-logrotate_3.14.0-4_amd64.deb ...
+Unpacking logrotate (3.14.0-4) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../78-libcurl4_7.64.0-4+deb10u1_amd64.deb ...
+Unpacking libcurl4:amd64 (7.64.0-4+deb10u1) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../79-curl_7.64.0-4+deb10u1_amd64.deb ...
+Unpacking curl (7.64.0-4+deb10u1) ...
+Setting up libjson-c3:amd64 (0.12.1+ds-2) ...
+Setting up flex (2.6.4-6.2) ...
+Setting up libapparmor1:amd64 (2.13.2-10) ...
+Setting up libgnutls-openssl27:amd64 (3.6.7-4+deb10u3) ...
+Setting up libsodium23:amd64 (1.0.17-1) ...
+Setting up libip4tc0:amd64 (1.8.2-4) ...
+Setting up libbison-dev:amd64 (2:3.3.2.dfsg-1) ...
+Setting up libestr0:amd64 (0.1.10-2.1) ...
+Setting up libfastjson4:amd64 (0.99.8-2) ...
+Setting up libargon2-1:amd64 (0~20171227-0.2) ...
+Setting up libprocps7:amd64 (2:3.3.15-2) ...
+Setting up libestr-dev:amd64 (0.1.10-2.1) ...
+Setting up libnorm1:amd64 (1.5.8+dfsg2-1) ...
+Setting up libpq5:amd64 (11.7-0+deb10u1) ...
+Setting up libnorm-dev:amd64 (1.5.8+dfsg2-1) ...
+Setting up libpq-dev (11.7-0+deb10u1) ...
+Setting up dh-exec (0.23.1) ...
+Setting up autoconf-archive (20180313-1) ...
+Setting up libcurl4-gnutls-dev:amd64 (7.64.0-4+deb10u1) ...
+Setting up libsnappy1v5:amd64 (1.1.7-1) ...
+Setting up libgssrpc4:amd64 (1.17-3) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-4) ...
+Setting up libbson-1.0-0 (1.14.0-1) ...
+Setting up uuid-dev:amd64 (2.33.1-0.1) ...
+Setting up comerr-dev:amd64 (2.1-1.44.5-1+deb10u3) ...
+Setting up libssl-dev:amd64 (1.1.1d-0+deb10u3) ...
+Setting up pkg-config (0.29-6) ...
+Setting up libgnutlsxx28:amd64 (3.6.7-4+deb10u3) ...
+Setting up libsodium-dev:amd64 (1.0.17-1) ...
+Setting up libidn2-dev:amd64 (2.0.5-1+deb10u1) ...
+Setting up librdkafka1:amd64 (0.11.6-1.1) ...
+Setting up lsof (4.91+dfsg-1) ...
+Setting up liblognorm5:amd64 (2.0.5-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-1) ...
+Setting up libkdb5-9:amd64 (1.17-3) ...
+Setting up procps (2:3.3.15-2) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+Setting up bison (2:3.3.2.dfsg-1) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Setting up libcurl4:amd64 (7.64.0-4+deb10u1) ...
+Setting up curl (7.64.0-4+deb10u1) ...
+Setting up libkadm5srv-mit11:amd64 (1.17-3) ...
+Setting up libjs-jquery (3.3.1~dfsg-3) ...
+Setting up libtasn1-6-dev:amd64 (4.13-3) ...
+Setting up dh-systemd (12.1.1) ...
+Setting up libsystemd-dev:amd64 (241-7~deb10u4) ...
+Setting up libfastjson-dev:amd64 (0.99.8-2) ...
+Setting up libp11-kit-dev:amd64 (0.23.15-2) ...
+Setting up libkmod2:amd64 (26-1) ...
+Setting up libpgm-5.2-0:amd64 (5.2.122~dfsg-3) ...
+Setting up libjs-underscore (1.9.1~dfsg-1) ...
+Setting up libpopt0:amd64 (1.16-12) ...
+Setting up libfaketime:amd64 (0.9.7-3) ...
+Setting up libhiredis0.14:amd64 (0.14.0-3) ...
+Setting up logrotate (3.14.0-4) ...
+Created symlink /etc/systemd/system/timers.target.wants/logrotate.timer → /lib/systemd/system/logrotate.timer.
+Setting up libbson-dev (1.14.0-1) ...
+Setting up libkadm5clnt-mit11:amd64 (1.17-3) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-4) ...
+Setting up libzmq5:amd64 (4.3.1-4+deb10u1) ...
+Setting up libhiredis-dev:amd64 (0.14.0-3) ...
+Setting up nettle-dev:amd64 (3.4.1-1) ...
+Setting up libsnappy-dev:amd64 (1.1.7-1) ...
+Setting up librdkafka++1:amd64 (0.11.6-1.1) ...
+Setting up libmongoc-1.0-0 (1.14.0-1) ...
+Setting up libpgm-dev:amd64 (5.2.122~dfsg-3) ...
+Setting up libjs-sphinxdoc (1.8.4-1) ...
+Setting up liblognorm-dev (2.0.5-1) ...
+Setting up librdkafka-dev:amd64 (0.11.6-1.1) ...
+Setting up krb5-multidev:amd64 (1.17-3) ...
+Setting up libgnutls28-dev:amd64 (3.6.7-4+deb10u3) ...
+Setting up libczmq4:amd64 (4.2.0-2) ...
+Setting up libmongoc-dev (1.14.0-1) ...
+Setting up libkrb5-dev:amd64 (1.17-3) ...
+Setting up libmariadb-dev (1:10.3.22-0+deb10u1) ...
+Setting up libzmq3-dev:amd64 (4.3.1-4+deb10u1) ...
+Setting up libmariadb-dev-compat:amd64 (1:10.3.22-0+deb10u1) ...
+Setting up libczmq-dev:amd64 (4.2.0-2) ...
+Setting up default-libmysqlclient-dev:amd64 (1.0.5) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.155-3) ...
+Setting up dmsetup (2:1.02.155-3) ...
+Setting up libcryptsetup12:amd64 (2:2.1.0-5+deb10u2) ...
+Setting up systemd (241-7~deb10u4) ...
+Created symlink /etc/systemd/system/getty.target.wants/getty@tty1.service → /lib/systemd/system/getty@.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /lib/systemd/system/remote-fs.target.
+Created symlink /etc/systemd/system/dbus-org.freedesktop.timesync1.service → /lib/systemd/system/systemd-timesyncd.service.
+Created symlink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service → /lib/systemd/system/systemd-timesyncd.service.
+Setting up rsyslog-build-deps (8.2002.0-2vyatta1) ...
+Processing triggers for libc-bin (2.28-10) ...
+Processing triggers for man-db (2.8.5-2) ...
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package rsyslog
+dpkg-buildpackage: info: source version 8.2002.0-2vyatta1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Mike Manning <mmanning@vyatta.att-mail.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying Don-t-create-a-database.patch
+dpkg-source: info: applying Increase-timeouts-in-imfile-basic-2GB-file-and-imfile-tru.patch
+dpkg-source: info: applying ocsp-v2.patch
+ debian/rules clean
+dh clean --with systemd
+   dh_clean
+ debian/rules binary
+dh binary --with systemd
+   dh_update_autotools_config
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/build/src'
+dh_auto_configure -- \
+	--enable-imptcp --enable-imjournal --enable-omjournal --enable-kmsg \
+	--enable-mysql \
+	--enable-pgsql \
+	--enable-elasticsearch \
+	--enable-imkafka \
+	--enable-omkafka \
+	--enable-mail \
+	--enable-imfile \
+	--enable-imfile-tests \
+	--enable-impstats \
+	--enable-klog \
+	--enable-gssapi-krb5 \
+	--enable-gnutls \
+	--enable-openssl \
+	--disable-relp \
+	--enable-pmaixforwardedfrom \
+	--enable-pmcisconames \
+	--enable-pmlastmsg \
+	--enable-pmsnare \
+	--enable-omstdout \
+	--enable-omprog \
+	--enable-omuxsock \
+	--enable-mmanon \
+	--enable-mmnormalize \
+	--enable-mmjsonparse \
+	--enable-mmutf8fix \
+	--enable-mmpstrucdata \
+	--enable-mmsequence \
+	--enable-mmfields \
+	--enable-mmrm1stspace \
+	--enable-imczmq \
+	--enable-omczmq \
+	--enable-omhiredis \
+	--enable-fmhash \
+	--disable-libgcrypt \
+	--enable-testbench \
+	--enable-extended-tests \
+	--enable-imdiag \
+	--disable-generate-man-pages \
+	--disable-fmhttp \
+	--disable-liblogging-stdlog \
+	--without-valgrind-testbench \
+	--with-systemdsystemunitdir=/lib/systemd/system
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking --enable-imptcp --enable-imjournal --enable-omjournal --enable-kmsg --enable-mysql --enable-pgsql --enable-elasticsearch --enable-imkafka --enable-omkafka --enable-mail --enable-imfile --enable-imfile-tests --enable-impstats --enable-klog --enable-gssapi-krb5 --enable-gnutls --enable-openssl --disable-relp --enable-pmaixforwardedfrom --enable-pmcisconames --enable-pmlastmsg --enable-pmsnare --enable-omstdout --enable-omprog --enable-omuxsock --enable-mmanon --enable-mmnormalize --enable-mmjsonparse --enable-mmutf8fix --enable-mmpstrucdata --enable-mmsequence --enable-mmfields --enable-mmrm1stspace --enable-imczmq --enable-omczmq --enable-omhiredis --enable-fmhash --disable-libgcrypt --enable-testbench --enable-extended-tests --enable-imdiag --disable-generate-man-pages --disable-fmhttp --disable-liblogging-stdlog --without-valgrind-testbench --with-systemdsystemunitdir=/lib/systemd/system
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... none needed
+checking whether yytext is a pointer... no
+checking for bison... bison -y
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for gcc option to accept ISO C99... none needed
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether C compiler accepts -Werror=unknown-warning-option... no
+checking whether C compiler accepts -Wno-suggest-attribute=format... yes
+checking whether C compiler accepts -fno-strict-aliasing... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wextra... yes
+checking whether C compiler accepts -Wundef... yes
+checking whether C compiler accepts -Wnested-externs... yes
+checking whether C compiler accepts -Wwrite-strings... yes
+checking whether C compiler accepts -Wpointer-arith... yes
+checking whether C compiler accepts -Wmissing-declarations... yes
+checking whether C compiler accepts -Wmissing-prototypes... yes
+checking whether C compiler accepts -Wstrict-prototypes... yes
+checking whether C compiler accepts -Wredundant-decls... yes
+checking whether C compiler accepts -Wno-unused-parameter... yes
+checking whether C compiler accepts -Wno-missing-field-initializers... yes
+checking whether C compiler accepts -Wdeclaration-after-statement... yes
+checking whether C compiler accepts -Wformat=2... yes
+checking whether C compiler accepts -Wold-style-definition... yes
+checking whether C compiler accepts -Wcast-align... yes
+checking whether C compiler accepts -Wformat-nonliteral... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether C compiler accepts -Wsign-compare... yes
+checking whether C compiler accepts -Wstrict-aliasing... yes
+checking whether C compiler accepts -Wshadow... yes
+checking whether C compiler accepts -Winline... yes
+checking whether C compiler accepts -Wpacked... yes
+checking whether C compiler accepts -Wmissing-format-attribute... yes
+checking whether C compiler accepts -Wmissing-noreturn... yes
+checking whether C compiler accepts -Winit-self... yes
+checking whether C compiler accepts -Wredundant-decls... (cached) yes
+checking whether C compiler accepts -Wmissing-include-dirs... yes
+checking whether C compiler accepts -Wunused-but-set-variable... yes
+checking whether C compiler accepts -Warray-bounds... yes
+checking whether C compiler accepts -Wimplicit-function-declaration... yes
+checking whether C compiler accepts -Wreturn-type... yes
+checking whether C compiler accepts -Wswitch-enum... yes
+checking whether C compiler accepts -Wswitch-default... yes
+checking whether C compiler accepts -Wunused-parameter... yes
+checking whether C compiler accepts -Wmissing-field-initializers... yes
+checking whether C compiler accepts -Wno-suggest-attribute=format... yes
+checking whether C compiler accepts -Wno-error=unused-parameter... yes
+checking whether C compiler accepts -Wno-error=missing-field-initializers... yes
+checking whether C compiler accepts -Werror=unknown-warning-option... (cached) no
+checking whether the linker accepts -Wl,--no-as-needed... yes
+checking whether the linker accepts -Wl,--fatal-warnings... yes
+checking whether the linker accepts -Wl,-fatal_warnings... no
+checking whether the linker accepts -Wl,--no-as-needed... yes
+checking whether the linker accepts -Wl,--fatal-warnings... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for LIBESTR... yes
+checking for LIBFASTJSON... yes
+HOST: x86_64-pc-linux-gnu
+checking for python version... 3.7
+checking for python platform... linux
+checking for python script directory... ${prefix}/lib/python3.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib/python3.7/site-packages
+checking for library containing clock_gettime... none required
+checking for library containing mq_getattr... -lrt
+checking for library containing dlopen... -ldl
+checking for sys/types.h... (cached) yes
+checking for netinet/in.h... yes
+checking for arpa/nameser.h... yes
+checking for netdb.h... yes
+checking for resolv.h... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for arpa/inet.h... yes
+checking for libgen.h... yes
+checking for malloc.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for netdb.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/stat.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for mode_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint8_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working volatile... yes
+checking for struct sockaddr.sa_len... no
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether gcc needs -traditional... no
+checking for sys/select.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking return type of signal handlers... void
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for flock... yes
+checking for recvmmsg... yes
+checking for basename... yes
+checking for alarm... yes
+checking for clock_gettime... yes
+checking for gethostbyname... yes
+checking for gethostname... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for regcomp... yes
+checking for select... yes
+checking for setsid... yes
+checking for socket... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... yes
+checking for strnlen... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for uname... yes
+checking for ttyname_r... yes
+checking for getline... yes
+checking for malloc_trim... yes
+checking for prctl... yes
+checking for epoll_create... yes
+checking for epoll_create1... yes
+checking for fdatasync... yes
+checking for syscall... yes
+checking for lseek64... yes
+checking for asprintf... yes
+checking for setns... yes
+checking for off64_t... yes
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking for inotify_init... yes
+checking for library containing getifaddrs... none required
+checking whether SCM_CREDENTIALS is declared... yes
+checking whether SO_TIMESTAMP is declared... yes
+checking whether SYS_gettid is declared... yes
+checking for struct sysinfo.uptime... yes
+checking whether GLOB_NOMAGIC is declared... yes
+checking for MAXHOSTNAMELEN... yes
+checking for __builtin_expect()... yes
+checking whether the compiler provides atomic builtins... yes
+checking whether the compiler provides atomic builtins for 64 bit data types... yes
+checking semaphore.h usability... yes
+checking semaphore.h presence... yes
+checking for semaphore.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for ZLIB... yes
+checking for gss_acquire_cred in -lgssapi_krb5... yes
+checking gssapi/gssapi.h usability... yes
+checking gssapi/gssapi.h presence... yes
+checking for gssapi/gssapi.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for pthread_rwlockattr_setkind_np in -lpthread... yes
+checking for pthread_setname_np in -lpthread... yes
+checking for library containing pthread_setschedparam... none required
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for library containing sched_get_priority_max... none required
+checking for sched_get_priority_max... yes
+checking for LIBSYSTEMD_JOURNAL... yes
+checking for LIBSYSTEMD... yes
+configure: --enable-libsystemd in auto mode
+configure: --enable-libsystemd in auto mode, enable-libsystemd is set to yes
+configure: enable-debug in auto mode, enable-debug is set to no
+checking for MYSQL... yes
+checking if we have mysql_library_init... checking for mysql_init in -lmysqlclient... yes
+checking for PGSQL... yes
+checking for LIBUUID... yes
+checking for CURL... yes
+checking for cos in -lm... yes
+checking for OPENSSL... yes
+checking for GNUTLS... yes
+checking for gnutls_certificate_set_retrieve_function... yes
+checking for gnutls_certificate_type_set_priority... no
+checking for LIBLOGNORM... yes
+checking for LOGNORM_REGEX_SUPPORTED defined... no
+checking maxminddb.h usability... no
+checking maxminddb.h presence... no
+checking for maxminddb.h... no
+checking protocol.h usability... no
+checking protocol.h presence... no
+checking for protocol.h... no
+checking for LIBLOGGING_STDLOG... no
+configure: liblogging-stdlog not found, parts of the testbench will not run
+checking for ip... yes
+configure: testbench won't use valgrind due to set --without-valgrind-testbench option
+checking for port_create... no
+checking for Solaris File Events Notification API support... no
+checking for LIBSYSTEMD_JOURNAL... yes
+checking hdfs.h usability... no
+checking hdfs.h presence... no
+checking for hdfs.h... no
+checking hadoop/hdfs.h usability... no
+checking hadoop/hdfs.h presence... no
+checking for hadoop/hdfs.h... no
+checking for LIBRDKAFKA... yes
+checking librdkafka/rdkafka.h usability... yes
+checking librdkafka/rdkafka.h presence... yes
+checking for librdkafka/rdkafka.h... yes
+checking for LIBRDKAFKA... yes
+checking for librdkafka/rdkafka.h... (cached) yes
+checking for CZMQ... yes
+checking for CZMQ... yes
+checking for HIREDIS... yes
+configure: Not running from git source
+checking for rst2man... no
+checking for rst2man.py... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating runtime/Makefile
+config.status: creating compat/Makefile
+config.status: creating grammar/Makefile
+config.status: creating tools/Makefile
+config.status: creating plugins/imudp/Makefile
+config.status: creating plugins/imtcp/Makefile
+config.status: creating plugins/im3195/Makefile
+config.status: creating plugins/imgssapi/Makefile
+config.status: creating plugins/imuxsock/Makefile
+config.status: creating plugins/imjournal/Makefile
+config.status: creating plugins/immark/Makefile
+config.status: creating plugins/imklog/Makefile
+config.status: creating plugins/omhdfs/Makefile
+config.status: creating plugins/omkafka/Makefile
+config.status: creating plugins/omprog/Makefile
+config.status: creating plugins/mmexternal/Makefile
+config.status: creating plugins/omstdout/Makefile
+config.status: creating plugins/omjournal/Makefile
+config.status: creating plugins/pmciscoios/Makefile
+config.status: creating plugins/pmnull/Makefile
+config.status: creating plugins/pmnormalize/Makefile
+config.status: creating plugins/omruleset/Makefile
+config.status: creating plugins/omuxsock/Makefile
+config.status: creating plugins/imfile/Makefile
+config.status: creating plugins/imsolaris/Makefile
+config.status: creating plugins/imptcp/Makefile
+config.status: creating plugins/impstats/Makefile
+config.status: creating plugins/imrelp/Makefile
+config.status: creating plugins/imdiag/Makefile
+config.status: creating plugins/imkafka/Makefile
+config.status: creating plugins/omtesting/Makefile
+config.status: creating plugins/omgssapi/Makefile
+config.status: creating plugins/ommysql/Makefile
+config.status: creating plugins/ompgsql/Makefile
+config.status: creating plugins/omrelp/Makefile
+config.status: creating plugins/omlibdbi/Makefile
+config.status: creating plugins/ommail/Makefile
+config.status: creating plugins/fmhttp/Makefile
+config.status: creating plugins/omsnmp/Makefile
+config.status: creating plugins/omudpspoof/Makefile
+config.status: creating plugins/ommongodb/Makefile
+config.status: creating plugins/mmnormalize/Makefile
+config.status: creating plugins/mmjsonparse/Makefile
+config.status: creating plugins/mmaudit/Makefile
+config.status: creating plugins/mmanon/Makefile
+config.status: creating plugins/mmrm1stspace/Makefile
+config.status: creating plugins/mmutf8fix/Makefile
+config.status: creating plugins/mmfields/Makefile
+config.status: creating plugins/mmpstrucdata/Makefile
+config.status: creating plugins/omelasticsearch/Makefile
+config.status: creating plugins/omclickhouse/Makefile
+config.status: creating plugins/mmsnmptrapd/Makefile
+config.status: creating plugins/pmlastmsg/Makefile
+config.status: creating plugins/mmdblookup/Makefile
+config.status: creating contrib/mmdarwin/Makefile
+config.status: creating contrib/omhttp/Makefile
+config.status: creating contrib/fmhash/Makefile
+config.status: creating contrib/pmsnare/Makefile
+config.status: creating contrib/pmpanngfw/Makefile
+config.status: creating contrib/pmaixforwardedfrom/Makefile
+config.status: creating contrib/omhiredis/Makefile
+config.status: creating contrib/omrabbitmq/Makefile
+config.status: creating contrib/imkmsg/Makefile
+config.status: creating contrib/mmgrok/Makefile
+config.status: creating contrib/mmcount/Makefile
+config.status: creating contrib/omczmq/Makefile
+config.status: creating contrib/imczmq/Makefile
+config.status: creating contrib/mmsequence/Makefile
+config.status: creating contrib/mmrfc5424addhmac/Makefile
+config.status: creating contrib/pmcisconames/Makefile
+config.status: creating contrib/omhttpfs/Makefile
+config.status: creating contrib/omamqp1/Makefile
+config.status: creating contrib/omtcl/Makefile
+config.status: creating contrib/imbatchreport/Makefile
+config.status: creating contrib/omfile-hardened/Makefile
+config.status: creating contrib/mmkubernetes/Makefile
+config.status: creating contrib/imtuxedoulog/Makefile
+config.status: creating contrib/improg/Makefile
+config.status: creating contrib/mmtaghostname/Makefile
+config.status: creating contrib/imdocker/Makefile
+config.status: creating contrib/pmdb2diag/Makefile
+config.status: creating tests/set-envvars
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+****************************************************
+rsyslog will be compiled with the following settings:
+
+    Large file support enabled:               yes
+    Networking support enabled:               yes
+    Regular expressions support enabled:      yes
+    rsyslog runtime will be built:            yes
+    rsyslogd will be built:                   yes
+    have to generate man pages:               no
+    Unlimited select() support enabled:       no
+    uuid support enabled:                     yes
+    Log file signing support via KSI LS12:    no
+    Log file encryption support:              no
+    anonymization support enabled:            yes
+    message counting support enabled:         no
+    liblogging-stdlog support enabled:        no
+    libsystemd enabled:                       yes
+    kafka static linking enabled:             no
+    atomic operations enabled:                yes
+
+---{ input plugins }---
+    Klog functionality enabled:               yes (linux)
+    /dev/kmsg functionality enabled:          yes
+    plain tcp input module enabled:           yes
+    imdiag enabled:                           yes
+    file input module enabled:                yes
+    docker log input module enabled:          no
+    Solaris input module enabled:             no
+    periodic statistics module enabled:       yes
+    imczmq input module enabled:              yes
+    imjournal input module enabled:           yes
+    imbatchreport input module enabled:       no
+    imkafka module will be compiled:          yes
+    imtuxedoulog module will be compiled:     no
+    improg input module enabled:              no
+
+---{ output plugins }---
+    Mail support enabled:                     yes
+    omfile-hardened module will be compiled:  no
+    omprog module will be compiled:           yes
+    omstdout module will be compiled:         yes
+    omjournal module will be compiled:        yes
+    omhdfs module will be compiled:           no
+    omelasticsearch module will be compiled:  yes
+    omclickhouse module will be compiled:     no
+    omhttp module will be compiled:           no
+    omruleset module will be compiled:        no
+    omudpspoof module will be compiled:       no
+    omuxsock module will be compiled:         yes
+    omczmq module will be compiled:           yes
+    omrabbitmq module will be compiled:       no
+    omhttpfs module will be compiled:         no
+    omamqp1 module will be compiled:          no
+    omtcl module will be compiled:            no
+    omkafka module will be compiled:          yes
+
+---{ parser modules }---
+    pmlastmsg module will be compiled:        yes
+    pmcisconames module will be compiled:     yes
+    pmciscoios module will be compiled:       no
+    pmnull module will be compiled:           no
+    pmnormalize module will be compiled:      no
+    pmaixforwardedfrom module w.be compiled:  yes
+    pmsnare module will be compiled:          yes
+    pmdb2diag module will be compiled:        no
+    pmpanngfw module will be compiled:        no
+
+---{ message modification modules }---
+    mmnormalize module will be compiled:      yes
+    mmjsonparse module will be compiled:      yes
+    mmgrok module will be compiled:           no
+    mmjaduit module will be compiled:         no
+    mmsnmptrapd module will be compiled:      no
+    mmutf8fix enabled:                        yes
+    mmrfc5424addhmac enabled:                 no
+    mmpstrucdata enabled:                     yes
+    mmsequence enabled:                       yes
+    mmdblookup enabled:                       no
+    mmdarwin enabled:                         no
+    mmfields enabled:                         yes
+    mmrm1stspace module enabled:              yes
+    mmkubernetes enabled:                     no
+    mmtaghostname enabled:                    no
+
+---{ database support }---
+    MySql support enabled:                    yes
+    libdbi support enabled:                   no
+    PostgreSQL support enabled:               yes
+    mongodb support enabled:                  no
+    hiredis support enabled:                  yes
+
+---{ protocol support }---
+    openssl network stream driver enabled:    yes
+    GnuTLS network stream driver enabled:     yes
+    GSSAPI Kerberos 5 support enabled:        yes
+    RELP support enabled:                     no
+    SNMP support enabled:                     no
+
+---{ function modules }---
+    fmhttp enabled:                           no
+    fmhash enabled:                           yes
+    fmhash with xxhash enabled:               no
+
+---{ debugging support }---
+    distcheck workaround enabled:             no
+    Testbench enabled:                        yes
+    valgrind tests enabled:                   no
+    valgrind helgrind tests enabled:          yes
+    Default tests enabled:                    yes
+    Testbench libfaketime tests enabled:      no
+    Extended Testbench enabled:               yes
+    MySQL Tests enabled:                      no
+    Elasticsearch Tests:                      no
+    ClickHouse Tests:                         no
+    PostgreSQL Tests enabled:                 no
+    Kafka Tests enabled:                      no
+    Imdocker Tests enabled:                   no
+    gnutls tests enabled:                     yes
+    imfile tests enabled:                     yes
+    systemd journal tests enabled:            no
+    SNMP Tests enabled:                       no
+    Debug mode enabled:                       no
+    (total) debugless mode enabled:           no
+    Diagnostic tools enabled:                 no
+    End-User tools enabled:                   no
+    Valgrind support settings enabled:        no
+
+make[1]: Leaving directory '/build/src'
+   dh_auto_build
+	make -j1
+make[1]: Entering directory '/build/src'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /build/src/missing aclocal-1.15 -I m4
+/build/src/missing: line 81: aclocal-1.15: command not found
+WARNING: 'aclocal-1.15' is missing on your system.
+         You should only need it if you modified 'acinclude.m4' or
+         'configure.ac' or m4 files included by 'configure.ac'.
+         The 'aclocal' program is part of the GNU Automake package:
+         <http://www.gnu.org/software/automake>
+         It also requires GNU Autoconf, GNU m4 and Perl in order to run:
+         <http://www.gnu.org/software/autoconf>
+         <http://www.gnu.org/software/m4/>
+         <http://www.perl.org/>
+make[1]: *** [Makefile:799: aclocal.m4] Error 127
+make[1]: Leaving directory '/build/src'
+dh_auto_build: make -j1 returned exit code 2
+make: *** [debian/rules:11: binary] Error 2
+dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
+debuild: fatal error at line 1182:
+dpkg-buildpackage -us -uc -ui -i -b failed
+chmod: cannot access '../*.deb': No such file or directory
+cp: cannot stat '../*.deb': No such file or directory

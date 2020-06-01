@@ -1,0 +1,316 @@
+Building vyatta-vrrp
+{"status":"Pulling from jsouthworth/danos-buildpackage","id":"debian10-bootstrap"}
+{"status":"Digest: sha256:fe499243687f6da2b6f300baa16598c2b3f1a87a4d02e7128122a143f16cbdb5"}
+{"status":"Status: Image is up to date for registry.hub.docker.com/jsouthworth/danos-buildpackage:debian10-bootstrap"}
+/tmp/pkgs /build/src
+dpkg-scanpackages: warning: package vyatta-op-system-alg-v1-yang (filename ./vyatta-op-system-alg-v1-yang_3.0.1_all.deb) is repeat; ignored that one and using data from ./vyatta-op-system-alg-v1-yang_4.2.0_all.deb!
+dpkg-scanpackages: warning: package vyatta-system-alg-v1-yang (filename ./vyatta-system-alg-v1-yang_4.2.0_all.deb) is repeat but newer version; used that one and ignored data from ./vyatta-system-alg-v1-yang_3.0.1_all.deb!
+dpkg-scanpackages: warning: package vyatta-system-alg-routing-instance-v1-yang (filename ./vyatta-system-alg-routing-instance-v1-yang_4.2.0_all.deb) is repeat but newer version; used that one and ignored data from ./vyatta-system-alg-routing-instance-v1-yang_3.0.1_all.deb!
+dpkg-scanpackages: warning: Packages with multiple instances but no --multiversion specified:
+dpkg-scanpackages: warning: ./vyatta-op-system-alg-v1-yang_3.0.1_all.deb
+dpkg-scanpackages: warning: ./vyatta-op-system-alg-v1-yang_4.2.0_all.deb
+dpkg-scanpackages: warning: ./vyatta-system-alg-routing-instance-v1-yang_4.2.0_all.deb
+dpkg-scanpackages: warning: ./vyatta-system-alg-v1-yang_4.2.0_all.deb
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   accton-as5916-54xks-hwdiag accton-as5916-54xks-support accton-as5916-54xks-sys-led-control acmd acmd-dbgsym base-files-vyatta bcm-kbp-linux-modules-5.4.0-trunk-vyatta-amd64 bcm-linux-bde-modules-5.4.0-trunk-vyatta-amd64 bvnos-linux-libc-dev-vyatta chvrf cli-sandbox cli-shell-api cloud-init config-utils configd configd-v1-yang curl-alternative deb-vci-helper dh-signobs dh-vci dh-yang dpdk dpdk-dev dpdk-dev-dbgsym dpdk-igb-uio-dkms dpdk-modules-5.4.0-trunk-vyatta-amd64 dpdk-rte-kni-dkms ephemerad ephemerad-v1-yang frr frr-dbg frr-doc frr-pythontools golang-dbus-dev golang-github-danos-aaa-dev golang-github-danos-config-dev golang-github-danos-configd-client-dev golang-github-danos-configd-rpc-dev golang-github-danos-encoding-rfc7951-dev golang-github-danos-mgmterror-dev golang-github-danos-op-dev golang-github-danos-utils-args-dev golang-github-danos-utils-audit-dev golang-github-danos-utils-exec-dev golang-github-danos-utils-guard-dev golang-github-danos-utils-natsort-dev golang-github-danos-utils-os-group-dev golang-github-danos-utils-patherr-dev golang-github-danos-utils-pathutil-dev golang-github-danos-utils-tsort-dev golang-github-danos-utils-tty-dev golang-github-danos-vci-dev golang-github-danos-vyatta-controller-protobuf-dev golang-github-danos-vyatta-dataplane-protobuf-dev golang-github-danos-yang-dev golang-github-danos-yangd-client-dev golang-github-danos-yangd-dev golang-github-jsouthworth-objtree-dev golang-github-zeromq-goczmq-dev golang-jsouthworth-dyn-dev golang-jsouthworth-etm-dev golang-jsouthworth-hash-dev golang-jsouthworth-immutable-dev golang-jsouthworth-seq-dev golang-jsouthworth-transduce-dev golang-jsouthworth-try-dev golang-vyatta-protocols-dev grub-efi-amd64-signed i2util-tools i2util-tools-dbgsym ibacm ibacm-dbgsym ibverbs-providers ibverbs-providers-dbgsym ibverbs-utils ibverbs-utils-dbgsym ietf-inet-types-yang ietf-netconf-monitoring-yang ietf-netconf-with-defaults-yang ietf-netconf-yang ietf-yang-types-yang ifmgrd ifmgrd-dbgsym iproute iproute-doc iproute2 iproute2-dbgsym iproute2-doc iputils-arping iputils-arping-dbgsym iputils-clockdiff iputils-clockdiff-dbgsym iputils-ping iputils-ping-dbgsym iputils-tracepath iputils-tracepath-dbgsym isc-dhcp-client isc-dhcp-client-dbgsym isc-dhcp-client-ddns isc-dhcp-client-ddns-dbgsym isc-dhcp-common isc-dhcp-dev isc-dhcp-relay isc-dhcp-relay-dbgsym isc-dhcp-server isc-dhcp-server-dbgsym isc-dhcp-server-ldap isc-dhcp-server-ldap-dbgsym jitterentropy-rngd jitterentropy-rngd-dbgsym journalbeat journalbeat-dbgsym keepalived keepalived-dbg libdpdk-dbg libdpdk-dev libi2util-dev libibumad-dev libibumad3 libibumad3-dbgsym libibverbs-dev libibverbs1 libibverbs1-dbgsym libipa-hbac-dev libipa-hbac0 libipa-hbac0-dbgsym libndpi-bin libndpi-bin-dbgsym libndpi-dev libndpi3.0 libndpi3.0-dbgsym libnetconf-dev libnetconf-doc libnetconf0 libnetconf0-dbgsym libnss-sss libnss-sss-dbgsym libnss-vrfdns libnss-vrfdns-dbgsym libpam-chvrf libpam-chvrf-dbgsym libpam-sss libpam-sss-dbgsym libpam-tacplus libpam-tacplus-dbg libpcap-dev libpcap0.8 libpcap0.8-dbg libpcap0.8-dev librdmacm-dev librdmacm1 librdmacm1-dbgsym libre-dev libre0 libre0-dbgsym librte-acl20.0 librte-acl20.0-dbgsym librte-bbdev0.200 librte-bbdev0.200-dbgsym librte-bitratestats20.0 librte-bitratestats20.0-dbgsym librte-bpf0.200 librte-bpf0.200-dbgsym librte-bus-dpaa20.0 librte-bus-dpaa20.0-dbgsym librte-bus-fslmc20.0 librte-bus-fslmc20.0-dbgsym librte-bus-ifpga20.0 librte-bus-ifpga20.0-dbgsym librte-bus-pci20.0 librte-bus-pci20.0-dbgsym librte-bus-vdev20.0 librte-bus-vdev20.0-dbgsym librte-bus-vmbus20.0 librte-bus-vmbus20.0-dbgsym librte-cfgfile20.0 librte-cfgfile20.0-dbgsym librte-cmdline20.0 librte-cmdline20.0-dbgsym librte-common-cpt20.0 librte-common-cpt20.0-dbgsym librte-common-dpaax20.0 librte-common-dpaax20.0-dbgsym librte-common-octeontx2-20.0 librte-common-octeontx2-20.0-dbgsym librte-common-octeontx20.0 librte-common-octeontx20.0-dbgsym librte-compressdev0.200 librte-compressdev0.200-dbgsym librte-cryptodev20.0 librte-cryptodev20.0-dbgsym librte-distributor20.0 librte-distributor20.0-dbgsym librte-eal20.0 librte-eal20.0-dbgsym librte-efd20.0 librte-efd20.0-dbgsym librte-ethdev20.0 librte-ethdev20.0-dbgsym librte-eventdev20.0 librte-eventdev20.0-dbgsym librte-fib0.200 librte-fib0.200-dbgsym librte-flow-classify0.200 librte-flow-classify0.200-dbgsym librte-gro20.0 librte-gro20.0-dbgsym librte-gso20.0 librte-gso20.0-dbgsym librte-hash20.0 librte-hash20.0-dbgsym librte-ip-frag20.0 librte-ip-frag20.0-dbgsym librte-ipsec0.200 librte-ipsec0.200-dbgsym librte-jobstats20.0 librte-jobstats20.0-dbgsym librte-kni20.0 librte-kni20.0-dbgsym librte-kvargs20.0 librte-kvargs20.0-dbgsym librte-latencystats20.0 librte-latencystats20.0-dbgsym librte-lpm20.0 librte-lpm20.0-dbgsym librte-mbuf20.0 librte-mbuf20.0-dbgsym librte-member20.0 librte-member20.0-dbgsym librte-mempool-bucket20.0 librte-mempool-bucket20.0-dbgsym librte-mempool-dpaa2-20.0 librte-mempool-dpaa2-20.0-dbgsym librte-mempool-dpaa20.0 librte-mempool-dpaa20.0-dbgsym librte-mempool-octeontx2-20.0 librte-mempool-octeontx2-20.0-dbgsym librte-mempool-octeontx20.0 librte-mempool-octeontx20.0-dbgsym librte-mempool-ring20.0 librte-mempool-ring20.0-dbgsym librte-mempool-stack20.0 librte-mempool-stack20.0-dbgsym librte-mempool20.0 librte-mempool20.0-dbgsym librte-meter20.0 librte-meter20.0-dbgsym librte-metrics20.0 librte-metrics20.0-dbgsym librte-net20.0 librte-net20.0-dbgsym librte-pci20.0 librte-pci20.0-dbgsym librte-pdump20.0 librte-pdump20.0-dbgsym librte-pipeline20.0 librte-pipeline20.0-dbgsym librte-pmd-aesni-gcm20.0 librte-pmd-aesni-gcm20.0-dbgsym librte-pmd-aesni-mb20.0 librte-pmd-aesni-mb20.0-dbgsym librte-pmd-af-packet20.0 librte-pmd-af-packet20.0-dbgsym librte-pmd-af-xdp20.0 librte-pmd-ark20.0 librte-pmd-ark20.0-dbgsym librte-pmd-atlantic20.0 librte-pmd-atlantic20.0-dbgsym librte-pmd-avp20.0 librte-pmd-avp20.0-dbgsym librte-pmd-axgbe20.0 librte-pmd-axgbe20.0-dbgsym librte-pmd-bbdev-fpga-lte-fec20.0 librte-pmd-bbdev-fpga-lte-fec20.0-dbgsym librte-pmd-bbdev-null20.0 librte-pmd-bbdev-null20.0-dbgsym librte-pmd-bbdev-turbo-sw20.0 librte-pmd-bbdev-turbo-sw20.0-dbgsym librte-pmd-bnx2x20.0 librte-pmd-bnx2x20.0-dbgsym librte-pmd-bnxt20.0 librte-pmd-bnxt20.0-dbgsym librte-pmd-bond20.0 librte-pmd-bond20.0-dbgsym librte-pmd-caam-jr20.0 librte-pmd-caam-jr20.0-dbgsym librte-pmd-ccp20.0 librte-pmd-ccp20.0-dbgsym librte-pmd-crypto-scheduler20.0 librte-pmd-crypto-scheduler20.0-dbgsym librte-pmd-cxgbe20.0 librte-pmd-cxgbe20.0-dbgsym librte-pmd-dpaa-event20.0 librte-pmd-dpaa-event20.0-dbgsym librte-pmd-dpaa-sec20.0 librte-pmd-dpaa-sec20.0-dbgsym librte-pmd-dpaa2-20.0 librte-pmd-dpaa2-20.0-dbgsym librte-pmd-dpaa2-event20.0 librte-pmd-dpaa2-event20.0-dbgsym librte-pmd-dpaa2-sec20.0 librte-pmd-dpaa2-sec20.0-dbgsym librte-pmd-dpaa20.0 librte-pmd-dpaa20.0-dbgsym librte-pmd-dsw-event20.0 librte-pmd-dsw-event20.0-dbgsym librte-pmd-e1000-20.0 librte-pmd-e1000-20.0-dbgsym librte-pmd-ena20.0 librte-pmd-ena20.0-dbgsym librte-pmd-enetc20.0 librte-pmd-enetc20.0-dbgsym librte-pmd-enic20.0 librte-pmd-enic20.0-dbgsym librte-pmd-failsafe20.0 librte-pmd-failsafe20.0-dbgsym librte-pmd-fm10k20.0 librte-pmd-fm10k20.0-dbgsym librte-pmd-hinic20.0 librte-pmd-hinic20.0-dbgsym librte-pmd-hns3-20.0 librte-pmd-hns3-20.0-dbgsym librte-pmd-i40e20.0 librte-pmd-i40e20.0-dbgsym librte-pmd-iavf20.0 librte-pmd-iavf20.0-dbgsym librte-pmd-ice20.0 librte-pmd-ice20.0-dbgsym librte-pmd-ifc20.0 librte-pmd-ifc20.0-dbgsym librte-pmd-isal20.0 librte-pmd-ixgbe20.0 librte-pmd-ixgbe20.0-dbgsym librte-pmd-kni20.0 librte-pmd-kni20.0-dbgsym librte-pmd-liquidio20.0 librte-pmd-liquidio20.0-dbgsym librte-pmd-memif20.0 librte-pmd-memif20.0-dbgsym librte-pmd-mlx4-20.0 librte-pmd-mlx4-20.0-dbgsym librte-pmd-mlx5-20.0 librte-pmd-mlx5-20.0-dbgsym librte-pmd-netvsc20.0 librte-pmd-netvsc20.0-dbgsym librte-pmd-nfp20.0 librte-pmd-nfp20.0-dbgsym librte-pmd-nitrox20.0 librte-pmd-nitrox20.0-dbgsym librte-pmd-null-crypto20.0 librte-pmd-null-crypto20.0-dbgsym librte-pmd-null20.0 librte-pmd-null20.0-dbgsym librte-pmd-octeontx-compress20.0 librte-pmd-octeontx-compress20.0-dbgsym librte-pmd-octeontx-crypto20.0 librte-pmd-octeontx-crypto20.0-dbgsym librte-pmd-octeontx-event20.0 librte-pmd-octeontx-event20.0-dbgsym librte-pmd-octeontx2-20.0 librte-pmd-octeontx2-20.0-dbgsym librte-pmd-octeontx2-crypto20.0 librte-pmd-octeontx2-crypto20.0-dbgsym librte-pmd-octeontx2-event20.0 librte-pmd-octeontx2-event20.0-dbgsym librte-pmd-octeontx20.0 librte-pmd-octeontx20.0-dbgsym librte-pmd-opdl-event20.0 librte-pmd-opdl-event20.0-dbgsym librte-pmd-openssl20.0 librte-pmd-openssl20.0-dbgsym librte-pmd-pcap20.0 librte-pmd-pcap20.0-dbgsym librte-pmd-pfe20.0 librte-pmd-pfe20.0-dbgsym librte-pmd-qat20.0 librte-pmd-qat20.0-dbgsym librte-pmd-qede20.0 librte-pmd-qede20.0-dbgsym librte-pmd-ring20.0 librte-pmd-ring20.0-dbgsym librte-pmd-sfc20.0 librte-pmd-sfc20.0-dbgsym librte-pmd-skeleton-event20.0 librte-pmd-skeleton-event20.0-dbgsym librte-pmd-softnic20.0 librte-pmd-sw-event20.0 librte-pmd-sw-event20.0-dbgsym librte-pmd-tap20.0 librte-pmd-tap20.0-dbgsym librte-pmd-thunderx20.0 librte-pmd-thunderx20.0-dbgsym librte-pmd-vdev-netvsc20.0 librte-pmd-vdev-netvsc20.0-dbgsym librte-pmd-vhost20.0 librte-pmd-vhost20.0-dbgsym librte-pmd-virtio-crypto20.0 librte-pmd-virtio-crypto20.0-dbgsym librte-pmd-virtio20.0 librte-pmd-virtio20.0-dbgsym librte-pmd-vmxnet3-20.0 librte-pmd-vmxnet3-20.0-dbgsym librte-pmd-zlib20.0 librte-pmd-zlib20.0-dbgsym librte-port20.0 librte-port20.0-dbgsym librte-power20.0 librte-power20.0-dbgsym librte-rawdev-dpaa2-cmdif20.0 librte-rawdev-dpaa2-cmdif20.0-dbgsym librte-rawdev-dpaa2-qdma20.0 librte-rawdev-dpaa2-qdma20.0-dbgsym librte-rawdev-ioat20.0 librte-rawdev-ioat20.0-dbgsym librte-rawdev-ntb20.0 librte-rawdev-ntb20.0-dbgsym librte-rawdev-octeontx2-dma20.0 librte-rawdev-octeontx2-dma20.0-dbgsym librte-rawdev-skeleton20.0 librte-rawdev-skeleton20.0-dbgsym librte-rawdev20.0 librte-rawdev20.0-dbgsym librte-rcu0.200 librte-rcu0.200-dbgsym librte-reorder20.0 librte-reorder20.0-dbgsym librte-rib0.200 librte-rib0.200-dbgsym librte-ring20.0 librte-ring20.0-dbgsym librte-sched20.0 librte-sched20.0-dbgsym librte-security20.0 librte-security20.0-dbgsym librte-stack0.200 librte-stack0.200-dbgsym librte-table20.0 librte-table20.0-dbgsym librte-telemetry0.200 librte-telemetry0.200-dbgsym librte-timer20.0 librte-timer20.0-dbgsym librte-vhost20.0 librte-vhost20.0-dbgsym libsnmp-base libsnmp-dev libsnmp-perl libsnmp-perl-dbgsym libsnmp-vyatta-perl libsnmp30 libsnmp30-dbg libsss-idmap-dev libsss-idmap0 libsss-idmap0-dbgsym libsss-nss-idmap-dev libsss-nss-idmap0 libsss-nss-idmap0-dbgsym libsss-simpleifp-dev libsss-simpleifp0 libsss-simpleifp0-dbgsym libsss-sudo libsss-sudo-dbgsym libtac-dev libtac3 libteam-dbg libteam-dev libteam-utils libteam5 libteamdctl0 libvci-dev libvci-perl libvci-perl-dbgsym libvci1 libvci1-dbgsym libvplaned-dev libvrfmanager-vyatta-dev libvyatta-bridge-perl libvyatta-cfg-dbg libvyatta-cfg-dev libvyatta-cfg1 libvyatta-cfgclient-perl libvyatta-controller-proto-dev libvyatta-controller-proto-support libvyatta-controller-proto1 libvyatta-dataplane-proto-dev libvyatta-dataplane-proto-support libvyatta-dataplane-proto1 libvyatta-dataplane-proto1-dbgsym libvyatta-dpdk-swport-dev libvyatta-dpdk-swport1 libvyatta-dpdk-swport1-dbgsym libvyatta-interface-perl libvyatta-live-perl libvyatta-route-broker-dev libvyatta-util-dev libvyatta-util1 libvyatta-util1-dbgsym libvyatta-vrfinterface-perl libvyatta-vrfmanager-perl libvyatta-vrfmanager-sh libvyattafal-dev libwbclient-sssd libwbclient-sssd-dbgsym libwbclient-sssd-dev libzmq-constants-perl libzmq-libzmq3-perl libzmq-libzmq3-perl-dbgsym lintian-profile-vyatta linux-compiler-gcc-8-x86 linux-firmware linux-headers-5.4.0-trunk-all linux-headers-5.4.0-trunk-all-amd64 linux-headers-5.4.0-trunk-common-vyatta linux-headers-5.4.0-trunk-vyatta-amd64 linux-headers-amd64 linux-image-5.4.0-trunk-vyatta-amd64 linux-image-5.4.0-trunk-vyatta-amd64-dbg linux-image-vyatta-amd64 linux-image-vyatta-amd64-dbg linux-kbuild-5.4 linux-kbuild-5.4-dbgsym linux-perf linux-perf-5.4 linux-perf-5.4-dbgsym linux-support-5.4.0-trunk live-boot-vyatta live-build-desc-buster live-build-desc-hooks lu lu-dbgsym mstpd mstpd-dbgsym netconf-callhome-client netconf-callhome-client-dbgsym netconf-callhome-server netconf-callhome-server-dbgsym netplug netplug-dbgsym notifyd notifyd-v1-yang opc owamp-client owamp-client-dbgsym owamp-server owamp-server-dbgsym pam-sandbox pam-sandbox-dbgsym pesign-obs-integration platform-parser ppp ppp-dbgsym ppp-dev provisiond provisiond-dbgsym pyang python-libipa-hbac python-libipa-hbac-dbgsym python-libsss-nss-idmap python-libsss-nss-idmap-dbgsym python-netsnmp python-netsnmp-dbgsym python-sss python-sss-dbgsym python-vyatta-cfgclient python3-accton-as5916-54xks-sfp-helper python3-pyverbs python3-pyverbs-dbgsym python3-rfc3339-to-systemd-time python3-shared-storage python3-ufispace-bsp-sfp-helper python3-ufispace-bsp-utils python3-vci python3-vci-dbgsym python3-vplane-config-npf python3-vrfmanager python3-vyatta-cfgclient python3-vyatta-interfaces python3-vyatta-phy python3-vyatta-platform-detect python3-vyatta-platform-sfp python3-vyatta-sssd radvd radvd-dbg rdma-core rdma-core-dbgsym rdmacm-utils rdmacm-utils-dbgsym repcpd repcpd-dbgsym ruby-vyatta-cfgclient shim-amd64-signed-template shim-unsigned snmp snmp-dbgsym snmpd snmpd-dbgsym snmptrapd snmptrapd-dbgsym srptools srptools-dbgsym sssd sssd-common sssd-common-dbgsym sssd-dbus sssd-dbus-dbgsym sssd-krb5 sssd-krb5-common sssd-krb5-common-dbgsym sssd-krb5-dbgsym sssd-ldap sssd-ldap-dbgsym sssd-proxy sssd-proxy-dbgsym sssd-tools sssd-tools-dbgsym tacplusd tacplusd-dbg td-agent-bit td-agent-bit-dbgsym tkmib twamp-client twamp-client-dbgsym twamp-server twamp-server-dbgsym ufispace-apollo-linux-modules-5.4.0-trunk-vyatta-amd64 ufispace-stat-led-control valgrind valgrind-dbg valgrind-mpi vci-service-dns vci-tools vcli vermont vermont-dbg vplane-config-npf vplane-config-qos vplane-controller vplane-controller-dbg vrf-manager vyatta-base-systemd vyatta-bash vyatta-bmc vyatta-bmc-clock vyatta-bridge-static-fdb-v1-yang vyatta-cfg vyatta-cfg-default-minimal vyatta-cfg-default-vcpe vyatta-cfg-default-vdr vyatta-cfg-default-vdr-dp vyatta-cfg-default-vr vyatta-cfg-journalbeat vyatta-cfg-system vyatta-config-migrate vyatta-config-shell vyatta-cpu-shield vyatta-curl-wrapper vyatta-dataplane vyatta-dataplane-dbgsym vyatta-dataplane-dev vyatta-dataplane-protocols-versions vyatta-dataplane-sample-plugin vyatta-dataplane-sample-plugin-dbgsym vyatta-dataplane-test vyatta-dataplane-test-dbgsym vyatta-debian-lldpd-config vyatta-debian-pam-configs-config vyatta-debian-passwd-config vyatta-debian-ssh-server-config vyatta-debian-system-config vyatta-debian-systemd-config vyatta-debug vyatta-debug-controller vyatta-debug-dataplane vyatta-debug-kernel vyatta-debug-routing vyatta-demo-hardware-diagnostics vyatta-dhcp-client-v1-yang vyatta-dhcp-client-yang vyatta-dhcpv6-client-v1-yang vyatta-dhcpv6-client-yang vyatta-dpi-application-names-v1-yang vyatta-dpi-application-types-v1-yang vyatta-dpi-user-v1-yang vyatta-dpi-v1-yang vyatta-dscp-v1-yang vyatta-entity-sensor-subagent vyatta-entity-sensor-subagent-dbgsym vyatta-frr-vci vyatta-fw-types-v1-yang vyatta-hotplug vyatta-hwdiag vyatta-ifmgr-v1-yang vyatta-image-tools vyatta-image-tools-initramfs-tools vyatta-image-tools-routing-instance vyatta-image-v1-yang vyatta-interfaces vyatta-interfaces-base vyatta-interfaces-bonding vyatta-interfaces-bonding-deviation-broadcom-stratadnx-v1-yang vyatta-interfaces-bonding-qos-v1-yang vyatta-interfaces-bonding-storm-control-v1-yang vyatta-interfaces-bonding-switch-v1-yang vyatta-interfaces-bonding-v1-yang vyatta-interfaces-bridge-mstp-v1-yang vyatta-interfaces-bridge-policy-v1-yang vyatta-interfaces-bridge-rstp-v1-yang vyatta-interfaces-bridge-spanning-tree-v1-yang vyatta-interfaces-bridge-state-v1-yang vyatta-interfaces-bridge-v1-yang vyatta-interfaces-dataplane-poe-v1-yang vyatta-interfaces-dataplane-switch-v1-yang vyatta-interfaces-erspan-v1-yang vyatta-interfaces-l2tpeth vyatta-interfaces-l2tpeth-v1-yang vyatta-interfaces-loopback-v1-yang vyatta-interfaces-openvpn-v1-yang vyatta-interfaces-policy-uplink-v1-yang vyatta-interfaces-policy-v1-yang vyatta-interfaces-pppoe vyatta-interfaces-pppoe-resources-chap-v1-yang vyatta-interfaces-pppoe-v1-yang vyatta-interfaces-routing-instance vyatta-interfaces-switch-deviations-siad-v1-yang vyatta-interfaces-switch-policy-v1-yang vyatta-interfaces-switch-v1-yang vyatta-interfaces-switch-vif-firewall-v1-yang vyatta-interfaces-switch-vif-policy-pbr-v1-yang vyatta-interfaces-switch-vif-policy-v1-yang vyatta-interfaces-switch-vif-sflow-v1-yang vyatta-interfaces-switch-vif-tcp-mss-v1-yang vyatta-interfaces-system-bridge-v1-yang vyatta-interfaces-system-groups-v1-yang vyatta-interfaces-system-support vyatta-interfaces-system-v1-yang vyatta-interfaces-tunnel-deviations-broadcom-dpp-v1-yang vyatta-interfaces-tunnel-transport-routing-instance-v1-yang vyatta-interfaces-tunnel-v1-yang vyatta-interfaces-v1-yang vyatta-interfaces-vfp-unnumbered-v1-yang vyatta-interfaces-vfp-v1-yang vyatta-interfaces-vhost-xconnect-v1-yang vyatta-interfaces-vif-v1-yang vyatta-interfaces-vif-v2-yang vyatta-interfaces-vti-v1-yang vyatta-ipmi vyatta-ippf-v1-yang vyatta-ipsec-trapd vyatta-ipv6-rtradv vyatta-ipv6-rtradv-groups-v1-yang vyatta-ipv6-rtradv-v1-yang vyatta-lldp vyatta-log-journald-config vyatta-mac-limit-v1-yang vyatta-mibs-misc vyatta-ndpi-application-names-v1-yang vyatta-ndpi-application-types-v1-yang vyatta-ndpi-show-name vyatta-ndpi-show-name-dbgsym vyatta-ndpi-v1-yang vyatta-netconf-agent vyatta-netconf-agent-dbgsym vyatta-npf-v1-yang vyatta-omrfc5676 vyatta-omrfc5676-dbgsym vyatta-op vyatta-op-add-system-image-v1-yang vyatta-op-add-system-v1-yang vyatta-op-add-v1-yang vyatta-op-clear-bmc-v1-yang vyatta-op-clear-bridge-spanning-tree-v1-yang vyatta-op-clear-bridge-v1-yang vyatta-op-clear-interfaces-bridge-v1-yang vyatta-op-clear-interfaces-switch-v1-yang vyatta-op-clear-interfaces-v1-yang vyatta-op-clear-log-v1-yang vyatta-op-clear-protocols-v1-yang vyatta-op-clear-security-v1-yang vyatta-op-clear-v1-yang vyatta-op-clone-system-image-v1-yang vyatta-op-clone-system-v1-yang vyatta-op-clone-v1-yang vyatta-op-common-protocols-bgp-routing-instance-v1-yang vyatta-op-common-protocols-bgp-v1-yang vyatta-op-common-protocols-ospf-routing-instance-v1-yang vyatta-op-common-protocols-ospf-v1-yang vyatta-op-common-protocols-ospfv3-routing-instance-v1-yang vyatta-op-common-protocols-ospfv3-v1-yang vyatta-op-common-protocols-policy-route-v1-yang vyatta-op-common-protocols-rip-routing-instance-v1-yang vyatta-op-common-protocols-rip-v1-yang vyatta-op-common-protocols-ripng-routing-instance-v1-yang vyatta-op-common-protocols-ripng-v1-yang vyatta-op-common-protocols-static-routing-instance-v1-yang vyatta-op-common-protocols-static-v1-yang vyatta-op-config-v1-yang vyatta-op-copy-file-v1-yang vyatta-op-copy-v1-yang vyatta-op-delete-file-v1-yang vyatta-op-delete-log-file-v1-yang vyatta-op-delete-system-image-v1-yang vyatta-op-delete-system-v1-yang vyatta-op-delete-v1-yang vyatta-op-generate-syslog-v1-yang vyatta-op-generate-v1-yang vyatta-op-install-image-v1-yang vyatta-op-install-v1-yang vyatta-op-ippf-v1-yang vyatta-op-monitor-interfaces-v1-yang vyatta-op-monitor-log-v1-yang vyatta-op-monitor-protocols-v1-yang vyatta-op-monitor-v1-yang vyatta-op-ndpi-v1-yang vyatta-op-network vyatta-op-network-dbgsym vyatta-op-network-routing-instance vyatta-op-npf-types-v1-yang vyatta-op-ping-routing-instance-v1-yang vyatta-op-ping-v1-yang vyatta-op-policy-pbr-v1-yang vyatta-op-policy-qos-v1-yang vyatta-op-protocols-frr-bgp-routing-instance-v1-yang vyatta-op-protocols-frr-bgp-v1-yang vyatta-op-protocols-frr-ldp-v1-yang vyatta-op-protocols-frr-ospf-routing-instance-v1-yang vyatta-op-protocols-frr-ospf-v1-yang vyatta-op-protocols-frr-ospfv3-v1-yang vyatta-op-protocols-frr-zebra-v1-yang vyatta-op-qa-notify-v1-yang vyatta-op-rename-system-image-v1-yang vyatta-op-rename-system-v1-yang vyatta-op-rename-v1-yang vyatta-op-request-hardware-diagnostic-v1-yang vyatta-op-request-v1-yang vyatta-op-reset-protocols-v1-yang vyatta-op-reset-system-login-v1-yang vyatta-op-reset-system-v1-yang vyatta-op-reset-tacplus-v1-yang vyatta-op-reset-v1-yang vyatta-op-resources-group-v1-yang vyatta-op-routing-instance-v1-yang vyatta-op-security-firewall-v1-yang vyatta-op-service-dns-routing-instance-v1-yang vyatta-op-service-dns-v1-yang vyatta-op-service-nat-cgnat-v1-yang vyatta-op-service-nat-nptv6-v1-yang vyatta-op-service-nat-pool-v1-yang vyatta-op-service-nat-v1-yang vyatta-op-service-nat64-v1-yang vyatta-op-set-system-image-v1-yang vyatta-op-set-system-v1-yang vyatta-op-set-v1-yang vyatta-op-shell vyatta-op-show-bmc-v1-yang vyatta-op-show-bridge-spanning-tree-v1-yang vyatta-op-show-bridge-v1-yang vyatta-op-show-confirmed-commit-v1-yang vyatta-op-show-file-v1-yang vyatta-op-show-hardware-cpu-v1-yang vyatta-op-show-hardware-v1-yang vyatta-op-show-host-routing-instance-v1-yang vyatta-op-show-host-v1-yang vyatta-op-show-interfaces-bonding-v1-yang vyatta-op-show-interfaces-bridge-v1-yang vyatta-op-show-interfaces-erspan-v1-yang vyatta-op-show-interfaces-l2tpeth-v1-yang vyatta-op-show-interfaces-loopback-v1-yang vyatta-op-show-interfaces-openvpn-v1-yang vyatta-op-show-interfaces-pppoe-v1-yang vyatta-op-show-interfaces-routing-instance-v1-yang vyatta-op-show-interfaces-switch-v1-yang vyatta-op-show-interfaces-system-v1-yang vyatta-op-show-interfaces-tunnel-v1-yang vyatta-op-show-interfaces-v1-yang vyatta-op-show-interfaces-vti-v1-yang vyatta-op-show-ip-ipv6-route-forward-routing-instance-v1-yang vyatta-op-show-ip-ipv6-route-forward-v1-yang vyatta-op-show-ip-ipv6-route-frr-v1-yang vyatta-op-show-ip-ipv6-route-routing-instance-v1-yang vyatta-op-show-ip-ipv6-route-v1-yang vyatta-op-show-ip-ipv6-v1-yang vyatta-op-show-journal-v1-yang vyatta-op-show-log-audit-v1-yang vyatta-op-show-log-auth-v1-yang vyatta-op-show-log-file-v1-yang vyatta-op-show-log-image-v1-yang vyatta-op-show-log-v1-yang vyatta-op-show-monitoring-protocols-frr-v1-yang vyatta-op-show-monitoring-v1-yang vyatta-op-show-platform-v1-yang vyatta-op-show-protocols-v1-yang vyatta-op-show-raid-v1-yang vyatta-op-show-security-v1-yang vyatta-op-show-switch-spanning-tree-v1-yang vyatta-op-show-switch-v1-yang vyatta-op-show-system-image-v1-yang vyatta-op-show-system-login-v1-yang vyatta-op-show-system-v1-yang vyatta-op-show-tacplus-v1-yang vyatta-op-show-v1-yang vyatta-op-show-watchdog-v1-yang vyatta-op-system-alg-v1-yang vyatta-op-system-session-dpi-v1-yang vyatta-op-system-session-v1-yang vyatta-op-tech-support-v1-yang vyatta-op-traceroute-routing-instance-v1-yang vyatta-op-traceroute-v1-yang vyatta-op-update-v1-yang vyatta-op-v1-yang vyatta-opd vyatta-opd-dev vyatta-opd-extensions-v1-yang vyatta-opd-v1-yang vyatta-package-tools vyatta-pcp-vci vyatta-platform-util vyatta-poe vyatta-poe-v1-yang vyatta-policy-action-v1-yang vyatta-policy-pbr-bridge-v1-yang vyatta-policy-pbr-dpi-v1-yang vyatta-policy-pbr-routing-instance-v1-yang vyatta-policy-pbr-v1-yang vyatta-policy-qos-augment-v1-yang vyatta-policy-qos-dpi-v1-yang vyatta-policy-qos-groupings-v1-yang vyatta-policy-qos-platform-support vyatta-policy-qos-uplink-v1-yang vyatta-policy-qos-v1-yang vyatta-policy-qos-vci vyatta-policy-route-v1-yang vyatta-policy-v1-yang vyatta-policy-vlan-modify-v1-yang vyatta-protocols-common vyatta-protocols-frr vyatta-protocols-frr-bgp-routing-instance-v1-yang vyatta-protocols-frr-bgp-v1-yang vyatta-protocols-frr-ldp-v1-yang vyatta-protocols-frr-ospf-routing-instance-v1-yang vyatta-protocols-frr-ospf-v1-yang vyatta-protocols-frr-ospfv3-v1-yang vyatta-protocols-frr-switch-vif-ospf-v1-yang vyatta-protocols-frr-switch-vif-ospfv3-v1-yang vyatta-protocols-interface-validation-mpls-v1-yang vyatta-protocols-interface-validation-routing-instance-v1-yang vyatta-protocols-interface-validation-v1-yang vyatta-protocols-static-routing-instance-inter-vrf-v1-yang vyatta-protocols-static-routing-instance-v1-yang vyatta-protocols-static-v1-yang vyatta-protocols-v1-yang vyatta-radius-system-user-login-feature vyatta-res-grp-vci vyatta-resources-chap-v1-yang vyatta-resources-group-v1-yang vyatta-resources-service-users-v1-yang vyatta-resources-v1-yang vyatta-rest vyatta-rest-dbgsym vyatta-restclient-perl vyatta-route-broker-frr vyatta-route-broker-frr-dbgsym vyatta-routing-instance-interfaces-v1-yang vyatta-routing-v1-yang vyatta-security-application-v1-yang vyatta-security-firewall-dpi-v1-yang vyatta-security-firewall-v1-yang vyatta-security-ssh-client-v1-yang vyatta-security-ssh-known-hosts-routing-instance-v1-yang vyatta-security-ssh-known-hosts-v1-yang vyatta-security-v1-yang vyatta-service-application-v1-yang vyatta-service-bridge vyatta-service-bridge-mstp vyatta-service-dhcp-client vyatta-service-dhcp-relay vyatta-service-dhcp-relay-routing-instance-v1-yang vyatta-service-dhcp-relay-v1-yang vyatta-service-dhcp-relay-yang vyatta-service-dhcp-server vyatta-service-dhcp-server-routing-instance-v1-yang vyatta-service-dhcp-server-v1-yang vyatta-service-dhcp-server-yang vyatta-service-dhcpv6-relay-routing-instance-v1-yang vyatta-service-dhcpv6-relay-v1-yang vyatta-service-dhcpv6-relay-yang vyatta-service-dhcpv6-server-routing-instance-v1-yang vyatta-service-dhcpv6-server-v1-yang vyatta-service-dhcpv6-server-yang vyatta-service-dns-routing-instance-v1-yang vyatta-service-dns-v1-yang vyatta-service-flow-monitoring-bonding-v1-yang vyatta-service-flow-monitoring-dataplane-vif-v1-yang vyatta-service-flow-monitoring-dpi-ipfix-option vyatta-service-flow-monitoring-routing-instance-v1-yang vyatta-service-flow-monitoring-v1-yang vyatta-service-flow-monitoring-vhost-v1-yang vyatta-service-https-v1-yang vyatta-service-lldp-v1-yang vyatta-service-nat-cgnat-v1-yang vyatta-service-nat-nptv6-v1-yang vyatta-service-nat-pool-v1-yang vyatta-service-nat-v1-yang vyatta-service-nat64-v1-yang vyatta-service-netconf-callhome-v1-yang vyatta-service-netconf-routing-instance-v1-yang vyatta-service-netconf-v1-yang vyatta-service-ntp vyatta-service-pcp-routing-instance-v1-yang vyatta-service-pcp-v1-yang vyatta-service-portmonitor-v1-yang vyatta-service-snmp vyatta-service-snmp-routing-instance-op vyatta-service-snmp-routing-instance-v1-yang vyatta-service-snmp-v1-yang vyatta-service-ssh vyatta-service-ssh-routing-instance-v1-yang vyatta-service-ssh-v1-yang vyatta-service-telnet vyatta-service-telnet-dbgsym vyatta-service-telnet-routing-instance-v1-yang vyatta-service-telnet-v1-yang vyatta-service-twamp-client-v1-yang vyatta-service-twamp-routing-instance-v1-yang vyatta-service-twamp-v1-yang vyatta-services-v1-yang vyatta-sfpd vyatta-show-application-v1-yang vyatta-snmp-mibs-misc vyatta-snmp-vrf-agent vyatta-snmp-vrf-agent-dbgsym vyatta-sssd-cfg vyatta-static-arp vyatta-static-pbr-tables-feature vyatta-static-pbr-tables-routing-instance-feature vyatta-syslog vyatta-system vyatta-system-acm-configd-v1-yang vyatta-system-acm-opd-v1-yang vyatta-system-acm-v1-yang vyatta-system-alg-routing-instance-v1-yang vyatta-system-alg-v1-yang vyatta-system-bmc-v1-yang vyatta-system-boot-loader-reduced-v1-yang vyatta-system-boot-loader-v1-yang vyatta-system-fru-v1-yang vyatta-system-hardware-cpu-history-v1-yang vyatta-system-iommu-v1-yang vyatta-system-journal-export-logstash-routing-instance-v1-yang vyatta-system-journal-export-logstash-v1-yang vyatta-system-journal-v1-yang vyatta-system-login-radius-routing-instance-v1-yang vyatta-system-login-sssd-v1-yang vyatta-system-login-user-isolation-v1-yang vyatta-system-login-v1-yang vyatta-system-misc-siad-deviations-v1-yang vyatta-system-misc-v1-yang vyatta-system-network-routing-instance-v1-yang vyatta-system-network-v1-yang vyatta-system-package-v1-yang vyatta-system-platform-deviation-danos-v1-yang vyatta-system-platform-v1-yang vyatta-system-sensor-v1-yang vyatta-system-session-routing-instance-v1-yang vyatta-system-session-v1-yang vyatta-system-syslog-routing-instance-v1-yang vyatta-system-syslog-v1-yang vyatta-system-tacplus-broadcast-v1-yang vyatta-system-tacplus-routing-instance-v1-yang vyatta-system-tacplus-v1-yang vyatta-system-time-routing-instance-v1-yang vyatta-system-time-v1-yang vyatta-system-v1-yang vyatta-system-watchdog-v1-yang vyatta-tacacs vyatta-tacplus-aaa-plugin vyatta-tacplus-aaa-plugin-dbgsym vyatta-tech-support vyatta-telnet-routing-instance vyatta-twamp vyatta-types-v1-yang vyatta-util vyatta-util-dbgsym vyatta-vci-bus vyatta-version vyatta-vmware-tools vyatta-vplane-qos-tests vyatta-watchdog vyatta-xconnect-v1-yang vyatta-zone-based-firewall-feature yang-utils yangd yangd-v1-yang
+dpkg-scanpackages: info: Wrote 1092 entries to output Packages file.
+/build/src
+Get:1 file:/tmp/pkgs  InRelease
+Ign:1 file:/tmp/pkgs  InRelease
+Get:2 file:/tmp/pkgs  Release
+Ign:2 file:/tmp/pkgs  Release
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages [204 kB]
+Hit:4 http://deb.debian.org/debian buster InRelease
+Get:5 http://deb.debian.org/debian buster-updates InRelease [49.3 kB]
+Get:6 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+Fetched 115 kB in 0s (473 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lintian is already the newest version (2.15.0).
+lintian set to manually installed.
+The following NEW packages will be installed:
+  base-files-vyatta lintian-profile-vyatta
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/8528 B of archives.
+After this operation, 76.8 kB of additional disk space will be used.
+Get:1 file:/tmp/pkgs  base-files-vyatta 0.6 [3148 B]
+Get:2 file:/tmp/pkgs  lintian-profile-vyatta 0.5 [5380 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package base-files-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27824 files and directories currently installed.)
+Preparing to unpack .../base-files-vyatta_0.6_amd64.deb ...
+Adding 'diversion of /etc/issue to /etc/issue.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue' from an Essential package with rename is dangerous, use --no-rename
+Adding 'diversion of /etc/issue.net to /etc/issue.net.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue.net' from an Essential package with rename is dangerous, use --no-rename
+Unpacking base-files-vyatta (0.6) ...
+Setting up base-files-vyatta (0.6) ...
+Selecting previously unselected package lintian-profile-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27851 files and directories currently installed.)
+Preparing to unpack .../lintian-profile-vyatta_0.5_all.deb ...
+Unpacking lintian-profile-vyatta (0.5) ...
+Setting up lintian-profile-vyatta (0.5) ...
+dh_testdir
+dh_testroot
+dh_prep
+dh_testdir
+dh_testroot
+dh_install
+dh_installdocs
+dh_installchangelogs
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'vyatta-vrrp-build-deps' in '../vyatta-vrrp-build-deps_2.26_all.deb'.
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package vyatta-vrrp-build-deps.
+(Reading database ... 27870 files and directories currently installed.)
+Preparing to unpack vyatta-vrrp-build-deps_2.26_all.deb ...
+Unpacking vyatta-vrrp-build-deps (2.26) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following additional packages will be installed:
+  dh-python dh-yang libalgorithm-c3-perl libclass-c3-perl libdbus-1-3
+  libmro-compat-perl libnet-dbus-perl libpython-stdlib libpython2-stdlib
+  libsub-uplevel-perl libtest-class-perl libtest-exception-perl
+  libxml-twig-perl python python-minimal python2 python2-minimal python2.7
+  python2.7-minimal python3-distutils python3-lib2to3
+Suggested packages:
+  libunicode-map8-perl libunicode-string-perl xml-twig-tools python-doc
+  python-tk python2-doc python2.7-doc binfmt-support
+Recommended packages:
+  libclass-c3-xs-perl dbus libtext-iconv-perl libtie-ixhash-perl
+  libxml-xpathengine-perl | libxml-xpath-perl
+The following NEW packages will be installed:
+  dh-python dh-yang libalgorithm-c3-perl libclass-c3-perl libdbus-1-3
+  libmro-compat-perl libnet-dbus-perl libpython-stdlib libpython2-stdlib
+  libsub-uplevel-perl libtest-class-perl libtest-exception-perl
+  libxml-twig-perl python python-minimal python2 python2-minimal python2.7
+  python2.7-minimal python3-distutils python3-lib2to3
+0 upgraded, 21 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 2872 kB/2874 kB of archives.
+After this operation, 8268 kB of additional disk space will be used.
+Get:1 file:/tmp/pkgs  dh-yang 0.3 [2356 B]
+Get:2 http://deb.debian.org/debian buster/main amd64 python3-lib2to3 all 3.7.3-1 [76.7 kB]
+Get:3 http://deb.debian.org/debian buster/main amd64 python3-distutils all 3.7.3-1 [142 kB]
+Get:4 http://deb.debian.org/debian buster/main amd64 dh-python all 3.20190308 [99.3 kB]
+Get:5 http://deb.debian.org/debian buster/main amd64 libdbus-1-3 amd64 1.12.16-1 [214 kB]
+Get:6 http://deb.debian.org/debian buster/main amd64 libxml-twig-perl all 1:3.50-1.1 [179 kB]
+Get:7 http://deb.debian.org/debian buster/main amd64 libnet-dbus-perl amd64 1.1.0-5+b1 [181 kB]
+Get:8 http://deb.debian.org/debian buster/main amd64 libalgorithm-c3-perl all 0.10-1 [12.0 kB]
+Get:9 http://deb.debian.org/debian buster/main amd64 libclass-c3-perl all 0.34-1 [22.4 kB]
+Get:10 http://deb.debian.org/debian buster/main amd64 libmro-compat-perl all 0.13-1 [12.2 kB]
+Get:11 http://deb.debian.org/debian buster/main amd64 libsub-uplevel-perl all 0.2800-1 [16.3 kB]
+Get:12 http://deb.debian.org/debian buster/main amd64 libtest-exception-perl all 0.43-1 [18.7 kB]
+Get:13 http://deb.debian.org/debian buster/main amd64 libtest-class-perl all 0.50-1 [56.6 kB]
+Get:14 http://deb.debian.org/debian buster/main amd64 python2.7-minimal amd64 2.7.16-2+deb10u1 [1369 kB]
+Get:15 http://deb.debian.org/debian buster/main amd64 python2-minimal amd64 2.7.16-1 [41.4 kB]
+Get:16 http://deb.debian.org/debian buster/main amd64 python-minimal amd64 2.7.16-1 [21.0 kB]
+Get:17 http://deb.debian.org/debian buster/main amd64 python2.7 amd64 2.7.16-2+deb10u1 [305 kB]
+Get:18 http://deb.debian.org/debian buster/main amd64 libpython2-stdlib amd64 2.7.16-1 [20.8 kB]
+Get:19 http://deb.debian.org/debian buster/main amd64 libpython-stdlib amd64 2.7.16-1 [20.8 kB]
+Get:20 http://deb.debian.org/debian buster/main amd64 python2 amd64 2.7.16-1 [41.6 kB]
+Get:21 http://deb.debian.org/debian buster/main amd64 python amd64 2.7.16-1 [22.8 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2872 kB in 0s (23.1 MB/s)
+Selecting previously unselected package python3-lib2to3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27874 files and directories currently installed.)
+Preparing to unpack .../00-python3-lib2to3_3.7.3-1_all.deb ...
+Unpacking python3-lib2to3 (3.7.3-1) ...
+Selecting previously unselected package python3-distutils.
+Preparing to unpack .../01-python3-distutils_3.7.3-1_all.deb ...
+Unpacking python3-distutils (3.7.3-1) ...
+Selecting previously unselected package dh-python.
+Preparing to unpack .../02-dh-python_3.20190308_all.deb ...
+Unpacking dh-python (3.20190308) ...
+Selecting previously unselected package dh-yang.
+Preparing to unpack .../03-dh-yang_0.3_all.deb ...
+Unpacking dh-yang (0.3) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../04-libdbus-1-3_1.12.16-1_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.12.16-1) ...
+Selecting previously unselected package libxml-twig-perl.
+Preparing to unpack .../05-libxml-twig-perl_1%3a3.50-1.1_all.deb ...
+Unpacking libxml-twig-perl (1:3.50-1.1) ...
+Selecting previously unselected package libnet-dbus-perl.
+Preparing to unpack .../06-libnet-dbus-perl_1.1.0-5+b1_amd64.deb ...
+Unpacking libnet-dbus-perl (1.1.0-5+b1) ...
+Selecting previously unselected package libalgorithm-c3-perl.
+Preparing to unpack .../07-libalgorithm-c3-perl_0.10-1_all.deb ...
+Unpacking libalgorithm-c3-perl (0.10-1) ...
+Selecting previously unselected package libclass-c3-perl.
+Preparing to unpack .../08-libclass-c3-perl_0.34-1_all.deb ...
+Unpacking libclass-c3-perl (0.34-1) ...
+Selecting previously unselected package libmro-compat-perl.
+Preparing to unpack .../09-libmro-compat-perl_0.13-1_all.deb ...
+Unpacking libmro-compat-perl (0.13-1) ...
+Selecting previously unselected package libsub-uplevel-perl.
+Preparing to unpack .../10-libsub-uplevel-perl_0.2800-1_all.deb ...
+Unpacking libsub-uplevel-perl (0.2800-1) ...
+Selecting previously unselected package libtest-exception-perl.
+Preparing to unpack .../11-libtest-exception-perl_0.43-1_all.deb ...
+Unpacking libtest-exception-perl (0.43-1) ...
+Selecting previously unselected package libtest-class-perl.
+Preparing to unpack .../12-libtest-class-perl_0.50-1_all.deb ...
+Unpacking libtest-class-perl (0.50-1) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../13-python2.7-minimal_2.7.16-2+deb10u1_amd64.deb ...
+Unpacking python2.7-minimal (2.7.16-2+deb10u1) ...
+Selecting previously unselected package python2-minimal.
+Preparing to unpack .../14-python2-minimal_2.7.16-1_amd64.deb ...
+Unpacking python2-minimal (2.7.16-1) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../15-python-minimal_2.7.16-1_amd64.deb ...
+Unpacking python-minimal (2.7.16-1) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../16-python2.7_2.7.16-2+deb10u1_amd64.deb ...
+Unpacking python2.7 (2.7.16-2+deb10u1) ...
+Selecting previously unselected package libpython2-stdlib:amd64.
+Preparing to unpack .../17-libpython2-stdlib_2.7.16-1_amd64.deb ...
+Unpacking libpython2-stdlib:amd64 (2.7.16-1) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../18-libpython-stdlib_2.7.16-1_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.16-1) ...
+Setting up python2.7-minimal (2.7.16-2+deb10u1) ...
+Setting up python2-minimal (2.7.16-1) ...
+Selecting previously unselected package python2.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28292 files and directories currently installed.)
+Preparing to unpack .../python2_2.7.16-1_amd64.deb ...
+Unpacking python2 (2.7.16-1) ...
+Setting up python-minimal (2.7.16-1) ...
+Selecting previously unselected package python.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28320 files and directories currently installed.)
+Preparing to unpack .../python_2.7.16-1_amd64.deb ...
+Unpacking python (2.7.16-1) ...
+Setting up python2.7 (2.7.16-2+deb10u1) ...
+Setting up libpython2-stdlib:amd64 (2.7.16-1) ...
+Setting up libxml-twig-perl (1:3.50-1.1) ...
+Setting up python2 (2.7.16-1) ...
+Setting up libpython-stdlib:amd64 (2.7.16-1) ...
+Setting up libalgorithm-c3-perl (0.10-1) ...
+Setting up libdbus-1-3:amd64 (1.12.16-1) ...
+Setting up dh-yang (0.3) ...
+Setting up libsub-uplevel-perl (0.2800-1) ...
+Setting up python3-lib2to3 (3.7.3-1) ...
+Setting up python (2.7.16-1) ...
+Setting up python3-distutils (3.7.3-1) ...
+Setting up dh-python (3.20190308) ...
+Setting up libnet-dbus-perl (1.1.0-5+b1) ...
+Setting up libclass-c3-perl (0.34-1) ...
+Setting up libtest-exception-perl (0.43-1) ...
+Setting up libmro-compat-perl (0.13-1) ...
+Setting up libtest-class-perl (0.50-1) ...
+Setting up vyatta-vrrp-build-deps (2.26) ...
+Processing triggers for libc-bin (2.28-10) ...
+Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for mime-support (3.62) ...
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package vyatta-vrrp
+dpkg-buildpackage: info: source version 2.26
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Anthony Dempsey <anthony.dempsey@intl.att.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with=systemd --with=yang
+   dh_clean
+ debian/rules build
+dh build --with=systemd --with=yang
+   dh_update_autotools_config
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/build/src'
+t/./test-runner.t
+1..13
+ok 1 - require Vyatta::VRRP::virtual_interface;
+not ok 2 - Test complex file get_largest_virtual_interface
+#   Failed test 'Test complex file get_largest_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 149.
+#   (in test_keepalived_virtual_interface->test_complex_file_get_largest_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp16'
+not ok 3 - Test complex file get_virtual_interfaces
+#   Failed test 'Test complex file get_virtual_interfaces'
+#   at t/test_keepalived_virtual_interface.pm line 139.
+#   (in test_keepalived_virtual_interface->test_complex_file_get_virtual_interfaces)
+#     Structures begin differing at:
+#          $got->{vyatta-dp0s3-2} = Does not exist
+#     $expected->{vyatta-dp0s3-2} = 'dp0vrrp2'
+not ok 4 - Test complex file increment_virtual_interface
+#   Failed test 'Test complex file increment_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 160.
+#   (in test_keepalived_virtual_interface->test_complex_file_increment_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp17'
+ok 5 - Test no vmacs get_largest_virtual_interface
+ok 6 - Test no vmacs get_virtual_interfaces
+ok 7 - Test no vmacs increment_virtual_interface
+not ok 8 - Test simple block get_largest_virtual_interface
+#   Failed test 'Test simple block get_largest_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 56.
+#   (in test_keepalived_virtual_interface->test_simple_block_get_largest_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp1'
+not ok 9 - Test simple block get_virtual_interfaces
+#   Failed test 'Test simple block get_virtual_interfaces'
+#   at t/test_keepalived_virtual_interface.pm line 46.
+#   (in test_keepalived_virtual_interface->test_simple_block_get_virtual_interfaces)
+#     Structures begin differing at:
+#          $got->{vyatta-dp0s3-1} = Does not exist
+#     $expected->{vyatta-dp0s3-1} = 'dp0vrrp1'
+not ok 10 - Test simple block increment_virtual_interface
+#   Failed test 'Test simple block increment_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 67.
+#   (in test_keepalived_virtual_interface->test_simple_block_increment_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp2'
+not ok 11 - Test simple file get_largest_virtual_interface
+#   Failed test 'Test simple file get_largest_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 117.
+#   (in test_keepalived_virtual_interface->test_simple_file_get_largest_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp3'
+not ok 12 - Test simple file get_virtual_interfaces
+#   Failed test 'Test simple file get_virtual_interfaces'
+#   at t/test_keepalived_virtual_interface.pm line 107.
+#   (in test_keepalived_virtual_interface->test_simple_file_get_virtual_interfaces)
+#     Structures begin differing at:
+#          $got->{vyatta-dp0s3-2} = Does not exist
+#     $expected->{vyatta-dp0s3-2} = 'dp0vrrp2'
+not ok 13 - Test simple file increment_virtual_interface
+#   Failed test 'Test simple file increment_virtual_interface'
+#   at t/test_keepalived_virtual_interface.pm line 128.
+#   (in test_keepalived_virtual_interface->test_simple_file_increment_virtual_interface)
+#          got: ''
+#     expected: 'dp0vrrp4'
+# Looks like you failed 9 tests of 13.
+make[1]: *** [debian/rules:9: override_dh_auto_test] Error 9
+make[1]: Leaving directory '/build/src'
+make: *** [debian/rules:6: build] Error 2
+dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
+debuild: fatal error at line 1182:
+dpkg-buildpackage -us -uc -ui -i -b failed
+chmod: cannot access '../*.deb': No such file or directory
+cp: cannot stat '../*.deb': No such file or directory

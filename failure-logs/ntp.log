@@ -1,0 +1,2282 @@
+Building ntp
+{"status":"Pulling from jsouthworth/danos-buildpackage","id":"debian10-bootstrap"}
+{"status":"Digest: sha256:fe499243687f6da2b6f300baa16598c2b3f1a87a4d02e7128122a143f16cbdb5"}
+{"status":"Status: Image is up to date for registry.hub.docker.com/jsouthworth/danos-buildpackage:debian10-bootstrap"}
+/tmp/pkgs /build/src
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   accton-as5916-54xks-hwdiag accton-as5916-54xks-support accton-as5916-54xks-sys-led-control acmd acmd-dbgsym base-files-vyatta bcm-kbp-linux-modules-5.4.0-trunk-vyatta-amd64 bcm-linux-bde-modules-5.4.0-trunk-vyatta-amd64 bvnos-linux-libc-dev-vyatta chvrf cli-sandbox cli-shell-api cloud-init config-utils configd configd-v1-yang deb-vci-helper dh-signobs dh-vci dh-yang dpdk dpdk-dev dpdk-dev-dbgsym dpdk-igb-uio-dkms dpdk-modules-5.4.0-trunk-vyatta-amd64 dpdk-rte-kni-dkms ephemerad ephemerad-v1-yang frr frr-dbg frr-doc frr-pythontools golang-dbus-dev golang-github-danos-aaa-dev golang-github-danos-config-dev golang-github-danos-configd-client-dev golang-github-danos-configd-rpc-dev golang-github-danos-encoding-rfc7951-dev golang-github-danos-mgmterror-dev golang-github-danos-utils-args-dev golang-github-danos-utils-audit-dev golang-github-danos-utils-exec-dev golang-github-danos-utils-guard-dev golang-github-danos-utils-natsort-dev golang-github-danos-utils-os-group-dev golang-github-danos-utils-patherr-dev golang-github-danos-utils-pathutil-dev golang-github-danos-utils-tsort-dev golang-github-danos-utils-tty-dev golang-github-danos-vci-dev golang-github-danos-vyatta-controller-protobuf-dev golang-github-danos-vyatta-dataplane-protobuf-dev golang-github-danos-yang-dev golang-github-danos-yangd-client-dev golang-github-danos-yangd-dev golang-github-jsouthworth-objtree-dev golang-github-zeromq-goczmq-dev golang-jsouthworth-dyn-dev golang-jsouthworth-etm-dev golang-jsouthworth-hash-dev golang-jsouthworth-immutable-dev golang-jsouthworth-seq-dev golang-jsouthworth-transduce-dev golang-jsouthworth-try-dev grub-efi-amd64-signed i2util-tools i2util-tools-dbgsym ibacm ibacm-dbgsym ibverbs-providers ibverbs-providers-dbgsym ibverbs-utils ibverbs-utils-dbgsym ietf-inet-types-yang ietf-netconf-monitoring-yang ietf-netconf-with-defaults-yang ietf-netconf-yang ietf-yang-types-yang ifmgrd ifmgrd-dbgsym iproute iproute-doc iproute2 iproute2-dbgsym iproute2-doc iputils-arping iputils-arping-dbgsym iputils-clockdiff iputils-clockdiff-dbgsym iputils-ping iputils-ping-dbgsym iputils-tracepath iputils-tracepath-dbgsym isc-dhcp-client isc-dhcp-client-dbgsym isc-dhcp-client-ddns isc-dhcp-client-ddns-dbgsym isc-dhcp-common isc-dhcp-dev isc-dhcp-relay isc-dhcp-relay-dbgsym isc-dhcp-server isc-dhcp-server-dbgsym isc-dhcp-server-ldap isc-dhcp-server-ldap-dbgsym jitterentropy-rngd jitterentropy-rngd-dbgsym journalbeat journalbeat-dbgsym keepalived keepalived-dbg libdpdk-dbg libdpdk-dev libi2util-dev libibumad-dev libibumad3 libibumad3-dbgsym libibverbs-dev libibverbs1 libibverbs1-dbgsym libndpi-bin libndpi-bin-dbgsym libndpi-dev libndpi3.0 libndpi3.0-dbgsym libnetconf-dev libnetconf-doc libnetconf0 libnetconf0-dbgsym libnss-vrfdns libnss-vrfdns-dbgsym libpam-chvrf libpam-chvrf-dbgsym libpcap-dev libpcap0.8 libpcap0.8-dbg libpcap0.8-dev librdmacm-dev librdmacm1 librdmacm1-dbgsym libre-dev libre0 libre0-dbgsym librte-acl20.0 librte-acl20.0-dbgsym librte-bbdev0.200 librte-bbdev0.200-dbgsym librte-bitratestats20.0 librte-bitratestats20.0-dbgsym librte-bpf0.200 librte-bpf0.200-dbgsym librte-bus-dpaa20.0 librte-bus-dpaa20.0-dbgsym librte-bus-fslmc20.0 librte-bus-fslmc20.0-dbgsym librte-bus-ifpga20.0 librte-bus-ifpga20.0-dbgsym librte-bus-pci20.0 librte-bus-pci20.0-dbgsym librte-bus-vdev20.0 librte-bus-vdev20.0-dbgsym librte-bus-vmbus20.0 librte-bus-vmbus20.0-dbgsym librte-cfgfile20.0 librte-cfgfile20.0-dbgsym librte-cmdline20.0 librte-cmdline20.0-dbgsym librte-common-cpt20.0 librte-common-cpt20.0-dbgsym librte-common-dpaax20.0 librte-common-dpaax20.0-dbgsym librte-common-octeontx2-20.0 librte-common-octeontx2-20.0-dbgsym librte-common-octeontx20.0 librte-common-octeontx20.0-dbgsym librte-compressdev0.200 librte-compressdev0.200-dbgsym librte-cryptodev20.0 librte-cryptodev20.0-dbgsym librte-distributor20.0 librte-distributor20.0-dbgsym librte-eal20.0 librte-eal20.0-dbgsym librte-efd20.0 librte-efd20.0-dbgsym librte-ethdev20.0 librte-ethdev20.0-dbgsym librte-eventdev20.0 librte-eventdev20.0-dbgsym librte-fib0.200 librte-fib0.200-dbgsym librte-flow-classify0.200 librte-flow-classify0.200-dbgsym librte-gro20.0 librte-gro20.0-dbgsym librte-gso20.0 librte-gso20.0-dbgsym librte-hash20.0 librte-hash20.0-dbgsym librte-ip-frag20.0 librte-ip-frag20.0-dbgsym librte-ipsec0.200 librte-ipsec0.200-dbgsym librte-jobstats20.0 librte-jobstats20.0-dbgsym librte-kni20.0 librte-kni20.0-dbgsym librte-kvargs20.0 librte-kvargs20.0-dbgsym librte-latencystats20.0 librte-latencystats20.0-dbgsym librte-lpm20.0 librte-lpm20.0-dbgsym librte-mbuf20.0 librte-mbuf20.0-dbgsym librte-member20.0 librte-member20.0-dbgsym librte-mempool-bucket20.0 librte-mempool-bucket20.0-dbgsym librte-mempool-dpaa2-20.0 librte-mempool-dpaa2-20.0-dbgsym librte-mempool-dpaa20.0 librte-mempool-dpaa20.0-dbgsym librte-mempool-octeontx2-20.0 librte-mempool-octeontx2-20.0-dbgsym librte-mempool-octeontx20.0 librte-mempool-octeontx20.0-dbgsym librte-mempool-ring20.0 librte-mempool-ring20.0-dbgsym librte-mempool-stack20.0 librte-mempool-stack20.0-dbgsym librte-mempool20.0 librte-mempool20.0-dbgsym librte-meter20.0 librte-meter20.0-dbgsym librte-metrics20.0 librte-metrics20.0-dbgsym librte-net20.0 librte-net20.0-dbgsym librte-pci20.0 librte-pci20.0-dbgsym librte-pdump20.0 librte-pdump20.0-dbgsym librte-pipeline20.0 librte-pipeline20.0-dbgsym librte-pmd-aesni-gcm20.0 librte-pmd-aesni-gcm20.0-dbgsym librte-pmd-aesni-mb20.0 librte-pmd-aesni-mb20.0-dbgsym librte-pmd-af-packet20.0 librte-pmd-af-packet20.0-dbgsym librte-pmd-af-xdp20.0 librte-pmd-ark20.0 librte-pmd-ark20.0-dbgsym librte-pmd-atlantic20.0 librte-pmd-atlantic20.0-dbgsym librte-pmd-avp20.0 librte-pmd-avp20.0-dbgsym librte-pmd-axgbe20.0 librte-pmd-axgbe20.0-dbgsym librte-pmd-bbdev-fpga-lte-fec20.0 librte-pmd-bbdev-fpga-lte-fec20.0-dbgsym librte-pmd-bbdev-null20.0 librte-pmd-bbdev-null20.0-dbgsym librte-pmd-bbdev-turbo-sw20.0 librte-pmd-bbdev-turbo-sw20.0-dbgsym librte-pmd-bnx2x20.0 librte-pmd-bnx2x20.0-dbgsym librte-pmd-bnxt20.0 librte-pmd-bnxt20.0-dbgsym librte-pmd-bond20.0 librte-pmd-bond20.0-dbgsym librte-pmd-caam-jr20.0 librte-pmd-caam-jr20.0-dbgsym librte-pmd-ccp20.0 librte-pmd-ccp20.0-dbgsym librte-pmd-crypto-scheduler20.0 librte-pmd-crypto-scheduler20.0-dbgsym librte-pmd-cxgbe20.0 librte-pmd-cxgbe20.0-dbgsym librte-pmd-dpaa-event20.0 librte-pmd-dpaa-event20.0-dbgsym librte-pmd-dpaa-sec20.0 librte-pmd-dpaa-sec20.0-dbgsym librte-pmd-dpaa2-20.0 librte-pmd-dpaa2-20.0-dbgsym librte-pmd-dpaa2-event20.0 librte-pmd-dpaa2-event20.0-dbgsym librte-pmd-dpaa2-sec20.0 librte-pmd-dpaa2-sec20.0-dbgsym librte-pmd-dpaa20.0 librte-pmd-dpaa20.0-dbgsym librte-pmd-dsw-event20.0 librte-pmd-dsw-event20.0-dbgsym librte-pmd-e1000-20.0 librte-pmd-e1000-20.0-dbgsym librte-pmd-ena20.0 librte-pmd-ena20.0-dbgsym librte-pmd-enetc20.0 librte-pmd-enetc20.0-dbgsym librte-pmd-enic20.0 librte-pmd-enic20.0-dbgsym librte-pmd-failsafe20.0 librte-pmd-failsafe20.0-dbgsym librte-pmd-fm10k20.0 librte-pmd-fm10k20.0-dbgsym librte-pmd-hinic20.0 librte-pmd-hinic20.0-dbgsym librte-pmd-hns3-20.0 librte-pmd-hns3-20.0-dbgsym librte-pmd-i40e20.0 librte-pmd-i40e20.0-dbgsym librte-pmd-iavf20.0 librte-pmd-iavf20.0-dbgsym librte-pmd-ice20.0 librte-pmd-ice20.0-dbgsym librte-pmd-ifc20.0 librte-pmd-ifc20.0-dbgsym librte-pmd-isal20.0 librte-pmd-ixgbe20.0 librte-pmd-ixgbe20.0-dbgsym librte-pmd-kni20.0 librte-pmd-kni20.0-dbgsym librte-pmd-liquidio20.0 librte-pmd-liquidio20.0-dbgsym librte-pmd-memif20.0 librte-pmd-memif20.0-dbgsym librte-pmd-mlx4-20.0 librte-pmd-mlx4-20.0-dbgsym librte-pmd-mlx5-20.0 librte-pmd-mlx5-20.0-dbgsym librte-pmd-netvsc20.0 librte-pmd-netvsc20.0-dbgsym librte-pmd-nfp20.0 librte-pmd-nfp20.0-dbgsym librte-pmd-nitrox20.0 librte-pmd-nitrox20.0-dbgsym librte-pmd-null-crypto20.0 librte-pmd-null-crypto20.0-dbgsym librte-pmd-null20.0 librte-pmd-null20.0-dbgsym librte-pmd-octeontx-compress20.0 librte-pmd-octeontx-compress20.0-dbgsym librte-pmd-octeontx-crypto20.0 librte-pmd-octeontx-crypto20.0-dbgsym librte-pmd-octeontx-event20.0 librte-pmd-octeontx-event20.0-dbgsym librte-pmd-octeontx2-20.0 librte-pmd-octeontx2-20.0-dbgsym librte-pmd-octeontx2-crypto20.0 librte-pmd-octeontx2-crypto20.0-dbgsym librte-pmd-octeontx2-event20.0 librte-pmd-octeontx2-event20.0-dbgsym librte-pmd-octeontx20.0 librte-pmd-octeontx20.0-dbgsym librte-pmd-opdl-event20.0 librte-pmd-opdl-event20.0-dbgsym librte-pmd-openssl20.0 librte-pmd-openssl20.0-dbgsym librte-pmd-pcap20.0 librte-pmd-pcap20.0-dbgsym librte-pmd-pfe20.0 librte-pmd-pfe20.0-dbgsym librte-pmd-qat20.0 librte-pmd-qat20.0-dbgsym librte-pmd-qede20.0 librte-pmd-qede20.0-dbgsym librte-pmd-ring20.0 librte-pmd-ring20.0-dbgsym librte-pmd-sfc20.0 librte-pmd-sfc20.0-dbgsym librte-pmd-skeleton-event20.0 librte-pmd-skeleton-event20.0-dbgsym librte-pmd-softnic20.0 librte-pmd-sw-event20.0 librte-pmd-sw-event20.0-dbgsym librte-pmd-tap20.0 librte-pmd-tap20.0-dbgsym librte-pmd-thunderx20.0 librte-pmd-thunderx20.0-dbgsym librte-pmd-vdev-netvsc20.0 librte-pmd-vdev-netvsc20.0-dbgsym librte-pmd-vhost20.0 librte-pmd-vhost20.0-dbgsym librte-pmd-virtio-crypto20.0 librte-pmd-virtio-crypto20.0-dbgsym librte-pmd-virtio20.0 librte-pmd-virtio20.0-dbgsym librte-pmd-vmxnet3-20.0 librte-pmd-vmxnet3-20.0-dbgsym librte-pmd-zlib20.0 librte-pmd-zlib20.0-dbgsym librte-port20.0 librte-port20.0-dbgsym librte-power20.0 librte-power20.0-dbgsym librte-rawdev-dpaa2-cmdif20.0 librte-rawdev-dpaa2-cmdif20.0-dbgsym librte-rawdev-dpaa2-qdma20.0 librte-rawdev-dpaa2-qdma20.0-dbgsym librte-rawdev-ioat20.0 librte-rawdev-ioat20.0-dbgsym librte-rawdev-ntb20.0 librte-rawdev-ntb20.0-dbgsym librte-rawdev-octeontx2-dma20.0 librte-rawdev-octeontx2-dma20.0-dbgsym librte-rawdev-skeleton20.0 librte-rawdev-skeleton20.0-dbgsym librte-rawdev20.0 librte-rawdev20.0-dbgsym librte-rcu0.200 librte-rcu0.200-dbgsym librte-reorder20.0 librte-reorder20.0-dbgsym librte-rib0.200 librte-rib0.200-dbgsym librte-ring20.0 librte-ring20.0-dbgsym librte-sched20.0 librte-sched20.0-dbgsym librte-security20.0 librte-security20.0-dbgsym librte-stack0.200 librte-stack0.200-dbgsym librte-table20.0 librte-table20.0-dbgsym librte-telemetry0.200 librte-telemetry0.200-dbgsym librte-timer20.0 librte-timer20.0-dbgsym librte-vhost20.0 librte-vhost20.0-dbgsym libsnmp-base libsnmp-dev libsnmp-perl libsnmp-perl-dbgsym libsnmp30 libsnmp30-dbg libteam-dbg libteam-dev libteam-utils libteam5 libteamdctl0 libvci-dev libvci-perl libvci-perl-dbgsym libvci1 libvci1-dbgsym libvplaned-dev libvrfmanager-vyatta-dev libvyatta-cfg-dbg libvyatta-cfg-dev libvyatta-cfg1 libvyatta-cfgclient-perl libvyatta-controller-proto-dev libvyatta-controller-proto-support libvyatta-controller-proto1 libvyatta-dataplane-proto-dev libvyatta-dataplane-proto-support libvyatta-dataplane-proto1 libvyatta-dataplane-proto1-dbgsym libvyatta-dpdk-swport-dev libvyatta-dpdk-swport1 libvyatta-dpdk-swport1-dbgsym libvyatta-util-dev libvyatta-util1 libvyatta-util1-dbgsym libvyatta-vrfmanager-perl libvyatta-vrfmanager-sh libvyattafal-dev libzmq-constants-perl libzmq-libzmq3-perl libzmq-libzmq3-perl-dbgsym lintian-profile-vyatta linux-compiler-gcc-8-x86 linux-firmware linux-headers-5.4.0-trunk-all linux-headers-5.4.0-trunk-all-amd64 linux-headers-5.4.0-trunk-common-vyatta linux-headers-5.4.0-trunk-vyatta-amd64 linux-headers-amd64 linux-image-5.4.0-trunk-vyatta-amd64 linux-image-5.4.0-trunk-vyatta-amd64-dbg linux-image-vyatta-amd64 linux-image-vyatta-amd64-dbg linux-kbuild-5.4 linux-kbuild-5.4-dbgsym linux-perf linux-perf-5.4 linux-perf-5.4-dbgsym linux-support-5.4.0-trunk live-boot-vyatta live-build-desc-buster live-build-desc-hooks lu lu-dbgsym mstpd mstpd-dbgsym netconf-callhome-client netconf-callhome-client-dbgsym netconf-callhome-server netconf-callhome-server-dbgsym netplug netplug-dbgsym notifyd notifyd-v1-yang pam-sandbox pam-sandbox-dbgsym pesign-obs-integration platform-parser pyang python-netsnmp python-netsnmp-dbgsym python-vyatta-cfgclient python3-accton-as5916-54xks-sfp-helper python3-pyverbs python3-pyverbs-dbgsym python3-shared-storage python3-vci python3-vci-dbgsym python3-vrfmanager python3-vyatta-cfgclient rdma-core rdma-core-dbgsym rdmacm-utils rdmacm-utils-dbgsym ruby-vyatta-cfgclient snmp snmp-dbgsym snmpd snmpd-dbgsym snmptrapd snmptrapd-dbgsym srptools srptools-dbgsym td-agent-bit td-agent-bit-dbgsym tkmib valgrind valgrind-dbg valgrind-mpi vci-tools vcli vplane-controller vplane-controller-dbg vrf-manager vyatta-cfg vyatta-config-shell vyatta-dataplane vyatta-dataplane-dbgsym vyatta-dataplane-dev vyatta-dataplane-protocols-versions vyatta-dataplane-sample-plugin vyatta-dataplane-sample-plugin-dbgsym vyatta-dataplane-test vyatta-dataplane-test-dbgsym vyatta-dscp-v1-yang vyatta-ifmgr-v1-yang vyatta-interfaces-v1-yang vyatta-ndpi-application-names-v1-yang vyatta-ndpi-application-types-v1-yang vyatta-ndpi-show-name vyatta-ndpi-show-name-dbgsym vyatta-netconf-agent vyatta-netconf-agent-dbgsym vyatta-op-config-v1-yang vyatta-op-qa-notify-v1-yang vyatta-op-show-confirmed-commit-v1-yang vyatta-policy-v1-yang vyatta-resources-v1-yang vyatta-security-v1-yang vyatta-service-netconf-callhome-v1-yang vyatta-service-netconf-routing-instance-v1-yang vyatta-service-netconf-v1-yang vyatta-services-v1-yang vyatta-system-acm-configd-v1-yang vyatta-system-acm-v1-yang vyatta-system-login-user-isolation-v1-yang vyatta-system-v1-yang vyatta-types-v1-yang vyatta-util vyatta-util-dbgsym vyatta-vci-bus yang-utils yangd yangd-v1-yang
+dpkg-scanpackages: info: Wrote 586 entries to output Packages file.
+/build/src
+Get:1 file:/tmp/pkgs  InRelease
+Ign:1 file:/tmp/pkgs  InRelease
+Get:2 file:/tmp/pkgs  Release
+Ign:2 file:/tmp/pkgs  Release
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages [116 kB]
+Hit:4 http://deb.debian.org/debian buster InRelease
+Get:5 http://deb.debian.org/debian buster-updates InRelease [49.3 kB]
+Get:6 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+Fetched 115 kB in 0s (468 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lintian is already the newest version (2.15.0).
+lintian set to manually installed.
+The following NEW packages will be installed:
+  base-files-vyatta lintian-profile-vyatta
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/8528 B of archives.
+After this operation, 76.8 kB of additional disk space will be used.
+Get:1 file:/tmp/pkgs  base-files-vyatta 0.6 [3148 B]
+Get:2 file:/tmp/pkgs  lintian-profile-vyatta 0.5 [5380 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package base-files-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27824 files and directories currently installed.)
+Preparing to unpack .../base-files-vyatta_0.6_amd64.deb ...
+Adding 'diversion of /etc/issue to /etc/issue.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue' from an Essential package with rename is dangerous, use --no-rename
+Adding 'diversion of /etc/issue.net to /etc/issue.net.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue.net' from an Essential package with rename is dangerous, use --no-rename
+Unpacking base-files-vyatta (0.6) ...
+Setting up base-files-vyatta (0.6) ...
+Selecting previously unselected package lintian-profile-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27851 files and directories currently installed.)
+Preparing to unpack .../lintian-profile-vyatta_0.5_all.deb ...
+Unpacking lintian-profile-vyatta (0.5) ...
+Setting up lintian-profile-vyatta (0.5) ...
+dh_testdir
+dh_testroot
+dh_prep
+dh_testdir
+dh_testroot
+dh_install
+dh_installdocs
+dh_installchangelogs
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'ntp-build-deps' in '../ntp-build-deps_4.2.8p12+dfsg-4vyatta2_amd64.deb'.
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package ntp-build-deps.
+(Reading database ... 27870 files and directories currently installed.)
+Preparing to unpack ntp-build-deps_4.2.8p12+dfsg-4vyatta2_amd64.deb ...
+Unpacking ntp-build-deps (1:4.2.8p12+dfsg-4vyatta2) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following additional packages will be installed:
+  autogen dh-apparmor guile-2.0-libs libbsd-dev libcap-dev libedit-dev
+  libevent-core-2.1-6 libevent-dev libevent-extra-2.1-6 libevent-openssl-2.1-6
+  libevent-pthreads-2.1-6 libncurses-dev libopts25 libopts25-dev libssl-dev
+  pkg-config pps-tools
+Suggested packages:
+  apparmor-easyprof ncurses-doc libssl-doc
+Recommended packages:
+  autogen-doc
+The following NEW packages will be installed:
+  autogen dh-apparmor guile-2.0-libs libbsd-dev libcap-dev libedit-dev
+  libevent-core-2.1-6 libevent-dev libevent-extra-2.1-6 libevent-openssl-2.1-6
+  libevent-pthreads-2.1-6 libncurses-dev libopts25 libopts25-dev libssl-dev
+  pkg-config pps-tools
+0 upgraded, 17 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 6248 kB of archives.
+After this operation, 28.0 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian buster/main amd64 guile-2.0-libs amd64 2.0.13+1-5.1 [2232 kB]
+Get:2 http://deb.debian.org/debian buster/main amd64 libopts25 amd64 1:5.18.12-4 [69.4 kB]
+Get:3 http://deb.debian.org/debian buster/main amd64 libopts25-dev amd64 1:5.18.12-4 [107 kB]
+Get:4 http://deb.debian.org/debian buster/main amd64 autogen amd64 1:5.18.12-4 [568 kB]
+Get:5 http://deb.debian.org/debian buster/main amd64 dh-apparmor all 2.13.2-10 [70.1 kB]
+Get:6 http://deb.debian.org/debian buster/main amd64 libcap-dev amd64 1:2.25-2 [30.2 kB]
+Get:7 http://deb.debian.org/debian buster/main amd64 libbsd-dev amd64 0.9.1-2 [219 kB]
+Get:8 http://deb.debian.org/debian buster/main amd64 libncurses-dev amd64 6.1+20181013-2+deb10u2 [333 kB]
+Get:9 http://deb.debian.org/debian buster/main amd64 libedit-dev amd64 3.1-20181209-1 [114 kB]
+Get:10 http://deb.debian.org/debian buster/main amd64 libevent-core-2.1-6 amd64 2.1.8-stable-4 [129 kB]
+Get:11 http://deb.debian.org/debian buster/main amd64 libevent-extra-2.1-6 amd64 2.1.8-stable-4 [100 kB]
+Get:12 http://deb.debian.org/debian buster/main amd64 libevent-pthreads-2.1-6 amd64 2.1.8-stable-4 [47.9 kB]
+Get:13 http://deb.debian.org/debian buster/main amd64 libevent-openssl-2.1-6 amd64 2.1.8-stable-4 [54.4 kB]
+Get:14 http://deb.debian.org/debian buster/main amd64 libevent-dev amd64 2.1.8-stable-4 [304 kB]
+Get:15 http://deb.debian.org/debian buster/main amd64 libssl-dev amd64 1.1.1d-0+deb10u3 [1793 kB]
+Get:16 http://deb.debian.org/debian buster/main amd64 pkg-config amd64 0.29-6 [63.5 kB]
+Get:17 http://deb.debian.org/debian buster/main amd64 pps-tools amd64 1.0.2-1 [12.8 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 6248 kB in 0s (49.0 MB/s)
+Selecting previously unselected package guile-2.0-libs:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27874 files and directories currently installed.)
+Preparing to unpack .../00-guile-2.0-libs_2.0.13+1-5.1_amd64.deb ...
+Unpacking guile-2.0-libs:amd64 (2.0.13+1-5.1) ...
+Selecting previously unselected package libopts25:amd64.
+Preparing to unpack .../01-libopts25_1%3a5.18.12-4_amd64.deb ...
+Unpacking libopts25:amd64 (1:5.18.12-4) ...
+Selecting previously unselected package libopts25-dev:amd64.
+Preparing to unpack .../02-libopts25-dev_1%3a5.18.12-4_amd64.deb ...
+Unpacking libopts25-dev:amd64 (1:5.18.12-4) ...
+Selecting previously unselected package autogen.
+Preparing to unpack .../03-autogen_1%3a5.18.12-4_amd64.deb ...
+Unpacking autogen (1:5.18.12-4) ...
+Replaced by files in installed package libopts25-dev:amd64 (1:5.18.12-4) ...
+Selecting previously unselected package dh-apparmor.
+Preparing to unpack .../04-dh-apparmor_2.13.2-10_all.deb ...
+Unpacking dh-apparmor (2.13.2-10) ...
+Selecting previously unselected package libcap-dev:amd64.
+Preparing to unpack .../05-libcap-dev_1%3a2.25-2_amd64.deb ...
+Unpacking libcap-dev:amd64 (1:2.25-2) ...
+Selecting previously unselected package libbsd-dev:amd64.
+Preparing to unpack .../06-libbsd-dev_0.9.1-2_amd64.deb ...
+Unpacking libbsd-dev:amd64 (0.9.1-2) ...
+Selecting previously unselected package libncurses-dev:amd64.
+Preparing to unpack .../07-libncurses-dev_6.1+20181013-2+deb10u2_amd64.deb ...
+Unpacking libncurses-dev:amd64 (6.1+20181013-2+deb10u2) ...
+Selecting previously unselected package libedit-dev:amd64.
+Preparing to unpack .../08-libedit-dev_3.1-20181209-1_amd64.deb ...
+Unpacking libedit-dev:amd64 (3.1-20181209-1) ...
+Selecting previously unselected package libevent-core-2.1-6:amd64.
+Preparing to unpack .../09-libevent-core-2.1-6_2.1.8-stable-4_amd64.deb ...
+Unpacking libevent-core-2.1-6:amd64 (2.1.8-stable-4) ...
+Selecting previously unselected package libevent-extra-2.1-6:amd64.
+Preparing to unpack .../10-libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb ...
+Unpacking libevent-extra-2.1-6:amd64 (2.1.8-stable-4) ...
+Selecting previously unselected package libevent-pthreads-2.1-6:amd64.
+Preparing to unpack .../11-libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb ...
+Unpacking libevent-pthreads-2.1-6:amd64 (2.1.8-stable-4) ...
+Selecting previously unselected package libevent-openssl-2.1-6:amd64.
+Preparing to unpack .../12-libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb ...
+Unpacking libevent-openssl-2.1-6:amd64 (2.1.8-stable-4) ...
+Selecting previously unselected package libevent-dev.
+Preparing to unpack .../13-libevent-dev_2.1.8-stable-4_amd64.deb ...
+Unpacking libevent-dev (2.1.8-stable-4) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../14-libssl-dev_1.1.1d-0+deb10u3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.1d-0+deb10u3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../15-pkg-config_0.29-6_amd64.deb ...
+Unpacking pkg-config (0.29-6) ...
+Selecting previously unselected package pps-tools.
+Preparing to unpack .../16-pps-tools_1.0.2-1_amd64.deb ...
+Unpacking pps-tools (1.0.2-1) ...
+Setting up libncurses-dev:amd64 (6.1+20181013-2+deb10u2) ...
+Setting up guile-2.0-libs:amd64 (2.0.13+1-5.1) ...
+Setting up pps-tools (1.0.2-1) ...
+Setting up libopts25:amd64 (1:5.18.12-4) ...
+Setting up libssl-dev:amd64 (1.1.1d-0+deb10u3) ...
+Setting up pkg-config (0.29-6) ...
+Setting up libevent-core-2.1-6:amd64 (2.1.8-stable-4) ...
+Setting up libcap-dev:amd64 (1:2.25-2) ...
+Setting up dh-apparmor (2.13.2-10) ...
+Setting up libbsd-dev:amd64 (0.9.1-2) ...
+Setting up libevent-extra-2.1-6:amd64 (2.1.8-stable-4) ...
+Setting up libevent-pthreads-2.1-6:amd64 (2.1.8-stable-4) ...
+Setting up libopts25-dev:amd64 (1:5.18.12-4) ...
+Setting up libevent-openssl-2.1-6:amd64 (2.1.8-stable-4) ...
+Setting up autogen (1:5.18.12-4) ...
+Setting up libedit-dev:amd64 (3.1-20181209-1) ...
+Setting up libevent-dev (2.1.8-stable-4) ...
+Setting up ntp-build-deps (1:4.2.8p12+dfsg-4vyatta2) ...
+Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for libc-bin (2.28-10) ...
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package ntp
+dpkg-buildpackage: info: source version 1:4.2.8p12+dfsg-4vyatta2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Vyatta Package Maintainers <DL-vyatta-help@att.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying openssl_libdir.patch
+dpkg-source: info: applying dfsg.patch
+dpkg-source: info: applying includes.patch
+dpkg-source: info: applying ntpdate-ipv6.patch
+dpkg-source: info: applying ntpd-linux-caps-runtime.patch
+dpkg-source: info: applying openssl-disable-check.patch
+dpkg-source: info: applying libedit.patch
+dpkg-source: info: applying reproducible-build.patch
+dpkg-source: info: applying sntp-sysexits.patch
+dpkg-source: info: applying debian-locfile.patch
+dpkg-source: info: applying sntp-kod-location.patch
+dpkg-source: info: applying disable-test-decodenetnum.patch
+dpkg-source: info: applying CVE-2019-8936.patch
+dpkg-source: info: applying vyatta-fake-debian8-for-all-distros
+dpkg-source: info: applying vyatta-refresh-peers.patch
+dpkg-source: info: applying vyatta-private-stat.patch
+ debian/rules clean
+# autoreconf is already called by ./bootstrap
+dh clean --without autoreconf
+   dh_clean
+ debian/rules binary
+# autoreconf is already called by ./bootstrap
+dh binary --without autoreconf
+   dh_update_autotools_config
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/build/src'
+# This is necessary for the changes in sntp-kod-location.patch to
+# take effect
+rm sntp/sntp-opts.c
+./bootstrap
+Touching < sntp/tests/packetHandling.c sntp/tests/networking.c sntp/tests/packetProcessing.c sntp/tests/t-log.c sntp/tests/kodFile.c sntp/tests/utilities.c sntp/tests/kodDatabase.c sntp/tests/keyFile.c sntp/tests/crypto.c tests/ntpq/t-ntpq.c tests/sec-2853/sec-2853.c tests/bug-2803/bug-2803.c tests/ntpd/t-ntp_signd.c tests/ntpd/ntp_prio_q.c tests/ntpd/leapsec.c tests/ntpd/t-ntp_scanner.c tests/ntpd/rc_cmdlength.c tests/ntpd/ntp_restrict.c tests/sandbox/ut-2803.c tests/sandbox/uglydate.c tests/sandbox/modetoa.c tests/libntp/clocktime.c tests/libntp/msyslog.c tests/libntp/timevalops.c tests/libntp/numtohost.c tests/libntp/refnumtoa.c tests/libntp/uglydate.c tests/libntp/tvtots.c tests/libntp/prettydate.c tests/libntp/atoint.c tests/libntp/caljulian.c tests/libntp/lfpfunc.c tests/libntp/sfptostr.c tests/libntp/hextoint.c tests/libntp/timespecops.c tests/libntp/refidsmear.c tests/libntp/tstotv.c tests/libntp/strtolfp.c tests/libntp/calyearstart.c tests/libntp/hextolfp.c tests/libntp/decodenetnum.c tests/libntp/netof.c tests/libntp/recvbuff.c tests/libntp/socktoa.c tests/libntp/statestr.c tests/libntp/vi64ops.c tests/libntp/atouint.c tests/libntp/buftvtots.c tests/libntp/authkeys.c tests/libntp/calendar.c tests/libntp/numtoa.c tests/libntp/caltontp.c tests/libntp/a_md5encrypt.c tests/libntp/octtoint.c tests/libntp/humandate.c tests/libntp/lfptostr.c tests/libntp/modetoa.c tests/libntp/ssl_init.c tests/libntp/ymd2yd.c tests/libntp/tsafememcmp.c>
+Touching < sntp/tests/run-packetHandling.c sntp/tests/run-networking.c sntp/tests/run-packetProcessing.c sntp/tests/run-t-log.c sntp/tests/run-kodFile.c sntp/tests/run-utilities.c sntp/tests/run-kodDatabase.c sntp/tests/run-keyFile.c sntp/tests/run-crypto.c tests/ntpq/run-t-ntpq.c tests/sec-2853/run-sec-2853.c tests/bug-2803/run-bug-2803.c tests/ntpd/run-t-ntp_signd.c tests/ntpd/run-ntp_prio_q.c tests/ntpd/run-leapsec.c tests/ntpd/run-t-ntp_scanner.c tests/ntpd/run-rc_cmdlength.c tests/ntpd/run-ntp_restrict.c tests/sandbox/run-ut-2803.c tests/sandbox/run-uglydate.c tests/sandbox/run-modetoa.c tests/libntp/run-clocktime.c tests/libntp/run-msyslog.c tests/libntp/run-timevalops.c tests/libntp/run-numtohost.c tests/libntp/run-refnumtoa.c tests/libntp/run-uglydate.c tests/libntp/run-tvtots.c tests/libntp/run-prettydate.c tests/libntp/run-atoint.c tests/libntp/run-caljulian.c tests/libntp/run-lfpfunc.c tests/libntp/run-sfptostr.c tests/libntp/run-hextoint.c tests/libntp/run-timespecops.c tests/libntp/run-refidsmear.c tests/libntp/run-tstotv.c tests/libntp/run-strtolfp.c tests/libntp/run-calyearstart.c tests/libntp/run-hextolfp.c tests/libntp/run-decodenetnum.c tests/libntp/run-netof.c tests/libntp/run-recvbuff.c tests/libntp/run-socktoa.c tests/libntp/run-statestr.c tests/libntp/run-vi64ops.c tests/libntp/run-atouint.c tests/libntp/run-buftvtots.c tests/libntp/run-authkeys.c tests/libntp/run-calendar.c tests/libntp/run-numtoa.c tests/libntp/run-caltontp.c tests/libntp/run-a_md5encrypt.c tests/libntp/run-octtoint.c tests/libntp/run-humandate.c tests/libntp/run-lfptostr.c tests/libntp/run-modetoa.c tests/libntp/run-ssl_init.c tests/libntp/run-ymd2yd.c tests/libntp/run-tsafememcmp.c>
+Touching < ntpd/ntp.conf.5man ntpd/ntp.conf.5mdoc ntpd/ntp.conf.man.in ntpd/ntp.conf.mdoc.in ntpd/ntp.conf.texi ntpd/ntpd-opts.c ntpd/ntpd-opts.h ntpd/ntpd.1ntpdman ntpd/ntpd.1ntpdmdoc ntpd/ntpd.c ntpd/ntpd.man.in ntpd/ntpd.mdoc.in ntpd/ntpd.texi ntpd/ntp.keys.5man ntpd/ntp.keys.5mdoc ntpd/ntp.keys.man.in ntpd/ntp.keys.mdoc.in ntpd/ntp.keys.texi ntpdc/ntpdc-layout.c ntpdc/ntpdc-opts.c ntpdc/ntpdc-opts.h ntpdc/ntpdc.1ntpdcman ntpdc/ntpdc.1ntpdcmdoc ntpdc/ntpdc.c ntpdc/ntpdc.h ntpdc/ntpdc.man.in ntpdc/ntpdc.mdoc.in ntpdc/ntpdc.texi ntpdc/ntpdc_ops.c ntpq/ntpq-opts.c ntpq/ntpq-opts.h ntpq/ntpq-subs.c ntpq/ntpq.1ntpqman ntpq/ntpq.1ntpqmdoc ntpq/ntpq.c ntpq/ntpq.h ntpq/ntpq.man.in ntpq/ntpq.mdoc.in ntpq/ntpq.texi ntpsnmpd/ntpsnmpd-opts.c ntpsnmpd/ntpsnmpd-opts.h ntpsnmpd/ntpsnmpd.1ntpsnmpdman ntpsnmpd/ntpsnmpd.1ntpsnmpdmdoc ntpsnmpd/ntpsnmpd.c ntpsnmpd/ntpsnmpd.man.in ntpsnmpd/ntpsnmpd.mdoc.in ntpsnmpd/ntpsnmpd.texi scripts/update-leap/update-leap-opts scripts/update-leap/update-leap.1update-leapman scripts/update-leap/update-leap.1update-leapmdoc scripts/update-leap/update-leap.man.in scripts/update-leap/update-leap.mdoc.in scripts/update-leap/update-leap.texi scripts/summary-opts scripts/summary.1summaryman scripts/summary.1summarymdoc scripts/summary.man.in scripts/summary.mdoc.in scripts/summary.texi scripts/ntpsweep/ntpsweep-opts scripts/ntpsweep/ntpsweep.1ntpsweepman scripts/ntpsweep/ntpsweep.1ntpsweepmdoc scripts/ntpsweep/ntpsweep.man.in scripts/ntpsweep/ntpsweep.mdoc.in scripts/ntpsweep/ntpsweep.texi scripts/ntptrace/ntptrace-opts scripts/ntptrace/ntptrace.1ntptraceman scripts/ntptrace/ntptrace.1ntptracemdoc scripts/ntptrace/ntptrace.man.in scripts/ntptrace/ntptrace.mdoc.in scripts/ntptrace/ntptrace.texi scripts/calc_tickadj/calc_tickadj-opts scripts/calc_tickadj/calc_tickadj.1calc_tickadjman scripts/calc_tickadj/calc_tickadj.1calc_tickadjmdoc scripts/calc_tickadj/calc_tickadj.man.in scripts/calc_tickadj/calc_tickadj.mdoc.in scripts/calc_tickadj/calc_tickadj.texi scripts/plot_summary-opts scripts/plot_summary.1plot_summaryman scripts/plot_summary.1plot_summarymdoc scripts/plot_summary.man.in scripts/plot_summary.mdoc.in scripts/plot_summary.texi scripts/ntp-wait/ntp-wait-opts scripts/ntp-wait/ntp-wait.1ntp-waitman scripts/ntp-wait/ntp-wait.1ntp-waitmdoc scripts/ntp-wait/ntp-wait.man.in scripts/ntp-wait/ntp-wait.mdoc.in scripts/ntp-wait/ntp-wait.texi sntp/sntp-opts.h sntp/sntp.1sntpman sntp/sntp.1sntpmdoc sntp/sntp.c sntp/sntp.man.in sntp/sntp.mdoc.in sntp/sntp.texi util/ntp-keygen-opts.c util/ntp-keygen-opts.h util/ntp-keygen.1ntp-keygenman util/ntp-keygen.1ntp-keygenmdoc util/ntp-keygen.c util/ntp-keygen.man.in util/ntp-keygen.mdoc.in util/ntp-keygen.texi>
+Touching < ntpd/invoke-ntp.conf.menu ntpd/invoke-ntp.conf.texi ntpd/invoke-ntp.keys.menu ntpd/invoke-ntp.keys.texi ntpd/invoke-ntpd.menu ntpd/invoke-ntpd.texi ntpd/invoke-ntp.conf.menu ntpd/invoke-ntp.conf.texi ntpd/invoke-ntp.keys.menu ntpd/invoke-ntp.keys.texi ntpd/invoke-ntpd.menu ntpd/invoke-ntpd.texi ntpd/invoke-ntp.conf.menu ntpd/invoke-ntp.conf.texi ntpd/invoke-ntp.keys.menu ntpd/invoke-ntp.keys.texi ntpd/invoke-ntpd.menu ntpd/invoke-ntpd.texi ntpdc/invoke-ntpdc.menu ntpdc/invoke-ntpdc.texi ntpq/invoke-ntpq.menu ntpq/invoke-ntpq.texi ntpsnmpd/invoke-ntpsnmpd.menu ntpsnmpd/invoke-ntpsnmpd.texi scripts/update-leap/invoke-update-leap.menu scripts/update-leap/invoke-update-leap.texi scripts/invoke-plot_summary.menu scripts/invoke-plot_summary.texi scripts/invoke-summary.menu scripts/invoke-summary.texi scripts/ntpsweep/invoke-ntpsweep.menu scripts/ntpsweep/invoke-ntpsweep.texi scripts/ntptrace/invoke-ntptrace.menu scripts/ntptrace/invoke-ntptrace.texi scripts/calc_tickadj/invoke-calc_tickadj.menu scripts/calc_tickadj/invoke-calc_tickadj.texi scripts/invoke-plot_summary.menu scripts/invoke-plot_summary.texi scripts/invoke-summary.menu scripts/invoke-summary.texi scripts/ntp-wait/invoke-ntp-wait.menu scripts/ntp-wait/invoke-ntp-wait.texi sntp/invoke-sntp.menu sntp/invoke-sntp.texi util/invoke-ntp-keygen.menu util/invoke-ntp-keygen.texi>
+Touching < ntpd/ntp.conf.html ntpd/ntpd.html ntpd/ntp.keys.html ntpdc/ntpdc.html ntpq/ntpq.html ntpsnmpd/ntpsnmpd.html scripts/update-leap/update-leap.html scripts/summary.html scripts/ntpsweep/ntpsweep.html scripts/ntptrace/ntptrace.html scripts/calc_tickadj/calc_tickadj.html scripts/plot_summary.html scripts/ntp-wait/ntp-wait.html sntp/sntp.html util/ntp-keygen.html>
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I sntp/m4 -I sntp/libevent/m4 -I sntp/libopts/m4
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: adding subdirectory sntp to autoreconf
+autoreconf: Entering directory `sntp'
+autoreconf: running: aclocal -I m4 -I libevent/m4 -I libopts/m4
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+autoreconf: configure.ac: adding subdirectory libevent to autoreconf
+autoreconf: Entering directory `libevent'
+autoreconf: running: aclocal -I m4
+autoreconf: running: libtoolize --copy
+autoreconf: running: /usr/bin/autoconf
+autoreconf: running: /usr/bin/autoheader
+autoreconf: running: automake --add-missing --copy --no-force
+autoreconf: Leaving directory `libevent'
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:158: LIBOPTS_WITHLIB_REGEX is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:260: LIBOPTS_RUN_PATHFIND is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:303: LIBOPTS_RUN_REALPATH is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:330: LIBOPTS_RUN_STRFTIME is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:363: LIBOPTS_RUN_FOPEN_BINARY is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+configure.ac:101: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2740: _AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2759: AC_RUN_IFELSE is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2042: AC_CACHE_VAL is expanded from...
+libopts/m4/libopts.m4:386: LIBOPTS_RUN_FOPEN_TEXT is expanded from...
+libopts/m4/libopts.m4:425: INVOKE_LIBOPTS_MACROS is expanded from...
+libopts/m4/libopts.m4:560: AM_COND_IF is expanded from...
+libopts/m4/libopts.m4:581: LIBOPTS_CHECK is expanded from...
+configure.ac:101: the top level
+tests/Makefile.am:178: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:178: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least a source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However,
+automake: this behaviour will change in future Automake versions: they will
+automake: unconditionally cause object files to be placed in the same subdirectory
+automake: of the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+tests/Makefile.am:147: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:147: but option 'subdir-objects' is disabled
+tests/Makefile.am:141: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:141: but option 'subdir-objects' is disabled
+tests/Makefile.am:154: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:154: but option 'subdir-objects' is disabled
+tests/Makefile.am:184: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:184: but option 'subdir-objects' is disabled
+tests/Makefile.am:129: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:129: but option 'subdir-objects' is disabled
+tests/Makefile.am:135: warning: source file '$(top_builddir)/version.c' is in a subdirectory,
+tests/Makefile.am:135: but option 'subdir-objects' is disabled
+unity/Makefile.am:17: warning: source file '../libpkgver/colcomp.c' is in a subdirectory,
+unity/Makefile.am:17: but option 'subdir-objects' is disabled
+autoreconf: Leaving directory `sntp'
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/assertions.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least a source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However,
+automake: this behaviour will change in future Automake versions: they will
+automake: unconditionally cause object files to be placed in the same subdirectory
+automake: of the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/buffer.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/backtrace-emptytbl.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/backtrace.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/$(LIBISC_PTHREADS_NOTHREADS)/condition.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/dir.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/error.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/errno2result.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/event.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/file.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/inet_ntop.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/inet_pton.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/interfaceiter.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/lib.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/log.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/md5.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/nls/msgcat.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/net.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/netaddr.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/netscope.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/ondestroy.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/random.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/result.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/stdio.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/stdtime.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/strerror.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/task.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/$(LIBISC_PTHREADS_NOTHREADS)/thread.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/unix/time.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/sha1.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/sockaddr.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:7: warning: source file '$(srcdir)/../lib/isc/tsmemcmp.c' is in a subdirectory,
+libntp/Makefile.am:7: but option 'subdir-objects' is disabled
+libntp/Makefile.am:43: warning: source file '$(srcdir)/../lib/isc/pthreads/mutex.c' is in a subdirectory,
+libntp/Makefile.am:43: but option 'subdir-objects' is disabled
+ntpq/Makefile.am:30: warning: variable 'libntpq_a_LDFLAGS' is defined but no program or
+ntpq/Makefile.am:30: library has 'libntpq_a' as canonical name (possible typo)
+tests/libntp/Makefile.am:249: warning: variable 'test_decodenetnum_SOURCES' is defined but no program or
+tests/libntp/Makefile.am:249: library has 'test_decodenetnum' as canonical name (possible typo)
+tests/ntpd/Makefile.am:89: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:89: but option 'subdir-objects' is disabled
+tests/ntpd/Makefile.am:109: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:109: but option 'subdir-objects' is disabled
+tests/ntpd/Makefile.am:129: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:129: but option 'subdir-objects' is disabled
+tests/ntpd/Makefile.am:189: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:189: but option 'subdir-objects' is disabled
+tests/ntpd/Makefile.am:167: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:167: but option 'subdir-objects' is disabled
+tests/ntpd/Makefile.am:150: warning: source file '$(srcdir)/../libntp/test-libntp.c' is in a subdirectory,
+tests/ntpd/Makefile.am:150: but option 'subdir-objects' is disabled
+autoreconf: Leaving directory `.'
+dh_auto_configure -- CFLAGS='-g -O2 -fdebug-prefix-map=/build/src=. -fstack-protector-strong -Wformat -Werror=format-security -fno-strict-aliasing' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE' LDFLAGS='-Wl,-z,relro -Wl,--as-needed' \
+	--build=x86_64-linux-gnu \
+	--host=x86_64-linux-gnu \
+	--prefix=/usr \
+	--enable-all-clocks --enable-parse-clocks --enable-SHM \
+	--enable-debugging --sysconfdir=/var/lib/ntp \
+	--with-lineeditlibs=edit \
+	--without-ntpsnmpd \
+	--disable-local-libopts \
+	--disable-local-libevent \
+	--enable-ntp-signd \
+	--disable-dependency-tracking \
+	--with-locfile=debian \
+	--with-openssl-libdir=/usr/lib/x86_64-linux-gnu
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking "CFLAGS=-g -O2 -fdebug-prefix-map=/build/src=. -fstack-protector-strong -Wformat -Werror=format-security -fno-strict-aliasing" "CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE" "LDFLAGS=-Wl,-z,relro -Wl,--as-needed" --build=x86_64-linux-gnu --host=x86_64-linux-gnu --prefix=/usr --enable-all-clocks --enable-parse-clocks --enable-SHM --enable-debugging --sysconfdir=/var/lib/ntp --with-lineeditlibs=edit --without-ntpsnmpd --disable-local-libopts --disable-local-libevent --enable-ntp-signd --disable-dependency-tracking --with-locfile=debian --with-openssl-libdir=/usr/lib/x86_64-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-linux-gnu-cc... no
+checking for x86_64-linux-gnu-gcc... x86_64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-linux-gnu-gcc accepts -g... yes
+checking for x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-linux-gnu-gcc... none
+checking how to run the C preprocessor... x86_64-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for x86_64-linux-gnu-gcc option to accept ISO C99... none needed
+checking for x86_64-linux-gnu-gcc option to accept ISO Standard C... (cached) none needed
+checking whether x86_64-linux-gnu-gcc needs -traditional... no
+checking if x86_64-linux-gnu-gcc can handle #warning... yes
+checking if x86_64-linux-gnu-gcc supports __attribute__((...))... yes
+checking if x86_64-linux-gnu-gcc can handle -Wstrict-overflow... yes
+checking if x86_64-linux-gnu-gcc can handle -Winit-self... yes
+checking if linker supports omitting unused code and data... yes
+checking additional compiler flags... none needed
+checking additional linker flags... none needed
+checking whether byte ordering is bigendian... no
+checking for working volatile... yes
+checking how to run the C preprocessor... x86_64-linux-gnu-gcc -E
+checking for bison... no
+checking for byacc... no
+checking for x86_64-linux-gnu-gcc option to accept ISO C99... (cached) none needed
+checking whether the compiler supports C99 structure initialization... yes
+checking for compile/link hardening flags... in file harden/linux
+checking to see if we need ylwrap VPATH hack... no
+checking for install dir and man conventions... in file loc/debian
+checking for x86_64-linux-gnu-ar... x86_64-linux-gnu-ar
+checking the archiver (x86_64-linux-gnu-ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-linux-gnu-objdump... x86_64-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-gnu-ar... (cached) x86_64-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-gnu-strip... x86_64-linux-gnu-strip
+checking for x86_64-linux-gnu-ranlib... x86_64-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-linux-gnu-nm -B output from x86_64-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for pid_t... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/procset.h usability... no
+checking sys/procset.h presence... no
+checking for sys/procset.h... no
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/stropts.h usability... yes
+checking sys/stropts.h presence... yes
+checking for sys/stropts.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for dlfcn.h... (cached) yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for memory.h... (cached) yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for string.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for inttypes.h... (cached) yes
+checking for working stdnoreturn.h... yes
+checking for runetype.h... no
+checking for wchar.h... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for int8_t... yes
+checking for uint8_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking for uint_t... no
+checking for pid_t... (cached) yes
+checking for size_t... yes
+checking for ptrdiff_t... yes
+checking size of char *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of short... 2
+checking for pathfind in -lgen... no
+checking for gettext in -lintl... no
+checking for vprintf... yes
+checking for _doprnt... no
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for mmap... yes
+checking for canonicalize_file_name... yes
+checking for snprintf... yes
+checking for strdup... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strsignal... yes
+checking for fchmod... yes
+checking for fstat... yes
+checking for chmod... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking whether autoopts-config can be found... checking whether autoopts-config is specified... autoopts-config
+ -lopts
+checking for x86_64-linux-gnu-pkg-config... /usr/bin/x86_64-linux-gnu-pkg-config
+checking if pkg-config is at least version 0.15.0... yes
+checking if libevent 2 or later is installed... yes, version 2.1.8-stable
+checking for size_t... (cached) yes
+checking for stdarg.h... (cached) yes
+checking for unsigned long long int... yes
+checking for vsnprintf... yes
+checking whether vsnprintf is C99 compliant... yes
+checking if C99-snprintf replacement vsnprintf will be used... no
+checking for snprintf... (cached) yes
+checking whether snprintf is C99 compliant... yes
+checking if C99-snprintf replacement snprintf will be used... no
+checking for ld used by x86_64-linux-gnu-gcc... (cached) /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... (cached) yes
+checking for directory path separator... '/'
+checking line editing libraries... edit
+checking for readline() with -ledit... yes
+checking readline.h usability... no
+checking readline.h presence... no
+checking for readline.h... no
+checking readline/readline.h usability... no
+checking readline/readline.h presence... no
+checking for readline/readline.h... no
+checking histedit.h usability... yes
+checking histedit.h presence... yes
+checking for histedit.h... yes
+checking history.h usability... no
+checking history.h presence... no
+checking for history.h... no
+checking readline/history.h usability... no
+checking readline/history.h presence... no
+checking for readline/history.h... no
+checking number of arguments to el_init()... 4
+checking whether readline supports history... yes
+checking for library containing cos... -lm
+checking for vfork.h... (cached) no
+checking for fork... (cached) yes
+checking for vfork... (cached) yes
+checking for working fork... (cached) yes
+checking for working vfork... (cached) yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for getclock... no
+checking for stime... yes
+checking for timegm... yes
+checking for strlcpy... no
+checking for strlcat... no
+checking for library containing snprintb... no
+checking for errno.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for net/if.h... yes
+checking for linux/if_addr.h... yes
+checking arpa/nameser.h usability... yes
+checking arpa/nameser.h presence... yes
+checking for arpa/nameser.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking sys/timers.h usability... no
+checking sys/timers.h presence... no
+checking for sys/timers.h... no
+checking for sys/sysctl.h... yes
+checking netinet/in_system.h usability... no
+checking netinet/in_system.h presence... no
+checking for netinet/in_system.h... no
+checking netinet/in_systm.h usability... yes
+checking netinet/in_systm.h presence... yes
+checking for netinet/in_systm.h... yes
+checking for netinet/in.h... (cached) yes
+checking for resolv.h... yes
+checking for net/if_var.h... no
+checking for netinet/ip.h... yes
+checking for netinet/in_var.h... no
+checking for library containing inet_pton... none required
+checking for library containing inet_ntop... none required
+checking for library containing setsockopt... none required
+checking for recvmsg... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking size of time_t... 8
+checking whether char is unsigned... no
+checking size of signed char... 1
+checking for s_char... no
+checking for long long... yes
+checking size of short... (cached) 2
+checking size of int... (cached) 4
+checking size of long... (cached) 8
+checking size of long long... 8
+checking for uid_t in sys/types.h... yes
+checking if we're including debugging code... yes
+checking semaphore.h usability... yes
+checking semaphore.h presence... yes
+checking for semaphore.h... yes
+checking for socketpair... yes
+checking for _beginthread... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking POSIX thread version... 10
+checking for LinuxThreads pthread.h... no
+checking for GNU Pth pthread.h... no
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for pthread_create in default libraries... no
+checking for pthread link with -kthread... no
+checking for pthread link with -pthread... yes
+configure: ol_link_threads: <posix> ol_link_pthreads <-pthread>
+checking for sched_yield... yes
+checking for pthread_yield... yes
+checking for thr_yield... no
+checking for pthread_kill... yes
+checking for pthread_rwlock_destroy with <pthread.h>... yes
+checking for pthread_detach with <pthread.h>... yes
+checking for pthread_setconcurrency... yes
+checking for pthread_getconcurrency... yes
+checking for thr_setconcurrency... no
+checking for thr_getconcurrency... no
+checking for pthread_kill_other_threads_np... no
+checking for LinuxThreads implementation... no
+checking for LinuxThreads consistency... no
+checking if pthread_create() works... yes
+checking if select yields when using pthreads... yes
+checking for thread specific errno... yes
+checking for thread specific h_errno... yes
+checking for sem_timedwait... yes
+checking size of pthread_t... 8
+checking for sigwait... yes
+checking for pthread_attr_getstacksize... yes
+checking for pthread_attr_setstacksize... yes
+checking for sysconf... yes
+checking if vsnprintf expands "%m" to strerror(errno)... yes
+checking sys/clockctl.h usability... no
+checking sys/clockctl.h presence... no
+checking for sys/clockctl.h... no
+checking if we should use /dev/clockctl... no
+checking sys/capability.h usability... yes
+checking sys/capability.h presence... yes
+checking for sys/capability.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking if we have linux capabilities (libcap)... yes
+checking priv.h usability... no
+checking priv.h presence... no
+checking for priv.h... no
+checking if we have solaris privileges... 
+checking sys/mac.h usability... no
+checking sys/mac.h presence... no
+checking for sys/mac.h... no
+checking if we should use TrustedBSD MAC privileges... 
+checking for library containing res_init... no
+checking for sys/types.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for arpa/nameser.h... (cached) yes
+checking for netdb.h... yes
+checking for resolv.h... (cached) yes
+checking for res_init... no
+checking for __res_init... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for uintptr_t... (cached) yes
+checking for int32... no
+checking for u_int32... no
+checking for int32 with DNS headers included... no
+checking for u_int32 with DNS headers included... no
+checking for sys/timepps.h... yes
+checking for struct timespec... yes
+checking for struct ntptimeval... yes
+checking for md5.h... no
+checking for library containing MD5Init... no
+checking for MD5Init... no
+checking for sysconf... (cached) yes
+checking for getdtablesize... yes
+checking for sigaction... yes
+checking for sigset... yes
+checking for sigvec... no
+checking for SIGIO... yes
+checking if we want to use SIGIO... no
+checking for SIGPOLL... yes
+checking if we can use SIGPOLL for UDP I/O... no
+checking if we can use SIGPOLL for TTY I/O... no
+checking number of arguments to gettimeofday()... 2
+checking for settimeofday... yes
+checking if we'll use clock_settime or settimeofday or stime... clock_settime()
+checking for deprecated --with-arlib... no
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether ln -s works... yes
+checking for library containing strerror... none required
+checking for perl... /usr/bin/perl
+checking for test... /usr/bin/test
+checking for net-snmp-config... no
+checking for net-snmp-config path... 
+checking for library containing openlog... none required
+checking if we want to use libseccomp sandboxing (EXPERIMENTAL)... no
+checking for facilitynames in syslog.h... yes
+checking bstring.h usability... no
+checking bstring.h presence... no
+checking for bstring.h... no
+checking dns_sd.h usability... no
+checking dns_sd.h presence... no
+checking for dns_sd.h... no
+checking for fcntl.h... (cached) yes
+checking fnmatch.h usability... yes
+checking fnmatch.h presence... yes
+checking for fnmatch.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking for inttypes.h... (cached) yes
+checking kvm.h usability... no
+checking kvm.h presence... no
+checking for kvm.h... no
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking for memory.h... (cached) yes
+checking for netdb.h... (cached) yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sgtty.h usability... yes
+checking sgtty.h presence... yes
+checking for sgtty.h... yes
+checking stdatomic.h usability... yes
+checking stdatomic.h presence... yes
+checking for stdatomic.h... yes
+checking for stdbool.h that conforms to C99... (cached) yes
+checking for _Bool... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking timepps.h usability... no
+checking timepps.h presence... no
+checking for timepps.h... no
+checking timex.h usability... no
+checking timex.h presence... no
+checking for timex.h... no
+checking for unistd.h... (cached) yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking net/if6.h usability... no
+checking net/if6.h presence... no
+checking for net/if6.h... no
+checking for net/route.h... yes
+checking netinfo/ni.h usability... no
+checking netinfo/ni.h presence... no
+checking for netinfo/ni.h... no
+checking sun/audioio.h usability... no
+checking sun/audioio.h presence... no
+checking for sun/audioio.h... no
+checking sys/audioio.h usability... no
+checking sys/audioio.h presence... no
+checking for sys/audioio.h... no
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/lock.h usability... no
+checking sys/lock.h presence... no
+checking for sys/lock.h... no
+checking for sys/mman.h... (cached) yes
+checking sys/modem.h usability... no
+checking sys/modem.h presence... no
+checking for sys/modem.h... no
+checking sys/ppsclock.h usability... no
+checking sys/ppsclock.h presence... no
+checking for sys/ppsclock.h... no
+checking sys/ppstime.h usability... no
+checking sys/ppstime.h presence... no
+checking for sys/ppstime.h... no
+checking for sched.h... (cached) yes
+checking for sys/select.h... (cached) yes
+checking sys/signal.h usability... yes
+checking sys/signal.h presence... yes
+checking for sys/signal.h... yes
+checking sys/sockio.h usability... no
+checking sys/sockio.h presence... no
+checking for sys/sockio.h... no
+checking machine/soundcard.h usability... no
+checking machine/soundcard.h presence... no
+checking for machine/soundcard.h... no
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/stream.h usability... no
+checking sys/stream.h presence... no
+checking for sys/stream.h... no
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking for sys/stropts.h... (cached) yes
+checking sys/syssgi.h usability... no
+checking sys/syssgi.h presence... no
+checking for sys/syssgi.h... no
+checking sys/systune.h usability... no
+checking sys/systune.h presence... no
+checking for sys/systune.h... no
+checking sys/termios.h usability... yes
+checking sys/termios.h presence... yes
+checking for sys/termios.h... yes
+checking sys/tpro.h usability... no
+checking sys/tpro.h presence... no
+checking for sys/tpro.h... no
+checking for sys/wait.h... (cached) yes
+checking for atomic_thread_fence... no
+checking for atomic_thread_fence()... 
+checking for ntp_adjtime... yes
+checking for ntp_gettime... yes
+checking for adjtimex... yes
+checking for sys/proc.h... no
+checking for sys/resource.h... yes
+checking for sys/shm.h... yes
+checking for sys/timex.h... yes
+checking return type of signal handlers... void
+checking for off_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for a fallback value for HZ... 100
+checking if we need to override the system's value for HZ... no
+checking for struct rt_msghdr... no
+checking for struct rtattr... yes
+checking struct sigaction for sa_sigaction... yes
+checking for struct ppsclockev... no
+checking for struct snd_size... no
+checking struct clockinfo for hz... no
+checking struct clockinfo for tickadj... (cached) no
+checking for struct ntptimeval.time.tv_nsec... no
+checking for arc4random_buf... no
+checking for daemon... yes
+checking for finite... yes
+checking for fnmatch... yes
+checking for getbootfile... no
+checking for getuid... yes
+checking for getrusage... yes
+checking for nanosleep... yes
+checking for strsignal... (cached) yes
+checking for mkstemp... yes
+checking for mktime... yes
+checking for mlockall... yes
+checking for nice... yes
+checking for plock... no
+checking for pututline... yes
+checking for pututxline... yes
+checking for readlink... yes
+checking for rtprio... no
+checking for sched_setscheduler... yes
+checking for setlinebuf... yes
+checking for setpgid... yes
+checking for setpriority... yes
+checking for setsid... yes
+checking for setvbuf... yes
+checking for strdup... (cached) yes
+checking for strerror... yes
+checking for setrlimit... yes
+checking for strchr... (cached) yes
+checking for timer_create... no
+checking for RLIMIT_MEMLOCK... yes
+checking for RLIMIT_STACK... yes
+checking for the default number of 4k stack pages... 50
+checking for the default number of megabytes to MEMLOCK... -1
+checking for _exit... yes
+checking for umask... yes
+checking for uname... yes
+checking for updwtmp... yes
+checking for updwtmpx... yes
+checking if we need extra help to define struct iovec... 0
+checking number of arguments taken by setpgrp()... 0
+checking if we need to declare 'errno'... no
+checking if we may declare 'h_errno'... yes
+checking if declaring 'syscall()' is ok... 
+checking if we will open the broadcast socket... yes
+checking if process groups are set with -pid... yes
+checking if we need a ctty for F_SETOWN... no
+checking if the OS clears cached routes when more specifics become available... no
+checking if the wildcard socket needs REUSEADDR to bind other addresses... yes
+checking for a minimum recommended value of tickadj... no
+checking if the TTY code permits PARENB and IGNPAR... no
+checking if we're including processing time debugging code... no
+checking for a the number of minutes in a DST adjustment... 60
+checking if ntpd will retry permanent DNS failures... no
+checking availability of ntp_{adj,get}time()... libc
+checking if sys/timex.h has STA_FLL... yes
+checking if we have kernel PLL support... yes
+checking if SIOCGIFCONF returns buffer size in the buffer... no
+checking for TTY PPS ioctl TIOCGPPSEV... no
+checking for TTY PPS ioctl TIOCSPPS... no
+checking for TTY PPS ioctl CIOGETEV... no
+checking linux/serial.h usability... yes
+checking linux/serial.h presence... yes
+checking for linux/serial.h... yes
+checking SHMEM_STATUS support... yes
+checking Datum/Bancomm bc635/VME interface... no
+checking TrueTime GPS receiver/VME interface... no
+checking for PCL720 clock support... no
+checking for default inclusion of all suitable non-PARSE clocks... yes
+checking if we have support for PARSE clocks... yes
+checking if we have support for audio clocks... yes
+checking if we have support for the SHM refclock interface... yes
+checking for termios modem control... yes
+checking ACTS modem service... yes
+checking Arbiter 1088A/B GPS receiver... yes
+checking Arcron MSF receiver... yes
+checking Austron 2200A/2201A GPS receiver... yes
+checking ATOM PPS interface... yes
+checking Chrono-log K-series WWVB receiver... yes
+checking CHU modem/decoder... yes
+checking CHU audio/decoder... yes
+checking Datum Programmable Time System... yes
+checking Dumb generic hh:mm:ss local clock... yes
+checking Forum Graphic GPS... yes
+checking Heath GC-1000 WWV/WWVH receiver... yes
+checking for hopf serial clock device... yes
+checking for hopf PCI clock 6039... yes
+checking HP 58503A GPS receiver... yes
+checking IRIG audio decoder... yes
+checking for JJY receiver... yes
+checking Rockwell Jupiter GPS receiver... yes
+checking Leitch CSD 5300 Master Clock System Driver... yes
+checking local clock reference... yes
+checking Magnavox MX4200 GPS receiver... no
+checking for NeoClock4X receiver... yes
+checking NMEA GPS receiver... yes
+checking for strtoll... yes
+checking for GPSD JSON receiver... yes
+checking for ONCORE Motorola VP/UT Oncore GPS... yes
+checking for Palisade clock... yes
+checking Conrad parallel port radio clock... yes
+checking PST/Traconex 1020 WWV/WWVH receiver... yes
+checking RIPENCC specific Trimble driver... no
+checking for SHM clock attached thru shared memory... yes
+checking Spectracom 8170/Netclock/2 WWVB receiver... yes
+checking KSI/Odetics TPRO/S GPS receiver/IRIG interface... no
+checking Kinemetrics/TrueTime receivers... yes
+checking TrueTime 560 IRIG-B decoder... no
+checking Ultralink M320 WWVB receiver... yes
+checking Spectracom TSYNC PCI timing board... yes
+checking WWV receiver... yes
+checking for Zyfer receiver... yes
+checking for default inclusion of all suitable PARSE clocks... yes
+checking Diem Computime Radio Clock... yes
+checking ELV/DCF7000 clock... yes
+checking HOPF 6021 clock... yes
+checking Meinberg clocks... yes
+checking DCF77 raw time code... yes
+checking if we must enable parity for RAWDCF... yes
+checking RCC 8000 clock... yes
+checking Schmid DCF77 clock... yes
+checking Trimble GPS receiver/TAIP protocol... yes
+checking Trimble GPS receiver/TSIP protocol... yes
+checking VARITEXT clock... yes
+checking SEL240X clock... yes
+checking if we need to make and use the parse libraries... yes
+checking for openssl library directory... /usr/lib/x86_64-linux-gnu
+checking for openssl include directory... /usr/include
+checking if we will use crypto... yes
+checking openssl/cmac.h usability... yes
+checking openssl/cmac.h presence... yes
+checking for openssl/cmac.h... yes
+checking openssl/hmac.h usability... yes
+checking openssl/hmac.h presence... yes
+checking for openssl/hmac.h... yes
+checking if linking with -lcrypto alone works... yes
+checking for EVP_MD_do_all_sorted... yes
+checking if we want to enable CMAC support... yes
+checking if we want to use OpenSSL's crypto random (if available)... yes
+checking for RAND_bytes... yes
+checking for RAND_poll... yes
+checking if we want to include NTP Autokey protocol support... yes
+checking if we want to run check-layout... yes
+checking if we can make dcf parse utilities... dcfd testdcf
+checking if we can build kernel streams modules for parse... no
+checking if we need basic refclock support... yes
+checking if we want HP-UX adjtimed support... no
+checking if we want QNX adjtime support... no
+checking if we can read kmem... no
+checking if adjtime is accurate... yes
+checking the name of 'tick' in the kernel... _tick
+checking for the units of 'tick'... usec
+checking the name of 'tickadj' in the kernel... _tickadj
+checking for the units of 'tickadj'... usec
+checking half-heartedly for 'dosynctodr' in the kernel... _dosynctodr
+checking half-heartedly for 'noprintf' in the kernel... _noprintf
+checking for a default value for 'tick'... txc.tick
+checking for a default value for 'tickadj'... 500/hz
+checking if we want and can make the ntptime utility... yes
+checking if we want and can make the tickadj utility... yes
+checking if we want and can make the timetrim utility... no
+checking if we want to build the NTPD simulator... no
+checking if sntp will be built... yes
+checking if we want to build ntpsnmpd... no
+checking if we should always slew the time... no
+checking if we should step and slew the time... no
+checking if ntpdate should step the time... no
+checking if we should sync TODR clock every hour... no
+checking if we should avoid kernel FLL bug... no
+checking if we want new session key behavior... yes
+checking if we want the explicit 127.0.0.0/8 martian filter... yes
+checking if we should use the IRIG sawtooth filter... no
+checking if we should enable NIST lockclock scheme... no
+checking if we want support for Samba's signing daemon... yes
+checking libscf.h usability... no
+checking libscf.h presence... no
+checking for libscf.h... no
+checking for struct sockaddr_storage... yes
+checking for sockaddr_storage.__ss_family... no
+checking for in_port_t... yes
+checking type of socklen arg for getsockname()... socklen_t
+checking struct sockaddr for sa_len... no
+checking for IPv6 structures... yes
+checking for Kame IPv6 support... no
+checking for in6_pktinfo... yes
+checking for sockaddr_in6.sin6_scope_id... yes
+checking for in6addr_any... yes
+checking for struct if_laddrconf... no
+checking for struct if_laddrreq... no
+checking for multicast IP support... yes
+checking arg type needed for setsockopt() IP*_MULTICAST_LOOP... u_int
+checking for getifaddrs... yes
+checking for if_nametoindex... yes
+checking for interface list sysctl... no
+checking if we want the saveconfig mechanism... yes
+checking if we want the experimental leap smear code... no
+checking if we want dynamic interleave support... no
+checking for ruby... no
+checking for gtest-config... no
+checking if we want to enable tests with undiagnosed problems... yes
+checking if we can run test-ntp_restrict... yes
+checking if we can run test-ntp_scanner... yes
+checking if we can run test-ntp_signd... yes
+checking whether sigsetjmp is declared... yes
+checking whether siglongjmp is declared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating adjtimed/Makefile
+config.status: creating clockstuff/Makefile
+config.status: creating include/Makefile
+config.status: creating include/isc/Makefile
+config.status: creating kernel/Makefile
+config.status: creating kernel/sys/Makefile
+config.status: creating libntp/Makefile
+config.status: creating libparse/Makefile
+config.status: creating ntpd/Makefile
+config.status: creating ntpd/complete.conf
+config.status: creating ntpdate/Makefile
+config.status: creating ntpdc/Makefile
+config.status: creating ntpdc/nl.pl
+config.status: creating ntpq/Makefile
+config.status: creating ntpsnmpd/Makefile
+config.status: creating parseutil/Makefile
+config.status: creating scripts/Makefile
+config.status: creating scripts/build/Makefile
+config.status: creating scripts/build/genAuthors
+config.status: creating scripts/build/mkver
+config.status: creating scripts/calc_tickadj/Makefile
+config.status: creating scripts/calc_tickadj/calc_tickadj
+config.status: creating scripts/lib/Makefile
+config.status: creating scripts/ntp-wait/Makefile
+config.status: creating scripts/ntp-wait/ntp-wait
+config.status: creating scripts/ntpsweep/Makefile
+config.status: creating scripts/ntpsweep/ntpsweep
+config.status: creating scripts/ntptrace/Makefile
+config.status: creating scripts/ntptrace/ntptrace
+config.status: creating scripts/plot_summary
+config.status: creating scripts/summary
+config.status: creating scripts/update-leap/Makefile
+config.status: creating scripts/update-leap/update-leap
+config.status: creating tests/Makefile
+config.status: creating tests/bug-2803/Makefile
+config.status: creating tests/libntp/Makefile
+config.status: creating tests/ntpd/Makefile
+config.status: creating tests/ntpq/Makefile
+config.status: creating tests/sandbox/Makefile
+config.status: creating tests/sec-2853/Makefile
+config.status: creating util/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in sntp (/build/src/sntp)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/usr'  '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' 'CFLAGS=-g -O2 -fdebug-prefix-map=/build/src=. -fstack-protector-strong -Wformat -Werror=format-security -fno-strict-aliasing' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE' 'LDFLAGS=-Wl,-z,relro -Wl,--as-needed' '--build=x86_64-linux-gnu' '--host=x86_64-linux-gnu' '--enable-all-clocks' '--enable-parse-clocks' '--enable-SHM' '--enable-debugging' '--sysconfdir=/var/lib/ntp' '--with-lineeditlibs=edit' '--without-ntpsnmpd' '--disable-local-libopts' '--disable-local-libevent' '--enable-ntp-signd' '--disable-dependency-tracking' '--with-locfile=debian' '--with-openssl-libdir=/usr/lib/x86_64-linux-gnu' 'build_alias=x86_64-linux-gnu' 'host_alias=x86_64-linux-gnu' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-linux-gnu-cc... no
+checking for x86_64-linux-gnu-gcc... x86_64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-linux-gnu-gcc accepts -g... yes
+checking for x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-linux-gnu-gcc... none
+checking how to run the C preprocessor... x86_64-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for x86_64-linux-gnu-gcc option to accept ISO C99... none needed
+checking for x86_64-linux-gnu-gcc option to accept ISO Standard C... (cached) none needed
+checking whether x86_64-linux-gnu-gcc needs -traditional... no
+checking if x86_64-linux-gnu-gcc can handle #warning... yes
+checking if x86_64-linux-gnu-gcc supports __attribute__((...))... yes
+checking if x86_64-linux-gnu-gcc can handle -Wstrict-overflow... yes
+checking if x86_64-linux-gnu-gcc can handle -Winit-self... yes
+checking if linker supports omitting unused code and data... yes
+checking additional compiler flags... none needed
+checking additional linker flags... none needed
+checking whether byte ordering is bigendian... no
+checking for working volatile... yes
+checking how to run the C preprocessor... x86_64-linux-gnu-gcc -E
+checking for compile/link hardening flags... in file harden/linux
+checking for install dir and man conventions... in file loc/debian
+checking for x86_64-linux-gnu-ar... x86_64-linux-gnu-ar
+checking the archiver (x86_64-linux-gnu-ar) interface... ar
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking how to print strings... printf
+checking for pid_t... yes
+checking for size_t... yes
+checking for stdarg.h... yes
+checking for unsigned long long int... yes
+checking for vsnprintf... yes
+checking whether vsnprintf is C99 compliant... yes
+checking if C99-snprintf replacement vsnprintf will be used... no
+checking for snprintf... yes
+checking whether snprintf is C99 compliant... yes
+checking if C99-snprintf replacement snprintf will be used... no
+checking for ld used by x86_64-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for directory path separator... '/'
+checking line editing libraries... edit
+checking for readline() with -ledit... yes
+checking readline.h usability... no
+checking readline.h presence... no
+checking for readline.h... no
+checking readline/readline.h usability... no
+checking readline/readline.h presence... no
+checking for readline/readline.h... no
+checking histedit.h usability... yes
+checking histedit.h presence... yes
+checking for histedit.h... yes
+checking history.h usability... no
+checking history.h presence... no
+checking for history.h... no
+checking readline/history.h usability... no
+checking readline/history.h presence... no
+checking for readline/history.h... no
+checking number of arguments to el_init()... 4
+checking whether readline supports history... yes
+checking for library containing cos... -lm
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for getclock... no
+checking for stime... yes
+checking for timegm... yes
+checking for strlcpy... no
+checking for strlcat... no
+checking for library containing snprintb... no
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/types.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for net/if.h... yes
+checking for linux/if_addr.h... yes
+checking arpa/nameser.h usability... yes
+checking arpa/nameser.h presence... yes
+checking for arpa/nameser.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timers.h usability... no
+checking sys/timers.h presence... no
+checking for sys/timers.h... no
+checking for sys/sysctl.h... yes
+checking netinet/in_system.h usability... no
+checking netinet/in_system.h presence... no
+checking for netinet/in_system.h... no
+checking netinet/in_systm.h usability... yes
+checking netinet/in_systm.h presence... yes
+checking for netinet/in_systm.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking for resolv.h... yes
+checking for net/if_var.h... no
+checking for netinet/ip.h... yes
+checking for netinet/in_var.h... no
+checking for library containing inet_pton... none required
+checking for library containing inet_ntop... none required
+checking for library containing setsockopt... none required
+checking for recvmsg... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking size of time_t... 8
+checking whether char is unsigned... no
+checking size of signed char... 1
+checking for s_char... no
+checking for long long... yes
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking for uid_t in sys/types.h... yes
+checking if we're including debugging code... yes
+checking semaphore.h usability... yes
+checking semaphore.h presence... yes
+checking for semaphore.h... yes
+checking for socketpair... yes
+checking for _beginthread... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking POSIX thread version... 10
+checking for LinuxThreads pthread.h... no
+checking for GNU Pth pthread.h... no
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for pthread_create in default libraries... no
+checking for pthread link with -kthread... no
+checking for pthread link with -pthread... yes
+configure: ol_link_threads: <posix> ol_link_pthreads <-pthread>
+checking for sched_yield... yes
+checking for pthread_yield... yes
+checking for thr_yield... no
+checking for pthread_kill... yes
+checking for pthread_rwlock_destroy with <pthread.h>... yes
+checking for pthread_detach with <pthread.h>... yes
+checking for pthread_setconcurrency... yes
+checking for pthread_getconcurrency... yes
+checking for thr_setconcurrency... no
+checking for thr_getconcurrency... no
+checking for pthread_kill_other_threads_np... no
+checking for LinuxThreads implementation... no
+checking for LinuxThreads consistency... no
+checking if pthread_create() works... yes
+checking if select yields when using pthreads... yes
+checking for thread specific errno... yes
+checking for thread specific h_errno... yes
+checking for sem_timedwait... yes
+checking size of pthread_t... 8
+checking for sigwait... yes
+checking for pthread_attr_getstacksize... yes
+checking for pthread_attr_setstacksize... yes
+checking for sysconf... yes
+checking if vsnprintf expands "%m" to strerror(errno)... yes
+checking sys/clockctl.h usability... no
+checking sys/clockctl.h presence... no
+checking for sys/clockctl.h... no
+checking if we should use /dev/clockctl... no
+checking sys/capability.h usability... yes
+checking sys/capability.h presence... yes
+checking for sys/capability.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking if we have linux capabilities (libcap)... yes
+checking priv.h usability... no
+checking priv.h presence... no
+checking for priv.h... no
+checking if we have solaris privileges... 
+checking sys/mac.h usability... no
+checking sys/mac.h presence... no
+checking for sys/mac.h... no
+checking if we should use TrustedBSD MAC privileges... 
+checking for library containing res_init... no
+checking for sys/types.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for arpa/nameser.h... (cached) yes
+checking for netdb.h... yes
+checking for resolv.h... (cached) yes
+checking for res_init... no
+checking for __res_init... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for uintptr_t... yes
+checking for int32... no
+checking for u_int32... no
+checking for int32 with DNS headers included... no
+checking for u_int32 with DNS headers included... no
+checking for sys/timepps.h... yes
+checking for struct timespec... yes
+checking for struct ntptimeval... yes
+checking for md5.h... no
+checking for library containing MD5Init... no
+checking for MD5Init... no
+checking for sysconf... (cached) yes
+checking for getdtablesize... yes
+checking for sigaction... yes
+checking for sigset... yes
+checking for sigvec... no
+checking for SIGIO... yes
+checking if we want to use SIGIO... no
+checking for SIGPOLL... yes
+checking if we can use SIGPOLL for UDP I/O... no
+checking if we can use SIGPOLL for TTY I/O... no
+checking number of arguments to gettimeofday()... 2
+checking for settimeofday... yes
+checking if we'll use clock_settime or settimeofday or stime... clock_settime()
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-linux-gnu-objdump... x86_64-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-gnu-ar... (cached) x86_64-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-gnu-strip... x86_64-linux-gnu-strip
+checking for x86_64-linux-gnu-ranlib... x86_64-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-linux-gnu-nm -B output from x86_64-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking if sntp will be built... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/procset.h usability... no
+checking sys/procset.h presence... no
+checking for sys/procset.h... no
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... (cached) yes
+checking sys/stropts.h usability... yes
+checking sys/stropts.h presence... yes
+checking for sys/stropts.h... yes
+checking for sys/time.h... (cached) yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for dlfcn.h... (cached) yes
+checking for errno.h... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for memory.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking for stdarg.h... (cached) yes
+checking for string.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for inttypes.h... (cached) yes
+checking for working stdnoreturn.h... yes
+checking for runetype.h... no
+checking for wchar.h... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for int8_t... yes
+checking for uint8_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for intptr_t... yes
+checking for uintptr_t... (cached) yes
+checking for uint_t... no
+checking for pid_t... (cached) yes
+checking for size_t... (cached) yes
+checking for ptrdiff_t... yes
+checking size of char *... 8
+checking size of int... (cached) 4
+checking size of long... (cached) 8
+checking size of short... (cached) 2
+checking for pathfind in -lgen... no
+checking for gettext in -lintl... no
+checking for vprintf... yes
+checking for _doprnt... no
+checking for vfork.h... (cached) no
+checking for fork... (cached) yes
+checking for vfork... (cached) yes
+checking for working fork... (cached) yes
+checking for working vfork... (cached) yes
+checking for mmap... yes
+checking for canonicalize_file_name... yes
+checking for snprintf... (cached) yes
+checking for strdup... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strsignal... yes
+checking for fchmod... yes
+checking for fstat... yes
+checking for chmod... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking whether autoopts-config can be found... checking whether autoopts-config is specified... autoopts-config
+ -lopts
+checking for x86_64-linux-gnu-pkg-config... /usr/bin/x86_64-linux-gnu-pkg-config
+checking if pkg-config is at least version 0.15.0... yes
+checking if libevent 2 or later is installed... yes, version 2.1.8-stable
+checking for library containing openlog... none required
+checking for netdb.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for sysexits.h... (cached) yes
+checking for facilitynames in syslog.h... yes
+checking for stdbool.h that conforms to C99... (cached) yes
+checking for _Bool... yes
+checking for openssl library directory... /usr/lib/x86_64-linux-gnu
+checking for openssl include directory... /usr/include
+checking if we will use crypto... yes
+checking openssl/cmac.h usability... yes
+checking openssl/cmac.h presence... yes
+checking for openssl/cmac.h... yes
+checking openssl/hmac.h usability... yes
+checking openssl/hmac.h presence... yes
+checking for openssl/hmac.h... yes
+checking if linking with -lcrypto alone works... yes
+checking for EVP_MD_do_all_sorted... yes
+checking for struct sockaddr_storage... yes
+checking for sockaddr_storage.__ss_family... no
+checking for in_port_t... yes
+checking type of socklen arg for getsockname()... socklen_t
+checking struct sockaddr for sa_len... no
+checking for IPv6 structures... yes
+checking for Kame IPv6 support... no
+checking for in6_pktinfo... yes
+checking for sockaddr_in6.sin6_scope_id... yes
+checking for in6addr_any... yes
+checking for struct if_laddrconf... no
+checking for struct if_laddrreq... no
+checking for multicast IP support... yes
+checking arg type needed for setsockopt() IP*_MULTICAST_LOOP... u_int
+checking for getifaddrs... yes
+checking for if_nametoindex... yes
+checking for socket... yes
+checking for ruby... no
+checking if we want to enable tests with undiagnosed problems... yes
+checking if we can run test-kodDatabase... yes
+checking if we can run test-kodFile... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libopts/Makefile
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating scripts/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/fileHandlingTest.h
+config.status: creating unity/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[1]: Leaving directory '/build/src'
+   dh_auto_build
+	make -j12
+make[1]: Entering directory '/build/src'
+{ echo "This file is automatically generated from html/copyright.html" ; \
+  lynx -dump ./html/copyright.html ;} > COPYRIGHT.new \
+&& mv -f COPYRIGHT.new ./COPYRIGHT
+cd . && \
+./scripts/build/checkChangeLog
+Compiling with GCC now generates lots of new warnings.
+cd ./html && \
+../scripts/build/checkHtmlFileDates
+/bin/bash: line 1: lynx: command not found
+make[1]: *** [Makefile:1116: COPYRIGHT] Error 127
+make[1]: *** Waiting for unfinished jobs....
+ 
+Don't be concerned. They're just warnings.
+ 
+Don't send bug reports about the warnings, either.
+ 
+Feel free to send patches that fix these warnings, though.
+ 
+make[1]: Leaving directory '/build/src'
+dh_auto_build: make -j12 returned exit code 2
+make: *** [debian/rules:13: binary] Error 2
+dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
+debuild: fatal error at line 1182:
+dpkg-buildpackage -us -uc -ui -i -b failed
+chmod: cannot access '../*.deb': No such file or directory
+cp: cannot stat '../*.deb': No such file or directory
