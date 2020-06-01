@@ -158,6 +158,8 @@ func determineBuildOrder(repos repoMetaData) []string {
 	depGraph := tsort.New()
 	for repo, ctrl := range repos.ctrlFiles {
 		depGraph.AddVertex(repo)
+		// Assume everything requires our base-files
+		depGraph.AddEdge(repo, "base-files")
 		for _, rel := range ctrl.Source.BuildDepends.Relations {
 			for _, pos := range rel.Possibilities {
 				name := strings.TrimSpace(pos.Name)
