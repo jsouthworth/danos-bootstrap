@@ -159,7 +159,10 @@ func determineBuildOrder(repos repoMetaData) []string {
 	for repo, ctrl := range repos.ctrlFiles {
 		depGraph.AddVertex(repo)
 		// Assume everything requires our base-files
-		depGraph.AddEdge(repo, "base-files")
+		if repo != "base-files" && repo != "lintian-profile-vyatta" {
+			depGraph.AddEdge(repo, "base-files")
+			depGraph.AddEdge(repo, "lintian-profile-vyatta")
+		}
 		for _, rel := range ctrl.Source.BuildDepends.Relations {
 			for _, pos := range rel.Possibilities {
 				name := strings.TrimSpace(pos.Name)
