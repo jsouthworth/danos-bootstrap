@@ -1,0 +1,232 @@
+Building grub
+{"status":"Pulling from jsouthworth/danos-buildpackage","id":"debian10-bootstrap"}
+{"status":"Digest: sha256:892720e5360160bd3fc57f4ea57f81ea72017ffb2f212a7252744d46681805b1"}
+{"status":"Status: Image is up to date for registry.hub.docker.com/jsouthworth/danos-buildpackage:debian10-bootstrap"}
+/tmp/pkgs /build/src
+dpkg-scanpackages: warning: Packages in archive but missing from override file:
+dpkg-scanpackages: warning:   accton-as5916-54xks-hwdiag accton-as5916-54xks-support accton-as5916-54xks-sys-led-control acmd acmd-dbgsym base-files-vyatta bcm-kbp-linux-modules-5.4.0-trunk-vyatta-amd64 bcm-linux-bde-modules-5.4.0-trunk-vyatta-amd64 bvnos-linux-libc-dev-vyatta cli-sandbox cloud-init config-utils configd configd-v1-yang deb-vci-helper dh-signobs dh-vci dh-yang dpdk dpdk-dev dpdk-dev-dbgsym dpdk-igb-uio-dkms dpdk-modules-5.4.0-trunk-vyatta-amd64 dpdk-rte-kni-dkms ephemerad ephemerad-v1-yang frr frr-dbg frr-doc frr-pythontools golang-dbus-dev golang-github-danos-aaa-dev golang-github-danos-config-dev golang-github-danos-configd-client-dev golang-github-danos-configd-rpc-dev golang-github-danos-encoding-rfc7951-dev golang-github-danos-mgmterror-dev golang-github-danos-utils-args-dev golang-github-danos-utils-audit-dev golang-github-danos-utils-exec-dev golang-github-danos-utils-guard-dev golang-github-danos-utils-natsort-dev golang-github-danos-utils-os-group-dev golang-github-danos-utils-patherr-dev golang-github-danos-utils-pathutil-dev golang-github-danos-utils-tsort-dev golang-github-danos-utils-tty-dev golang-github-danos-vci-dev golang-github-danos-vyatta-dataplane-protobuf-dev golang-github-danos-yang-dev golang-github-danos-yangd-client-dev golang-github-danos-yangd-dev golang-github-jsouthworth-objtree-dev golang-github-zeromq-goczmq-dev golang-jsouthworth-dyn-dev golang-jsouthworth-etm-dev golang-jsouthworth-hash-dev golang-jsouthworth-immutable-dev golang-jsouthworth-seq-dev golang-jsouthworth-transduce-dev golang-jsouthworth-try-dev ibacm ibacm-dbgsym ibverbs-providers ibverbs-providers-dbgsym ibverbs-utils ibverbs-utils-dbgsym ietf-inet-types-yang ietf-netconf-monitoring-yang ietf-netconf-with-defaults-yang ietf-netconf-yang ietf-yang-types-yang iproute iproute-doc iproute2 iproute2-dbgsym iproute2-doc libdpdk-dbg libdpdk-dev libibumad-dev libibumad3 libibumad3-dbgsym libibverbs-dev libibverbs1 libibverbs1-dbgsym libndpi-bin libndpi-bin-dbgsym libndpi-dev libndpi3.0 libndpi3.0-dbgsym libpcap-dev libpcap0.8 libpcap0.8-dbg libpcap0.8-dev librdmacm-dev librdmacm1 librdmacm1-dbgsym librte-acl20.0 librte-acl20.0-dbgsym librte-bbdev0.200 librte-bbdev0.200-dbgsym librte-bitratestats20.0 librte-bitratestats20.0-dbgsym librte-bpf0.200 librte-bpf0.200-dbgsym librte-bus-dpaa20.0 librte-bus-dpaa20.0-dbgsym librte-bus-fslmc20.0 librte-bus-fslmc20.0-dbgsym librte-bus-ifpga20.0 librte-bus-ifpga20.0-dbgsym librte-bus-pci20.0 librte-bus-pci20.0-dbgsym librte-bus-vdev20.0 librte-bus-vdev20.0-dbgsym librte-bus-vmbus20.0 librte-bus-vmbus20.0-dbgsym librte-cfgfile20.0 librte-cfgfile20.0-dbgsym librte-cmdline20.0 librte-cmdline20.0-dbgsym librte-common-cpt20.0 librte-common-cpt20.0-dbgsym librte-common-dpaax20.0 librte-common-dpaax20.0-dbgsym librte-common-octeontx2-20.0 librte-common-octeontx2-20.0-dbgsym librte-common-octeontx20.0 librte-common-octeontx20.0-dbgsym librte-compressdev0.200 librte-compressdev0.200-dbgsym librte-cryptodev20.0 librte-cryptodev20.0-dbgsym librte-distributor20.0 librte-distributor20.0-dbgsym librte-eal20.0 librte-eal20.0-dbgsym librte-efd20.0 librte-efd20.0-dbgsym librte-ethdev20.0 librte-ethdev20.0-dbgsym librte-eventdev20.0 librte-eventdev20.0-dbgsym librte-fib0.200 librte-fib0.200-dbgsym librte-flow-classify0.200 librte-flow-classify0.200-dbgsym librte-gro20.0 librte-gro20.0-dbgsym librte-gso20.0 librte-gso20.0-dbgsym librte-hash20.0 librte-hash20.0-dbgsym librte-ip-frag20.0 librte-ip-frag20.0-dbgsym librte-ipsec0.200 librte-ipsec0.200-dbgsym librte-jobstats20.0 librte-jobstats20.0-dbgsym librte-kni20.0 librte-kni20.0-dbgsym librte-kvargs20.0 librte-kvargs20.0-dbgsym librte-latencystats20.0 librte-latencystats20.0-dbgsym librte-lpm20.0 librte-lpm20.0-dbgsym librte-mbuf20.0 librte-mbuf20.0-dbgsym librte-member20.0 librte-member20.0-dbgsym librte-mempool-bucket20.0 librte-mempool-bucket20.0-dbgsym librte-mempool-dpaa2-20.0 librte-mempool-dpaa2-20.0-dbgsym librte-mempool-dpaa20.0 librte-mempool-dpaa20.0-dbgsym librte-mempool-octeontx2-20.0 librte-mempool-octeontx2-20.0-dbgsym librte-mempool-octeontx20.0 librte-mempool-octeontx20.0-dbgsym librte-mempool-ring20.0 librte-mempool-ring20.0-dbgsym librte-mempool-stack20.0 librte-mempool-stack20.0-dbgsym librte-mempool20.0 librte-mempool20.0-dbgsym librte-meter20.0 librte-meter20.0-dbgsym librte-metrics20.0 librte-metrics20.0-dbgsym librte-net20.0 librte-net20.0-dbgsym librte-pci20.0 librte-pci20.0-dbgsym librte-pdump20.0 librte-pdump20.0-dbgsym librte-pipeline20.0 librte-pipeline20.0-dbgsym librte-pmd-aesni-gcm20.0 librte-pmd-aesni-gcm20.0-dbgsym librte-pmd-aesni-mb20.0 librte-pmd-aesni-mb20.0-dbgsym librte-pmd-af-packet20.0 librte-pmd-af-packet20.0-dbgsym librte-pmd-af-xdp20.0 librte-pmd-ark20.0 librte-pmd-ark20.0-dbgsym librte-pmd-atlantic20.0 librte-pmd-atlantic20.0-dbgsym librte-pmd-avp20.0 librte-pmd-avp20.0-dbgsym librte-pmd-axgbe20.0 librte-pmd-axgbe20.0-dbgsym librte-pmd-bbdev-fpga-lte-fec20.0 librte-pmd-bbdev-fpga-lte-fec20.0-dbgsym librte-pmd-bbdev-null20.0 librte-pmd-bbdev-null20.0-dbgsym librte-pmd-bbdev-turbo-sw20.0 librte-pmd-bbdev-turbo-sw20.0-dbgsym librte-pmd-bnx2x20.0 librte-pmd-bnx2x20.0-dbgsym librte-pmd-bnxt20.0 librte-pmd-bnxt20.0-dbgsym librte-pmd-bond20.0 librte-pmd-bond20.0-dbgsym librte-pmd-caam-jr20.0 librte-pmd-caam-jr20.0-dbgsym librte-pmd-ccp20.0 librte-pmd-ccp20.0-dbgsym librte-pmd-crypto-scheduler20.0 librte-pmd-crypto-scheduler20.0-dbgsym librte-pmd-cxgbe20.0 librte-pmd-cxgbe20.0-dbgsym librte-pmd-dpaa-event20.0 librte-pmd-dpaa-event20.0-dbgsym librte-pmd-dpaa-sec20.0 librte-pmd-dpaa-sec20.0-dbgsym librte-pmd-dpaa2-20.0 librte-pmd-dpaa2-20.0-dbgsym librte-pmd-dpaa2-event20.0 librte-pmd-dpaa2-event20.0-dbgsym librte-pmd-dpaa2-sec20.0 librte-pmd-dpaa2-sec20.0-dbgsym librte-pmd-dpaa20.0 librte-pmd-dpaa20.0-dbgsym librte-pmd-dsw-event20.0 librte-pmd-dsw-event20.0-dbgsym librte-pmd-e1000-20.0 librte-pmd-e1000-20.0-dbgsym librte-pmd-ena20.0 librte-pmd-ena20.0-dbgsym librte-pmd-enetc20.0 librte-pmd-enetc20.0-dbgsym librte-pmd-enic20.0 librte-pmd-enic20.0-dbgsym librte-pmd-failsafe20.0 librte-pmd-failsafe20.0-dbgsym librte-pmd-fm10k20.0 librte-pmd-fm10k20.0-dbgsym librte-pmd-hinic20.0 librte-pmd-hinic20.0-dbgsym librte-pmd-hns3-20.0 librte-pmd-hns3-20.0-dbgsym librte-pmd-i40e20.0 librte-pmd-i40e20.0-dbgsym librte-pmd-iavf20.0 librte-pmd-iavf20.0-dbgsym librte-pmd-ice20.0 librte-pmd-ice20.0-dbgsym librte-pmd-ifc20.0 librte-pmd-ifc20.0-dbgsym librte-pmd-isal20.0 librte-pmd-ixgbe20.0 librte-pmd-ixgbe20.0-dbgsym librte-pmd-kni20.0 librte-pmd-kni20.0-dbgsym librte-pmd-liquidio20.0 librte-pmd-liquidio20.0-dbgsym librte-pmd-memif20.0 librte-pmd-memif20.0-dbgsym librte-pmd-mlx4-20.0 librte-pmd-mlx4-20.0-dbgsym librte-pmd-mlx5-20.0 librte-pmd-mlx5-20.0-dbgsym librte-pmd-netvsc20.0 librte-pmd-netvsc20.0-dbgsym librte-pmd-nfp20.0 librte-pmd-nfp20.0-dbgsym librte-pmd-nitrox20.0 librte-pmd-nitrox20.0-dbgsym librte-pmd-null-crypto20.0 librte-pmd-null-crypto20.0-dbgsym librte-pmd-null20.0 librte-pmd-null20.0-dbgsym librte-pmd-octeontx-compress20.0 librte-pmd-octeontx-compress20.0-dbgsym librte-pmd-octeontx-crypto20.0 librte-pmd-octeontx-crypto20.0-dbgsym librte-pmd-octeontx-event20.0 librte-pmd-octeontx-event20.0-dbgsym librte-pmd-octeontx2-20.0 librte-pmd-octeontx2-20.0-dbgsym librte-pmd-octeontx2-crypto20.0 librte-pmd-octeontx2-crypto20.0-dbgsym librte-pmd-octeontx2-event20.0 librte-pmd-octeontx2-event20.0-dbgsym librte-pmd-octeontx20.0 librte-pmd-octeontx20.0-dbgsym librte-pmd-opdl-event20.0 librte-pmd-opdl-event20.0-dbgsym librte-pmd-openssl20.0 librte-pmd-openssl20.0-dbgsym librte-pmd-pcap20.0 librte-pmd-pcap20.0-dbgsym librte-pmd-pfe20.0 librte-pmd-pfe20.0-dbgsym librte-pmd-qat20.0 librte-pmd-qat20.0-dbgsym librte-pmd-qede20.0 librte-pmd-qede20.0-dbgsym librte-pmd-ring20.0 librte-pmd-ring20.0-dbgsym librte-pmd-sfc20.0 librte-pmd-sfc20.0-dbgsym librte-pmd-skeleton-event20.0 librte-pmd-skeleton-event20.0-dbgsym librte-pmd-softnic20.0 librte-pmd-sw-event20.0 librte-pmd-sw-event20.0-dbgsym librte-pmd-tap20.0 librte-pmd-tap20.0-dbgsym librte-pmd-thunderx20.0 librte-pmd-thunderx20.0-dbgsym librte-pmd-vdev-netvsc20.0 librte-pmd-vdev-netvsc20.0-dbgsym librte-pmd-vhost20.0 librte-pmd-vhost20.0-dbgsym librte-pmd-virtio-crypto20.0 librte-pmd-virtio-crypto20.0-dbgsym librte-pmd-virtio20.0 librte-pmd-virtio20.0-dbgsym librte-pmd-vmxnet3-20.0 librte-pmd-vmxnet3-20.0-dbgsym librte-pmd-zlib20.0 librte-pmd-zlib20.0-dbgsym librte-port20.0 librte-port20.0-dbgsym librte-power20.0 librte-power20.0-dbgsym librte-rawdev-dpaa2-cmdif20.0 librte-rawdev-dpaa2-cmdif20.0-dbgsym librte-rawdev-dpaa2-qdma20.0 librte-rawdev-dpaa2-qdma20.0-dbgsym librte-rawdev-ioat20.0 librte-rawdev-ioat20.0-dbgsym librte-rawdev-ntb20.0 librte-rawdev-ntb20.0-dbgsym librte-rawdev-octeontx2-dma20.0 librte-rawdev-octeontx2-dma20.0-dbgsym librte-rawdev-skeleton20.0 librte-rawdev-skeleton20.0-dbgsym librte-rawdev20.0 librte-rawdev20.0-dbgsym librte-rcu0.200 librte-rcu0.200-dbgsym librte-reorder20.0 librte-reorder20.0-dbgsym librte-rib0.200 librte-rib0.200-dbgsym librte-ring20.0 librte-ring20.0-dbgsym librte-sched20.0 librte-sched20.0-dbgsym librte-security20.0 librte-security20.0-dbgsym librte-stack0.200 librte-stack0.200-dbgsym librte-table20.0 librte-table20.0-dbgsym librte-telemetry0.200 librte-telemetry0.200-dbgsym librte-timer20.0 librte-timer20.0-dbgsym librte-vhost20.0 librte-vhost20.0-dbgsym libsnmp-base libsnmp-dev libsnmp-perl libsnmp-perl-dbgsym libsnmp30 libsnmp30-dbg libvyatta-dataplane-proto-dev libvyatta-dataplane-proto-support libvyatta-dataplane-proto1 libvyatta-dataplane-proto1-dbgsym libvyatta-dpdk-swport-dev libvyatta-dpdk-swport1 libvyatta-dpdk-swport1-dbgsym libvyattafal-dev lintian-profile-vyatta linux-compiler-gcc-8-x86 linux-headers-5.4.0-trunk-all linux-headers-5.4.0-trunk-all-amd64 linux-headers-5.4.0-trunk-common-vyatta linux-headers-5.4.0-trunk-vyatta-amd64 linux-headers-amd64 linux-image-5.4.0-trunk-vyatta-amd64 linux-image-5.4.0-trunk-vyatta-amd64-dbg linux-image-vyatta-amd64 linux-image-vyatta-amd64-dbg linux-kbuild-5.4 linux-kbuild-5.4-dbgsym linux-perf linux-perf-5.4 linux-perf-5.4-dbgsym linux-support-5.4.0-trunk pam-sandbox pam-sandbox-dbgsym pesign-obs-integration platform-parser python-netsnmp python-netsnmp-dbgsym python3-accton-as5916-54xks-sfp-helper python3-pyverbs python3-pyverbs-dbgsym python3-shared-storage rdma-core rdma-core-dbgsym rdmacm-utils rdmacm-utils-dbgsym snmp snmp-dbgsym snmpd snmpd-dbgsym snmptrapd snmptrapd-dbgsym srptools srptools-dbgsym td-agent-bit td-agent-bit-dbgsym tkmib valgrind valgrind-dbg valgrind-mpi vci-tools vyatta-dataplane vyatta-dataplane-dbgsym vyatta-dataplane-dev vyatta-dataplane-protocols-versions vyatta-dataplane-sample-plugin vyatta-dataplane-sample-plugin-dbgsym vyatta-dataplane-test vyatta-dataplane-test-dbgsym vyatta-ndpi-application-names-v1-yang vyatta-ndpi-application-types-v1-yang vyatta-ndpi-show-name vyatta-ndpi-show-name-dbgsym vyatta-system-acm-configd-v1-yang vyatta-system-login-user-isolation-v1-yang vyatta-vci-bus yang-utils yangd yangd-v1-yang
+dpkg-scanpackages: info: Wrote 464 entries to output Packages file.
+/build/src
+Get:1 file:/tmp/pkgs  InRelease
+Ign:1 file:/tmp/pkgs  InRelease
+Get:2 file:/tmp/pkgs  Release
+Ign:2 file:/tmp/pkgs  Release
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages
+Ign:3 file:/tmp/pkgs  Packages
+Get:3 file:/tmp/pkgs  Packages [89.2 kB]
+Hit:4 http://security.debian.org/debian-security buster/updates InRelease
+Hit:5 http://deb.debian.org/debian buster InRelease
+Get:6 http://deb.debian.org/debian buster-updates InRelease [49.3 kB]
+Fetched 49.3 kB in 0s (186 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lintian is already the newest version (2.15.0).
+lintian set to manually installed.
+The following NEW packages will be installed:
+  base-files-vyatta lintian-profile-vyatta
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/8528 B of archives.
+After this operation, 76.8 kB of additional disk space will be used.
+Get:1 file:/tmp/pkgs  base-files-vyatta 0.6 [3148 B]
+Get:2 file:/tmp/pkgs  lintian-profile-vyatta 0.5 [5380 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package base-files-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27955 files and directories currently installed.)
+Preparing to unpack .../base-files-vyatta_0.6_amd64.deb ...
+Adding 'diversion of /etc/issue to /etc/issue.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue' from an Essential package with rename is dangerous, use --no-rename
+Adding 'diversion of /etc/issue.net to /etc/issue.net.debian by base-files-vyatta'
+dpkg-divert: warning: diverting file '/etc/issue.net' from an Essential package with rename is dangerous, use --no-rename
+Unpacking base-files-vyatta (0.6) ...
+Setting up base-files-vyatta (0.6) ...
+Selecting previously unselected package lintian-profile-vyatta.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27982 files and directories currently installed.)
+Preparing to unpack .../lintian-profile-vyatta_0.5_all.deb ...
+Unpacking lintian-profile-vyatta (0.5) ...
+Setting up lintian-profile-vyatta (0.5) ...
+dh_testdir
+dh_testroot
+dh_prep
+dh_testdir
+dh_testroot
+dh_install
+dh_installdocs
+dh_installchangelogs
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'grub2-build-deps' in '../grub2-build-deps_2.02-2vyatta4_amd64.deb'.
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package grub2-build-deps.
+(Reading database ... 28001 files and directories currently installed.)
+Preparing to unpack grub2-build-deps_2.02-2vyatta4_amd64.deb ...
+Unpacking grub2-build-deps (2.02-2vyatta4) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies...Starting pkgProblemResolver with broken count: 1
+Starting 2 pkgProblemResolver with broken count: 1
+Investigating (0) grub2-build-deps:amd64 < 2.02-2vyatta4 @iU mK Nb Ib >
+Broken grub2-build-deps:amd64 Depends on gcc-6:amd64 < none @un H >
+  Removing grub2-build-deps:amd64 because I can't find gcc-6:amd64
+Done
+ Done
+Starting pkgProblemResolver with broken count: 0
+Starting 2 pkgProblemResolver with broken count: 0
+Done
+The following packages will be REMOVED:
+  grub2-build-deps
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+1 not fully installed or removed.
+After this operation, 9216 B disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28005 files and directories currently installed.)
+Removing grub2-build-deps (2.02-2vyatta4) ...
+mk-build-deps: Unable to install grub2-build-deps at /usr/bin/mk-build-deps line 457.
+mk-build-deps: Unable to install all build-dep packages
+total 4700
+drwxr-xr-x  1 builduser builduser    4096 Jun  1 21:09 .
+drwxr-xr-x  1 builduser builduser    4096 Jun  1 19:46 ..
+drwxr-xr-x  4 builduser builduser    4096 May 29 20:39 .git
+-rw-r--r--  1 builduser builduser    3993 May 29 20:39 .gitignore
+-rw-r--r--  1 builduser builduser     107 May 29 20:39 .gitmodules
+-rw-r--r--  1 builduser builduser   10695 May 29 20:39 ABOUT-NLS
+-rw-r--r--  1 builduser builduser     669 May 29 20:39 AUTHORS
+-rw-r--r--  1 builduser builduser     357 May 29 20:39 BUGS
+-rw-r--r--  1 builduser builduser   35147 May 29 20:39 COPYING
+-rw-r--r--  1 builduser builduser  128551 May 29 20:39 ChangeLog
+-rw-r--r--  1 builduser builduser 1943422 May 29 20:39 ChangeLog-2015
+-rw-r--r--  1 builduser builduser   11461 May 29 20:39 INSTALL
+-rw-r--r--  1 builduser builduser   30011 May 29 20:39 Makefile.am
+-rw-r--r--  1 builduser builduser 1309286 May 29 20:39 Makefile.in
+-rw-r--r--  1 builduser builduser   72788 May 29 20:39 Makefile.util.am
+-rw-r--r--  1 builduser builduser   31402 May 29 20:39 Makefile.util.def
+-rw-r--r--  1 builduser builduser    1451 May 29 20:39 Makefile.utilgcry.def
+-rw-r--r--  1 builduser builduser   22309 May 29 20:39 NEWS
+-rw-r--r--  1 builduser builduser     801 May 29 20:39 README
+-rw-r--r--  1 builduser builduser    1398 May 29 20:39 THANKS
+-rw-r--r--  1 builduser builduser     318 May 29 20:39 TODO
+-rw-r--r--  1 builduser builduser   13459 May 29 20:39 acinclude.m4
+-rw-r--r--  1 builduser builduser   45698 May 29 20:39 aclocal.m4
+drwxr-xr-x  2 builduser builduser    4096 May 29 20:39 asm-tests
+-rwxr-xr-x  1 builduser builduser    3005 May 29 20:39 autogen.sh
+drwxr-xr-x  3 builduser builduser    4096 May 29 20:39 build-aux
+drwxr-xr-x  2 builduser builduser    4096 May 29 20:39 conf
+-rw-r--r--  1 builduser builduser   52911 May 29 20:39 config-util.h.in
+-rw-r--r--  1 builduser builduser    2041 May 29 20:39 config.h.in
+-rwxr-xr-x  1 builduser builduser  839832 May 29 20:39 configure
+-rw-r--r--  1 builduser builduser   68919 May 29 20:39 configure.ac
+-rw-r--r--  1 builduser builduser      78 May 29 20:39 coreboot.cfg
+drwxr-xr-x 13 builduser builduser    4096 May 29 20:39 debian
+drwxr-xr-x  3 builduser builduser    4096 May 29 20:39 docs
+-rw-r--r--  1 builduser builduser    1698 May 29 20:39 geninit.sh
+-rw-r--r--  1 builduser builduser   35008 May 29 20:39 gentpl.py
+drwxr-xr-x 29 builduser builduser    4096 May 29 20:39 grub-core
+-rw-r--r--  1 root      root         2496 Jun  1 21:09 grub2-build-deps_2.02-2vyatta4_amd64.deb
+drwxr-xr-x  4 builduser builduser    4096 May 29 20:39 include
+-rwxr-xr-x  1 builduser builduser     352 May 29 20:39 linguas.sh
+drwxr-xr-x  2 builduser builduser    4096 May 29 20:39 m4
+drwxr-xr-x  2 builduser builduser    4096 May 29 20:39 po
+-rw-r--r--  1 builduser builduser      10 May 29 20:39 stamp-h.in
+drwxr-xr-x  6 builduser builduser    4096 May 29 20:39 tests
+drwxr-xr-x  3 builduser builduser    4096 May 29 20:39 themes
+drwxr-xr-x  2 builduser builduser    4096 May 29 20:39 unicode
+drwxr-xr-x  6 builduser builduser    4096 May 29 20:39 util
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package grub2
+dpkg-buildpackage: info: source version 2.02-2vyatta4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Vyatta Package Maintainers <DL-vyatta-help@att.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying olpc_prefix_hack.patch
+dpkg-source: info: applying core_in_fs.patch
+dpkg-source: info: applying dpkg_version_comparison.patch
+dpkg-source: info: applying grub_legacy_0_based_partitions.patch
+dpkg-source: info: applying disable_floppies.patch
+dpkg-source: info: applying grub.cfg_400.patch
+dpkg-source: info: applying gfxpayload_keep_default.patch
+dpkg-source: info: applying install_stage2_confusion.patch
+dpkg-source: info: applying mkrescue_efi_modules.patch
+dpkg-source: info: applying mkconfig_loopback.patch
+dpkg-source: info: applying restore_mkdevicemap.patch
+dpkg-source: info: applying gettext_quiet.patch
+dpkg-source: info: applying mkconfig_mid_upgrade.patch
+dpkg-source: info: applying install_efi_fallback.patch
+dpkg-source: info: applying mkconfig_ubuntu_recovery.patch
+dpkg-source: info: applying install_locale_langpack.patch
+dpkg-source: info: applying mkconfig_nonexistent_loopback.patch
+dpkg-source: info: applying default_grub_d.patch
+dpkg-source: info: applying blacklist_1440x900x32.patch
+dpkg-source: info: applying uefi_firmware_setup.patch
+dpkg-source: info: applying mkconfig_ubuntu_distributor.patch
+dpkg-source: info: applying linuxefi.patch
+dpkg-source: info: applying linuxefi_no_insmod_on_sb.patch
+dpkg-source: info: applying linuxefi_move_fdt_helper.patch
+dpkg-source: info: applying linuxefi_load_arm_with_sb.patch
+dpkg-source: info: applying linuxefi_fix_efi_validation_race.patch
+dpkg-source: info: applying linuxefi_use_dev_chainloader_target.patch
+dpkg-source: info: applying linuxefi_add_sb_to_efi_chainload.patch
+dpkg-source: info: applying linuxefi_honor_sb_mode.patch
+dpkg-source: info: applying linuxefi_rework_linux_cmd.patch
+dpkg-source: info: applying linuxefi_rework_linux16_cmd.patch
+dpkg-source: info: applying linuxefi_rework_pe_loading.patch
+dpkg-source: info: applying linuxefi_rework_non-sb_efi_chainload.patch
+dpkg-source: info: applying linuxefi_debug.patch
+dpkg-source: info: applying linuxefi_minor_cleanups.patch
+dpkg-source: info: applying linuxefi_handle_multiarch_boot.patch
+dpkg-source: info: applying linuxefi_cleanup_errors_in_loader.patch
+dpkg-source: info: applying linuxefi_non_sb_fallback.patch
+dpkg-source: info: applying linuxefi_re-enable_linux_cmd.patch
+dpkg-source: info: applying mkconfig_signed_kernel.patch
+dpkg-source: info: applying install_signed.patch
+dpkg-source: info: applying sleep_shift.patch
+dpkg-source: info: applying wubi_no_windows.patch
+dpkg-source: info: applying maybe_quiet.patch
+dpkg-source: info: applying install_efi_ubuntu_flavours.patch
+dpkg-source: info: applying quick_boot.patch
+dpkg-source: info: applying gfxpayload_dynamic.patch
+dpkg-source: info: applying vt_handoff.patch
+dpkg-source: info: applying probe_fusionio.patch
+dpkg-source: info: applying ignore_grub_func_test_failures.patch
+dpkg-source: info: applying mkconfig_recovery_title.patch
+dpkg-source: info: applying skip_gettext_strings_test.patch
+dpkg-source: info: applying install_powerpc_machtypes.patch
+dpkg-source: info: applying ieee1275-clear-reset.patch
+dpkg-source: info: applying ppc64el-disable-vsx.patch
+dpkg-source: info: applying grub-install-pvxen-paths.patch
+dpkg-source: info: applying insmod-xzio-and-lzopio-on-xen.patch
+dpkg-source: info: applying grub-install-extra-removable.patch
+dpkg-source: info: applying mkconfig_other_inits.patch
+dpkg-source: info: applying syslinux-test-out-of-tree.patch
+dpkg-source: info: applying zpool_full_device_name.patch
+dpkg-source: info: applying misc-fix-invalid-char-strtol.patch
+dpkg-source: info: applying net_read_bracketed_ipv6_addr.patch
+dpkg-source: info: applying bootp_new_net_bootp6_command.patch
+dpkg-source: info: applying efinet_uefi_ipv6_pxe_support.patch
+dpkg-source: info: applying bootp_process_dhcpack_http_boot.patch
+dpkg-source: info: applying efinet_set_network_from_uefi_devpath.patch
+dpkg-source: info: applying efinet_set_dns_from_uefi_proto.patch
+dpkg-source: info: applying grub-install-efibootmgr-check.patch
+dpkg-source: info: applying support_initrd-less_boot.patch
+dpkg-source: info: applying dont-fail-efi-warnings.patch
+dpkg-source: info: applying sb_force_signed_kernel.patch
+dpkg-checkbuilddeps: error: Unmet build dependencies: python flex bison help2man texinfo gcc-6 gcc-6-multilib xfonts-unifont libfreetype6-dev libdevmapper-dev libsdl1.2-dev xorriso qemu-system cpio parted libfuse-dev (>= 2.8.4-1.4) ttf-dejavu-core liblzma-dev dosfstools mtools wamerican
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)
+debuild: fatal error at line 1182:
+dpkg-buildpackage -us -uc -ui -i -b failed
+chmod: cannot access '../*.deb': No such file or directory
+cp: cannot stat '../*.deb': No such file or directory
