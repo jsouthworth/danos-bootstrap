@@ -225,7 +225,7 @@ func buildRepos(
 	interrupt := make(chan os.Signal)
 	signal.Notify(interrupt, os.Interrupt)
 	logf, err := os.OpenFile(filepath.Join(logDir, "failed-builds.log"),
-		os.O_RDWR|os.O_CREATE, 0755)
+		os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0755)
 	if err != nil {
 		return err
 	}
@@ -253,7 +253,6 @@ func buildRepos(
 		return buildErrs
 	}
 	return nil
-
 }
 
 func teeAndEval(logdir, repo string, fn func() error) error {
@@ -267,7 +266,7 @@ func teeAndEval(logdir, repo string, fn func() error) error {
 	os.Stderr = outw
 
 	outf, e := os.OpenFile(filepath.Join(logdir, repo+".log"),
-		os.O_RDWR|os.O_CREATE, 0755)
+		os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0755)
 	if e != nil {
 		return e
 	}
