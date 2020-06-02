@@ -22,12 +22,14 @@ import (
 )
 
 var (
-	clone   bool
-	build   bool
-	srcDir  string
-	pkgDir  string
-	logDir  string
-	version string
+	clone     bool
+	build     bool
+	local     bool
+	srcDir    string
+	pkgDir    string
+	logDir    string
+	imageName string
+	version   string
 )
 
 func resolvePath(in string) string {
@@ -185,15 +187,23 @@ func determineBuildOrder(repos repoMetaData) []string {
 	return append(sorted, repos.unparseable...)
 }
 
-func buildRepo(debDir, baseDir, repo, version string) error {
+func buildRepo(
+	debDir, baseDir, repo, imageName, version string,
+	local bool,
+) error {
 	fmt.Println("Building", repo)
-	bldr, err := bpkg.MakeBuilder(
+	opts := []bpkg.MakeBuilderOption{
 		bpkg.SourceDirectory(
 			resolvePath(filepath.Join(baseDir, repo))),
 		bpkg.DestinationDirectory(resolvePath(debDir)),
 		bpkg.PreferredPackageDirectory(resolvePath(debDir)),
+		bpkg.ImageName(imageName),
 		bpkg.Version(version),
-	)
+	}
+	if local {
+		opts = append(opts, bpkg.LocalImage())
+	}
+	bldr, err := bpkg.MakeBuilder(opts...)
 	if err != nil {
 		return buildError{repo: repo, err: err}
 	}
@@ -205,7 +215,11 @@ func buildRepo(debDir, baseDir, repo, version string) error {
 	return nil
 }
 
-func buildRepos(repos []string, logDir, debDir, baseDir, version string) error {
+func buildRepos(
+	repos []string,
+	logDir, debDir, baseDir, imageName, version string,
+	local bool,
+) error {
 	var buildErrs errList
 	done := make(chan struct{})
 	interrupt := make(chan os.Signal)
@@ -219,7 +233,8 @@ func buildRepos(repos []string, logDir, debDir, baseDir, version string) error {
 	go func() {
 		for _, repo := range repos {
 			err := teeAndEval(logDir, repo, func() error {
-				return buildRepo(debDir, baseDir, repo, version)
+				return buildRepo(debDir, baseDir, repo,
+					imageName, version, local)
 			})
 			if err != nil {
 				buildErrs = append(buildErrs, err)
@@ -290,7 +305,13 @@ func init() {
 	flag.StringVar(&srcDir, "src", "src", "source directory")
 	flag.StringVar(&pkgDir, "pkg", "pkg", "package directory")
 	flag.StringVar(&logDir, "log", "log", "log directory")
-	flag.StringVar(&version, "version", "latest", "version of danos to build for")
+	flag.StringVar(&imageName, "image-name",
+		"jsouthworth.net/danos-buildpackage",
+		"name of docker image")
+	flag.StringVar(&version, "version", "latest",
+		"version of danos to build for")
+	flag.BoolVar(&local, "local", false,
+		"is the image only on the local system")
 }
 
 func main() {
@@ -309,7 +330,8 @@ func main() {
 	if build {
 		err := os.MkdirAll(logDir, 0777)
 		handleError(err)
-		err = buildRepos(buildOrder, logDir, pkgDir, srcDir, version)
+		err = buildRepos(buildOrder, logDir, pkgDir, srcDir,
+			imageName, version, local)
 		handleError(err)
 	}
 }
