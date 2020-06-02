@@ -306,7 +306,7 @@ func init() {
 	flag.StringVar(&pkgDir, "pkg", "pkg", "package directory")
 	flag.StringVar(&logDir, "log", "log", "log directory")
 	flag.StringVar(&imageName, "image-name",
-		"jsouthworth.net/danos-buildpackage",
+		"jsouthworth/danos-buildpackage",
 		"name of docker image")
 	flag.StringVar(&version, "version", "latest",
 		"version of danos to build for")
