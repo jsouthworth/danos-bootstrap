@@ -3,21 +3,19 @@ module danos-bootstrap
 go 1.13
 
 require (
-	github.com/Microsoft/go-winio v0.4.14 // indirect
-	github.com/danos/utils v0.0.0-20191119162830-b62d93ee5a7e
-	github.com/go-git/go-git/v5 v5.1.0
+	github.com/Microsoft/go-winio v0.4.16 // indirect
+	github.com/danos/utils v0.0.0-20201029161013-0a7b9d7c48d1
 	github.com/google/go-github v17.0.0+incompatible
 	github.com/google/go-querystring v1.0.0 // indirect
+	github.com/kr/text v0.2.0 // indirect
+	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/stretchr/testify v1.5.1 // indirect
-	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37 // indirect
-	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2 // indirect
-	golang.org/x/sys v0.0.0-20200523222454-059865788121 // indirect
-	jsouthworth.net/go/danos-buildpackage v0.0.0-20200602145032-35b1f97e2f1d
-	jsouthworth.net/go/dyn v0.0.0-20190414143850-c77f9cc7c983
-	jsouthworth.net/go/immutable v0.0.0-20200428214457-0cfcea959a4d
-	jsouthworth.net/go/seq v0.0.0-20190918170623-46e5a194a36e // indirect
-	jsouthworth.net/go/transduce v0.0.0-20190413184222-84fc8240a117 // indirect
-	pault.ag/go/debian v0.0.0-20190530135403-b831f604d664
+	golang.org/x/crypto v0.0.0-20201208171446-5f87f3452ae9 // indirect
+	golang.org/x/net v0.0.0-20201209123823-ac852fbbde11 // indirect
+	golang.org/x/sys v0.0.0-20201214095126-aec9a390925b // indirect
+	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
+	gopkg.in/yaml.v2 v2.3.0 // indirect
+	jsouthworth.net/go/danos-buildpackage v0.0.0-20201207173700-850d0427851e
+	pault.ag/go/debian v0.10.1
 )

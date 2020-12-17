@@ -9,16 +9,17 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"os/exec"
 	"os/signal"
 	"path/filepath"
 	"strings"
 	"sync"
 
 	"github.com/danos/utils/tsort"
-	git "github.com/go-git/go-git/v5"
 	"github.com/google/go-github/github"
 	bpkg "jsouthworth.net/go/danos-buildpackage"
 	"pault.ag/go/debian/control"
+	"pault.ag/go/debian/dependency"
 )
 
 var (
@@ -30,6 +31,7 @@ var (
 	logDir    string
 	imageName string
 	version   string
+	gitRef    string
 )
 
 func resolvePath(in string) string {
@@ -69,7 +71,17 @@ func (l errList) Error() string {
 	return buf.String()
 }
 
+func tagIsElementOf(tag string, set []*github.RepositoryTag) bool {
+	for _, elem := range set {
+		if tag == *elem.Name {
+			return true
+		}
+	}
+	return false
+}
+
 func cloneRepos(into string) error {
+	os.MkdirAll(into, 0777)
 	client := github.NewClient(nil)
 
 	opt := &github.RepositoryListByOrgOptions{
@@ -96,15 +108,41 @@ func cloneRepos(into string) error {
 		if repo.Archived != nil && *repo.Archived {
 			continue
 		}
-		fmt.Println("Cloning", *repo.Name, "from", *repo.CloneURL)
-		_, err := git.PlainClone(filepath.Join(into, *repo.Name), false,
-			&git.CloneOptions{
-				URL:      *repo.CloneURL,
-				Progress: os.Stdout,
-			})
+
+		cmd := exec.Command("git", "clone", *repo.CloneURL, *repo.Name)
+		cmd.Dir = filepath.Join(into)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		err := cmd.Run()
 		if err != nil {
-			cloneErrs = append(cloneErrs,
-				cloneError{repo: *repo.Name, err: err})
+			err = cloneError{repo: *repo.Name, err: err}
+			cloneErrs = append(cloneErrs, err)
+			fmt.Fprintln(os.Stderr, "clone", err)
+			continue
+		}
+
+		cmd = exec.Command("git", "checkout", gitRef)
+		cmd.Dir = filepath.Join(into, *repo.Name)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		err = cmd.Run()
+		if err != nil {
+			err = cloneError{
+				repo: *repo.Name,
+				err:  fmt.Errorf("the reference did not exist"),
+			}
+			cloneErrs = append(cloneErrs, err)
+			fmt.Fprintln(os.Stderr, "checkout", err)
+			// If we were unable to checkout the correct branch
+			// remove the clone, it would be nice to only clone
+			// the proper branches but the github API has a rate
+			// limit that the tool exceeds.
+			err = os.RemoveAll(cmd.Dir)
+			if err != nil {
+				err = cloneError{repo: *repo.Name, err: err}
+				cloneErrs = append(cloneErrs, err)
+			}
+			continue
 		}
 	}
 	if len(cloneErrs) != 0 {
@@ -151,6 +189,18 @@ func enumerateBuildableRepos(from string) repoMetaData {
 		for _, bin := range ctrl.Binaries {
 			pkgName := strings.TrimSpace(bin.Package)
 			out.pack2repo[pkgName] = repo.Name()
+			providesStr, ok := bin.Values["Provides"]
+			if !ok {
+				continue
+			}
+			provides, err := dependency.Parse(providesStr)
+			if err != nil {
+				continue
+			}
+			for _, poss := range provides.GetAllPossibilities() {
+				name := strings.TrimSpace(poss.Name)
+				out.pack2repo[name] = repo.Name()
+			}
 		}
 	}
 	return out
@@ -161,10 +211,18 @@ func determineBuildOrder(repos repoMetaData) []string {
 	for repo, ctrl := range repos.ctrlFiles {
 		depGraph.AddVertex(repo)
 		// Assume everything requires our base-files
-		if repo != "base-files" && repo != "lintian-profile-vyatta" {
+		if repo != "base-files" &&
+			repo != "lintian-profile-vyatta" {
 			depGraph.AddEdge(repo, "base-files")
 			depGraph.AddEdge(repo, "lintian-profile-vyatta")
+			if repo != "linux-vyatta" {
+				// The kernel has some funky metadata this
+				// tool can't resolve, so just build it
+				// first.
+				depGraph.AddEdge(repo, "linux-vyatta")
+			}
 		}
+
 		for _, rel := range ctrl.Source.BuildDepends.Relations {
 			for _, pos := range rel.Possibilities {
 				name := strings.TrimSpace(pos.Name)
@@ -192,9 +250,9 @@ func buildRepo(
 	local bool,
 ) error {
 	fmt.Println("Building", repo)
+	repoPath := resolvePath(filepath.Join(baseDir, repo))
 	opts := []bpkg.MakeBuilderOption{
-		bpkg.SourceDirectory(
-			resolvePath(filepath.Join(baseDir, repo))),
+		bpkg.SourceDirectory(repoPath),
 		bpkg.DestinationDirectory(resolvePath(debDir)),
 		bpkg.PreferredPackageDirectory(resolvePath(debDir)),
 		bpkg.ImageName(imageName),
@@ -203,6 +261,7 @@ func buildRepo(
 	if local {
 		opts = append(opts, bpkg.LocalImage())
 	}
+
 	bldr, err := bpkg.MakeBuilder(opts...)
 	if err != nil {
 		return buildError{repo: repo, err: err}
@@ -307,15 +366,19 @@ func init() {
 	flag.StringVar(&imageName, "image-name",
 		"jsouthworth/danos-buildpackage",
 		"name of docker image")
-	flag.StringVar(&version, "version", "latest",
+	flag.StringVar(&version, "version", "debian10-bootstrap",
 		"version of danos to build for")
 	flag.BoolVar(&local, "local", false,
 		"is the image only on the local system")
+	flag.StringVar(&gitRef, "ref", "", "git reference to checkout")
 }
 
 func main() {
 	flag.Parse()
 	if clone {
+		if gitRef == "" {
+			handleError(fmt.Errorf("Must supply git ref to clone"))
+		}
 		err := cloneRepos(srcDir)
 		handleError(err)
 	}
